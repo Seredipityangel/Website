@@ -1,4 +1,4 @@
-package Itd.newbee.mall.entity;
+package ltd.newbee.mall.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 

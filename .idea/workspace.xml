@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9290c5d8-ddac-46cc-b8ac-bbd356082d07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Itd/newbee/mall/entity/NewBeeMallGoods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Itd/newbee/mall/entity/NewBeeMallOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/entity/MallUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Itd/newbee/mall/NewBeeMallApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/NewBeeMallApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Itd/newbee/mall/common/IndexConfigTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/IndexConfigTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Itd/newbee/mall/config/NeeBeeMallWebMvcConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/config/NeeBeeMallWebMvcConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Itd/newbee/mall/dao/AdminUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/AdminUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Itd/newbee/mall/entity/AdminUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/entity/AdminUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Itd/newbee/mall/entity/NewBeeMallGoods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/entity/NewBeeMallGoods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Itd/newbee/mall/entity/NewBeeMallOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/entity/NewBeeMallOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Itd/newbee/mall/interceptor/AdminLoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/interceptor/AdminLoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Itd/newbee/mall/util/NewBeeMallUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/util/NewBeeMallUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

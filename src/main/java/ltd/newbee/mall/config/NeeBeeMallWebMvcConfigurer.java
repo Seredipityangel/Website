@@ -1,4 +1,4 @@
-package Itd.newbee.mall.config;
+package ltd.newbee.mall.config;
 
 import ltd.newbee.mall.common.Constants;
 import ltd.newbee.mall.interceptor.AdminLoginInterceptor;

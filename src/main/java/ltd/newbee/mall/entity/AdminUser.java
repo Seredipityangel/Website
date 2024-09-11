@@ -1,4 +1,4 @@
-package Itd.newbee.mall.entity;
+package ltd.newbee.mall.entity;
 
 public class AdminUser {
     private Integer adminUserId;

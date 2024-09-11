@@ -1,4 +1,4 @@
-package Itd.newbee.mall;
+package ltd.newbee.mall;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

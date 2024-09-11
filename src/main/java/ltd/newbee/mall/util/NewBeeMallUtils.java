@@ -1,4 +1,4 @@
-package Itd.newbee.mall.util;
+package ltd.newbee.mall.util;
 
 public class NewBeeMallUtils {
 }

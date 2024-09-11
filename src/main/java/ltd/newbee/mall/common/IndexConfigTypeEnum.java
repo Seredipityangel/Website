@@ -1,4 +1,4 @@
-package Itd.newbee.mall.common;
+package ltd.newbee.mall.common;
 
 public enum IndexConfigTypeEnum {
 }

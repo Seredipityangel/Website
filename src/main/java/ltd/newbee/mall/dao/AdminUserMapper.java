@@ -1,4 +1,4 @@
-package Itd.newbee.mall.dao;
+package ltd.newbee.mall.dao;
 
 public interface AdminUserMapper {
 }
