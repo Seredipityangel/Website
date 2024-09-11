@@ -1,6 +1,5 @@
 package ltd.newbee.mall.interceptor;
 
-import ltd.newbee.mall.common.Constants;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
