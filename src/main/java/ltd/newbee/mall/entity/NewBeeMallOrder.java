@@ -2,8 +2,6 @@ package ltd.newbee.mall.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import java.util.Date;
-import com.fasterxml.jackson.annotation.JsonFormat;
-import java.util.Date;
 
 public class NewBeeMallOrder {
     private Long orderId;

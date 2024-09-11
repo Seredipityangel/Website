@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9290c5d8-ddac-46cc-b8ac-bbd356082d07" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/entity/NewBeeMallOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/entity/NewBeeMallOrder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
