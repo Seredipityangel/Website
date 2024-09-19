@@ -1,6 +1,5 @@
 package ltd.newbee.mall.util;
 
-
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.BeanWrapperImpl;

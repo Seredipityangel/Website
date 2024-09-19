@@ -2,7 +2,6 @@ package ltd.newbee.mall.util;
 
 import java.security.MessageDigest;
 
-
 public class MD5Util {
 
     private static String byteArrayToHexString(byte b[]) {
