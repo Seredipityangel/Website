@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9290c5d8-ddac-46cc-b8ac-bbd356082d07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/newbee_mall_index_config.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/IndexConfigTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/IndexConfigTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/NewBeeMallCategoryLevelEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/NewBeeMallCategoryLevelEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/NewBeeMallOrderStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/NewBeeMallOrderStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/PayStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/PayStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/PayTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/PayTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/ServiceResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/ServiceResultEnum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
