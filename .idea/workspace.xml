@@ -5,31 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9290c5d8-ddac-46cc-b8ac-bbd356082d07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/NewBeeMallCategoryLevelEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/NewBeeMallException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/NewBeeMallOrderStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/PayStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/PayTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/common/ServiceResultEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/CarouselMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/GoodsCategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/IndexConfigMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/MallUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/NewBeeMallOrderItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/NewBeeMallShoppingCartItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/CarouselMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/GoodsCategoryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/IndexConfigMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/MallUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/NewBeeMallOrderItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/NewBeeMallShoppingCartItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/newbee_mall_schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error/error_400.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error/error_404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error/error_5xx.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/AdminUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/AdminUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/CarouselMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/CarouselMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/GoodsCategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/GoodsCategoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/MallUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/MallUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/NewBeeMallOrderItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/NewBeeMallOrderItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/NewBeeMallShoppingCartItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/NewBeeMallShoppingCartItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/NewBeeMallOrderItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/NewBeeMallOrderItemMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/NewBeeMallShoppingCartItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/NewBeeMallShoppingCartItemMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
