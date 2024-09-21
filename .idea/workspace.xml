@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9290c5d8-ddac-46cc-b8ac-bbd356082d07" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/newbee_mall_index_config.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/CarouselMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/CarouselMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/GoodsCategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/GoodsCategoryMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/MallUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/MallUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/NewBeeMallOrderItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/NewBeeMallOrderItemMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/NewBeeMallShoppingCartItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/NewBeeMallShoppingCartItemMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/NewBeeMallOrderItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/NewBeeMallOrderItemMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/NewBeeMallShoppingCartItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/NewBeeMallShoppingCartItemMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,11 +17,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="FxmlFile" />
         <option value="Interface" />
         <option value="Class" />
         <option value="Enum" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
