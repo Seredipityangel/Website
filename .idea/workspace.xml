@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9290c5d8-ddac-46cc-b8ac-bbd356082d07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/admin/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/admin/NewBeeMallCarouselController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/service/impl/NewBeeMallCarouselServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/vo/NewBeeMallGoodsDetailVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/vo/NewBeeMallIndexCategoryVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/vo/NewBeeMallIndexConfigGoodsVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/vo/NewBeeMallOrderDetailsVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/vo/NewBeeMallOrderItemVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/vo/NewBeeMallOrderListVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/vo/NewBeeMallSearchGoodsVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/vo/NewBeeMallShoppingCartItemVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/vo/NewBeeMallUserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/vo/SearchPageCategoryVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/vo/SecondLevelCategoryVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/vo/ThirdLevelCategoryVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/service/NewBeeMallUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/service/impl/NewBeeMallCategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/service/impl/NewBeeMallUserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +33,7 @@
         <option value="FxmlFile" />
         <option value="Enum" />
         <option value="HTML File" />
+        <option value="Kotlin Class" />
         <option value="Interface" />
         <option value="Class" />
       </list>
