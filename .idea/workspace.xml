@@ -5,8 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9290c5d8-ddac-46cc-b8ac-bbd356082d07" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/admin/NewBeeMallGoodsCategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/admin/NewBeeMallGoodsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/admin/NewBeeMallGoodsIndexConfigController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/admin/NewBeeMallOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/admin/NewBeeMallUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/common/CommonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/common/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/mall/GoodsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/mall/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/mall/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/mall/PersonalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/mall/ShoppingCartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/service/NewBeeMallGoodsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/service/NewBeeMallIndexConfigService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/service/NewBeeMallOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/service/NewBeeMallShoppingCartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/service/impl/NewBeeMallGoodsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/service/impl/NewBeeMallIndexConfigServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/service/impl/NewBeeMallOrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/service/impl/NewBeeMallShoppingCartServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mall/pay-select.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mall/pay-select.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/service/NewBeeMallCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/service/NewBeeMallCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/service/impl/NewBeeMallCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/service/impl/NewBeeMallCategoryServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +40,9 @@
         <option value="FxmlFile" />
         <option value="Enum" />
         <option value="Kotlin Class" />
-        <option value="Class" />
         <option value="HTML File" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
