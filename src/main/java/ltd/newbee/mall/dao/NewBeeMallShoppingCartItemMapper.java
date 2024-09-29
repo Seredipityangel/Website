@@ -1,5 +1,6 @@
 package ltd.newbee.mall.dao;
 
+
 import ltd.newbee.mall.entity.NewBeeMallShoppingCartItem;
 import org.apache.ibatis.annotations.Param;
 

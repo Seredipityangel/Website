@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9290c5d8-ddac-46cc-b8ac-bbd356082d07" name="Changes" comment="" />
+    <list default="true" id="9290c5d8-ddac-46cc-b8ac-bbd356082d07" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/NewBeeMallShoppingCartItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/NewBeeMallShoppingCartItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/newbee_mall_category.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/newbee_mall_category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/newbee_mall_goods.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/newbee_mall_goods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/newbee_mall_order.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/newbee_mall_order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/newbee_mall_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/newbee_mall_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/newbeemall_goods_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/newbee_mall_goods_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/sidebar.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,9 +25,9 @@
         <option value="FxmlFile" />
         <option value="Enum" />
         <option value="Kotlin Class" />
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -52,6 +61,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.NewBeeMallApplication.executor": "Run",
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -71,6 +81,19 @@
   }
 }]]></component>
   <component name="RunManager">
+    <configuration name="NewBeeMallApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ltd.newbee.mall.NewBeeMallApplication" />
+      <module name="mall001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ltd.newbee.mall.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Website" />
       <method v="2">
@@ -84,6 +107,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.NewBeeMallApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
