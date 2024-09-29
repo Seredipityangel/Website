@@ -1,6 +1,5 @@
 package ltd.newbee.mall.interceptor;
 
-
 import ltd.newbee.mall.common.Constants;
 import ltd.newbee.mall.controller.vo.NewBeeMallUserVO;
 import ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper;
@@ -43,4 +42,3 @@ public class NewBeeMallCartNumberInterceptor implements HandlerInterceptor {
 
     }
 }
-
