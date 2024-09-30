@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>newbee-mall管理系统 | Log in</title>
+    <title>newbee-mall System management | Log in</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" th:href="@{/admin/dist/img/favicon.ico}"/>
@@ -34,7 +34,7 @@
 <div class="login-box">
     <div class="login-logo" style="color: #1baeae;">
         <img th:src="@{/mall/image/new-bee-logo-3.png}" style="    height: 58px;float: left;margin-left: 10px;">
-        <h1>管理系统登陆</h1>
+        <h1>Management System Login</h1>
     </div>
     <!-- /.login-logo -->
     <div class="card">
@@ -46,20 +46,20 @@
                 </div>
                 <div class="form-group has-feedback">
                     <span class="fa fa-user form-control-feedback"></span>
-                    <input type="text" id="userName" name="userName" class="form-control" placeholder="请输入账号"
+                    <input type="text" id="userName" name="userName" class="form-control" placeholder="Please enter the account"
                            required="true">
                 </div>
                 <div class="form-group has-feedback">
                     <span class="fa fa-lock form-control-feedback"></span>
-                    <input type="password" id="password" name="password" class="form-control" placeholder="请输入密码"
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Please enter your password"
                            required="true">
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <input type="text" class="form-control" name="verifyCode" placeholder="请输入验证码" required="true">
+                        <input type="text" class="form-control" name="verifyCode" placeholder="Please enter your CAPTCHA" required="true">
                     </div>
                     <div class="col-6">
-                        <img alt="单击图片刷新！" class="pointer" th:src="@{/common/kaptcha}"
+                        <img alt="Click on the image to refresh！" class="pointer" th:src="@{/common/kaptcha}"
                              onclick="this.src='/common/kaptcha?d='+new Date()*1">
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                     <div class="col-8">
                     </div>
                     <div class="col-4">
-                        <button type="submit" class="btn btn-primary btn-block btn-flat">登录
+                        <button type="submit" class="btn btn-primary btn-block btn-flat">Log in
                         </button>
                     </div>
                 </div>

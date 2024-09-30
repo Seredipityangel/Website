@@ -29,7 +29,7 @@
       </th:block>
       <th:block th:if="${searchPageCategoryVO==null}">
         <th:block th:if="${keyword!=null and keyword !=''}">
-          <div class="findword">搜索 "
+          <div class="findword">Research "
             <th:block th:text="${keyword}"></th:block>
             "
           </div>
@@ -39,17 +39,17 @@
   </div>
 </div>
 
-<!--排序-->
+<!--Ranking-->
 <div class="sort">
   <div class="list">
     <a th:href="@{'/search?keyword='+${keyword==null?'':keyword}+'&goodsCategoryId='+${goodsCategoryId==null?'':goodsCategoryId}+'&orderBy=default'}">
-      <div th:class="${orderBy==null || orderBy=='default'?'active':''}">推荐</div>
+      <div th:class="${orderBy==null || orderBy=='default'?'active':''}">Recommend</div>
     </a>
     <a th:href="@{'/search?keyword='+${keyword==null?'':keyword}+'&goodsCategoryId='+${goodsCategoryId==null?'':goodsCategoryId}+'&orderBy=new'}">
-      <div th:class="${orderBy=='new'?'active':''}">新品</div>
+      <div th:class="${orderBy=='new'?'active':''}">New Good</div>
     </a>
     <a th:href="@{'/search?keyword='+${keyword==null?'':keyword}+'&goodsCategoryId='+${goodsCategoryId==null?'':goodsCategoryId}+'&orderBy=price'}">
-      <div th:class="${orderBy=='price'?'active':''}">价格</div>
+      <div th:class="${orderBy=='price'?'active':''}">Price</div>
     </a>
   </div>
 </div>
@@ -78,7 +78,7 @@
       <th:block th:if="${null != pageResult and !#lists.isEmpty(pageResult.list)}">
             <span class="page_span1">
                  <a th:href="@{${pageResult.currPage==1}?'##':'/search?keyword='+${keyword==null?'':keyword}+'&page=' + ${pageResult.currPage-1}+'&goodsCategoryId='+${goodsCategoryId==null?'':goodsCategoryId}+'&orderBy='+${orderBy==null?'':orderBy}}">
-                                    < 上一页
+                                    < preceding page
                                 </a>
                 <th:block th:if="${pageResult.currPage-2 >=1}"><a
                         th:href="@{'/search?keyword='+${keyword==null?'':keyword}+'&page=' + ${pageResult.currPage-2}+'&goodsCategoryId='+${goodsCategoryId==null?'':goodsCategoryId}+'&orderBy='+${orderBy==null?'':orderBy}}"
@@ -94,7 +94,7 @@
                         th:href="@{'/search?keyword='+${keyword==null?'':keyword}+'&page=' + ${pageResult.currPage+2}+'&goodsCategoryId='+${goodsCategoryId==null?'':goodsCategoryId}+'&orderBy='+${orderBy==null?'':orderBy}}"
                         th:text="${pageResult.currPage +2}">1</a></th:block>
                  <a th:href="@{${pageResult.currPage>=pageResult.totalPage}?'##':'/search?keyword='+${keyword==null?'':keyword}+'&page=' + ${pageResult.currPage+1}+'&goodsCategoryId='+${goodsCategoryId==null?'':goodsCategoryId}+'&orderBy='+${orderBy==null?'':orderBy}}">
-                                    下一页 >
+                                    next page >
                                 </a>
 					</span>
       </th:block>

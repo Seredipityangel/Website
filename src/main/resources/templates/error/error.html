@@ -7,12 +7,12 @@
 </head>
 <body>
 <div class="cover">
-    <h1>你的请求出错了</h1>
-    <p th:text="'错误信息：'+${message}" style="color: red;font-weight: 600;"></p>
-    <p th:text="'请求地址：'+${url}"></p>
-    <h2>报告问题</h2>
-    <a href="#" target="_blank" style="color: #1baeae">提交issue</a>&nbsp;&nbsp;&nbsp;&nbsp;
-    <h2>异常堆栈跟踪日志</h2>
+    <h1>There's been an error in your request.</h1>
+    <p th:text="'Error Massage：'+${message}" style="color: red;font-weight: 600;"></p>
+    <p th:text="'Request Address：'+${url}"></p>
+    <h2>Reporting issues</h2>
+    <a href="#" target="_blank" style="color: #1baeae">Submit issue</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <h2>Exception Stack Trace Log</h2>
     <div th:each="string:${stackTrace}">
         <small><th:block th:text="${string}"></th:block></small>
     </div>

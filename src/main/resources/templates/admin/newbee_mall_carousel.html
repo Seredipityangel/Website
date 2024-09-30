@@ -12,13 +12,13 @@
 </style>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
-    <!-- 引入页面头header-fragment -->
+    <!-- Introducing the page header header-fragment -->
     <div th:replace="admin/header::header-nav"></div>
-    <!-- 引入工具栏sidebar-fragment -->
+    <!-- Introducing the toolbar sidebar-fragment -->
     <div th:replace="admin/sidebar::sidebar-fragment(${path})"></div>
-    <!-- Content Wrapper. Contains 图标content -->
+    <!-- Content Wrapper. Contains icon content -->
     <div class="content-wrapper">
-        <!-- Content Header (图标header) -->
+        <!-- Content Header (icon header) -->
         <div class="content-header">
             <div class="container-fluid">
             </div><!-- /.container-fluid -->
@@ -28,18 +28,18 @@
             <div class="container-fluid">
                 <div class="card card-primary card-outline">
                     <div class="card-header">
-                        <h3 class="card-title">轮播图管理</h3>
+                        <h3 class="card-title">Rotational chart management</h3>
                     </div> <!-- /.card-body -->
                     <div class="card-body">
                         <div class="grid-btn">
                             <button class="btn btn-info" onclick="carouselAdd()"><i
-                                    class="fa fa-plus"></i>&nbsp;新增
+                                    class="fa fa-plus"></i>&nbsp;Add
                             </button>
                             <button class="btn btn-info" onclick="carouselEdit()"><i
-                                    class="fa fa-pencil-square-o"></i>&nbsp;修改
+                                    class="fa fa-pencil-square-o"></i>&nbsp;Edit
                             </button>
                             <button class="btn btn-danger" onclick="deleteCarousel()"><i
-                                    class="fa fa-trash-o"></i>&nbsp;删除
+                                    class="fa fa-trash-o"></i>&nbsp;delete
                             </button>
                         </div>
                         <br>
@@ -52,7 +52,7 @@
         </div>
         <!-- /.content -->
         <div class="content">
-            <!-- 模态框（Modal） -->
+            <!-- modal box（Modal） -->
             <div class="modal fade" id="carouselModal" tabindex="-1" role="dialog"
                  aria-labelledby="carouselModalLabel">
                 <div class="modal-dialog" role="document">
@@ -66,7 +66,7 @@
                             <form id="indexConfigForm">
                                 <div class="form-group">
                                     <div class="alert alert-danger" id="edit-error-msg" style="display: none;">
-                                        错误信息展示栏。
+                                        Error message display bar.
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -80,25 +80,25 @@
                                     <div class="col-sm-4">
                                         <button class="btn btn-info" style="margin-bottom: 5px;"
                                                 id="uploadCarouselImage">
-                                            <i class="fa fa-picture-o"></i>&nbsp;上传轮播图
+                                            <i class="fa fa-picture-o"></i>&nbsp;Upload a rotating image
                                         </button>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="redirectUrl" class="control-label">跳转链接:</label>
+                                    <label for="redirectUrl" class="control-label">jump link: </label>
                                     <input type="text" class="form-control" id="redirectUrl" name="redirectUrl"
-                                           placeholder="请输入跳转链接" value="##">
+                                           placeholder="Please enter the jump link" value="##">
                                 </div>
                                 <div class="form-group">
-                                    <label for="carouselRank" class="control-label">排序值:</label>
+                                    <label for="carouselRank" class="control-label">sorted value:</label>
                                     <input type="number" class="form-control" id="carouselRank" name="carouselRank"
-                                           placeholder="请输入排序值">
+                                           placeholder="Please enter a sort value">
                                 </div>
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                            <button type="button" class="btn btn-primary" id="saveButton">确认</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">cancel</button>
+                            <button type="button" class="btn btn-primary" id="saveButton">confirm</button>
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,8 @@
         </div>
     </div>
     <!-- /.content-wrapper -->
-    <!-- 引入页脚footer-fragment -->
+    <!-- Introducing a footer footer-fragment -->
+    <!-- Introducing a footer footer-fragment -->
     <div th:replace="admin/footer::footer-fragment"></div>
 </div>
 <!-- jQuery -->

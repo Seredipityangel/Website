@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>NewBee商城-注册</title>
+    <title>NewBee Mall-Registration</title>
     <link rel="stylesheet" th:href="@{mall/css/common.css}">
     <link rel="stylesheet" th:href="@{mall/styles/login.css}">
     <link rel="stylesheet" th:href="@{mall/styles/header.css}">
@@ -19,32 +19,32 @@
     <div class="login">
         <div class="login_center">
             <div class="login_top">
-                <div class="left fl">会员注册</div>
-                <div class="right fr">您已有账号？<a href="login.html" target="_self">请登录</a></div>
+                <div class="left fl">Member Registration</div>
+                <div class="right fr">You already have an account？<a href="login.html" target="_self">Please Log in</a></div>
                 <div class="clear"></div>
                 <div class="under-line center"></div>
             </div>
             <form id="registerForm" onsubmit="return false;" action="##">
                 <div class="login_main center">
-                    <div class="login-info">手机号:&nbsp;<input class="login-info-input" type="text" name="loginName"
-                                                                placeholder="请输入你的手机号" id="loginName"/>
+                    <div class="login-info">Phone number:&nbsp;<input class="login-info-input" type="text" name="loginName"
+                                                                placeholder="Please enter your phone number" id="loginName"/>
                     </div>
-                    <div class="login-info">密&nbsp;&nbsp;&nbsp;&nbsp;码:&nbsp;<input class="login-info-input"
+                    <div class="login-info">password:&nbsp;<input class="login-info-input"
                                                                                       type="password"
                                                                                       name="password"
                                                                                       id="password"
-                                                                                      placeholder="请输入你的密码"/>
+                                                                                      placeholder="Please enter your password"/>
                     </div>
                     <div class="login-info">
-                        验证码:&nbsp;
+                        CAPTCHA:&nbsp;
                         <input class="login-info-input verify-code" type="text" name="verifyCode" id="verifyCode"
-                               placeholder="请输入验证码"/>
-                        <img alt="单击图片刷新！" style="top: 16px;position: relative;" th:src="@{/common/mall/kaptcha}"
+                               placeholder="Please enter your CAPTCHA"/>
+                        <img alt="Click on the image to refresh！" style="top: 16px;position: relative;" th:src="@{/common/mall/kaptcha}"
                              onclick="this.src='/common/mall/kaptcha?d='+new Date()*1">
                     </div>
                 </div>
                 <div class="login_submit">
-                    <input class="submit" type="button" onclick="register()" value="立即注册">
+                    <input class="submit" type="button" onclick="register()" value="Registration Now">
                 </div>
             </form>
         </div>

@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>NewBee商城-购物车</title>
+    <title>NewBee Mall-Cart</title>
     <link rel="stylesheet" th:href="@{mall/css/iconfont.css}">
     <link rel="stylesheet" th:href="@{mall/css/common.css}">
     <link rel="stylesheet" th:href="@{mall/styles/header.css}">
@@ -19,8 +19,8 @@
             </div>
         </a>
 
-        <div class="wdgwc fl ml20">购物车</div>
-        <div class="wxts fl ml20">温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</div>
+        <div class="wdgwc fl ml20">Shopping Cart</div>
+        <div class="wxts fl ml20">Warm reminder: whether the good is purchased successfully, to the final order shall prevail, please settle as soon as possible!</div>
         <div class="clear"></div>
     </div>
     <div class="cart_line"></div>
@@ -35,11 +35,11 @@
                 <div class="top2 center">
                     <div class="sub_top fl">
                     </div>
-                    <div class="sub_top fl">商品名称</div>
-                    <div class="sub_top fl">单价</div>
-                    <div class="sub_top fl">数量</div>
-                    <div class="sub_top fl">小计</div>
-                    <div class="sub_top fr">操作</div>
+                    <div class="sub_top fl">Good Name</div>
+                    <div class="sub_top fl">Price of Item</div>
+                    <div class="sub_top fl">Quantity</div>
+                    <div class="sub_top fl">Subtotal</div>
+                    <div class="sub_top fr">Rig</div>
                     <div class="clear"></div>
                 </div>
                 <th:block th:each="item : ${myShoppingCartItems}">
@@ -47,15 +47,15 @@
                         <div class="sub_content fl ">
                         </div>
                         <div class="sub_content cover fl"><img th:src="@{${item.goodsCoverImg}}"></div>
-                        <div class="sub_content fl ft20" th:text="${item.goodsName}">商品名称</div>
-                        <div class="sub_content fl" th:text="${item.sellingPrice+'元'}">1299元</div>
+                        <div class="sub_content fl ft20" th:text="${item.goodsName}">Good Name</div>
+                        <div class="sub_content fl" th:text="${item.sellingPrice+'$'}">$1299</div>
                         <div class="sub_content fl">
                             <input class="goods_count" th:id="${'goodsCount'+item.cartItemId}" type="number"
                                    th:onblur="'updateItem('+${item.cartItemId}+')'"
                                    th:value="${item.goodsCount}" step="1" min="1"
                                    max="5">
                         </div>
-                        <div class="sub_content fl" th:text="${item.goodsCount*item.sellingPrice+'元'}">1299元</div>
+                        <div class="sub_content fl" th:text="${item.goodsCount*item.sellingPrice+'$'}">$1299</div>
                         <div class="sub_content fl"><a href="##" th:onclick="'deleteItem('+${item.cartItemId}+')'">×</a>
                         </div>
                         <div class="clear"></div>
@@ -66,24 +66,24 @@
         <div class="pre_order mt20 center">
             <div class="tips fl ml20">
                 <ul>
-                    <li><a th:href="@{/index}">继续购物</a></li>
+                    <li><a th:href="@{/index}">Keep shopping</a></li>
                     <li>|</li>
-                    <li>共<span th:text="${itemsTotal}">13</span>件商品</li>
+                    <li>Total<span th:text="${itemsTotal}">13</span>Commodities</li>
                     <div class="clear"></div>
                 </ul>
             </div>
             <div class="order_div fr">
-                <div class="order_total fl">合计（不含运费）：<span th:text="${priceTotal}+'.00元'">1299.00元</span></div>
+                <div class="order_total fl">Total (excluding freight):<span th:text="${priceTotal}+'.00$'">$1299.00</span></div>
                 <div class="order_button fr">
                     <th:block th:if="${itemsTotal == 0}">
                         <input class="order_button_c" type="button" name="tip"
                                onclick="tip()"
-                               value="去结算"/>
+                               value="go to the settlement table"/>
                     </th:block>
                     <th:block th:unless="${itemsTotal == 0}">
                         <input class="order_button_d" type="button" name="settle"
                                onclick="settle()"
-                               value="去结算"/>
+                               value="go to the settlement table"/>
                     </th:block>
                 </div>
                 <div class="clear"></div>

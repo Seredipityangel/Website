@@ -29,18 +29,18 @@
             <div class="container-fluid">
                 <div class="card card-primary card-outline">
                     <div class="card-header">
-                        <h3 class="card-title">首页配置管理</h3>
+                        <h3 class="card-title">Home Configuration Management</h3>
                     </div> <!-- /.card-body -->
                     <div class="card-body">
                         <div class="grid-btn">
                             <button class="btn btn-info" onclick="configAdd()"><i
-                                    class="fa fa-plus"></i>&nbsp;新增
+                                    class="fa fa-plus"></i>&nbsp;Add
                             </button>
                             <button class="btn btn-info" onclick="configEdit()"><i
-                                    class="fa fa-pencil-square-o"></i>&nbsp;修改
+                                    class="fa fa-pencil-square-o"></i>&nbsp;Edit
                             </button>
                             <button class="btn btn-danger" onclick="deleteConfig()"><i
-                                    class="fa fa-trash-o"></i>&nbsp;删除
+                                    class="fa fa-trash-o"></i>&nbsp;Delete
                             </button>
                         </div>
                         <br>
@@ -67,36 +67,36 @@
                             <form id="indexConfigForm">
                                 <div class="form-group">
                                     <div class="alert alert-danger" id="edit-error-msg" style="display: none;">
-                                        错误信息展示栏。
+                                        Error message display bar.
                                     </div>
                                 </div>
                                 <input type="hidden" class="form-control" id="indexConfigModaconfigId" name="indexConfigModaconfigId">
                                 <input type="hidden" id="configType" th:value="${configType}">
                                 <div class="form-group">
-                                    <label for="configName" class="control-label">配置项显示字符:</label>
+                                    <label for="configName" class="control-label">Configuration Item Display Characters:</label>
                                     <input type="text" class="form-control" id="configName" name="configName"
-                                           placeholder="请输入配置项显示字符" required="true">
+                                           placeholder="Please enter the configuration item display characters" required="true">
                                 </div>
                                 <div class="form-group">
-                                    <label for="redirectUrl" class="control-label">跳转链接:</label>
+                                    <label for="redirectUrl" class="control-label">Jump Link:</label>
                                     <input type="text" class="form-control" id="redirectUrl" name="redirectUrl"
-                                           placeholder="请输入跳转链接" value="##">
+                                           placeholder="Please enter the jump link" value="##">
                                 </div>
                                 <div class="form-group">
-                                    <label for="goodsId" class="control-label">关联商品编号:</label>
+                                    <label for="goodsId" class="control-label">Related Goods Number:</label>
                                     <input type="number" class="form-control" id="goodsId" name="goodsId"
-                                           placeholder="关联商品编号" value="0">
+                                           placeholder="Please enter the related goods number" value="0">
                                 </div>
                                 <div class="form-group">
-                                    <label for="configRank" class="control-label">排序值:</label>
+                                    <label for="configRank" class="control-label">Ranking:</label>
                                     <input type="number" class="form-control" id="configRank" name="configRank"
-                                           placeholder="请输入排序值">
+                                           placeholder="Please enter thr ranking">
                                 </div>
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                            <button type="button" class="btn btn-primary" id="saveButton">确认</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">cancel</button>
+                            <button type="button" class="btn btn-primary" id="saveButton">confirm</button>
                         </div>
                     </div>
                 </div>

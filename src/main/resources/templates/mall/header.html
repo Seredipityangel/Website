@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:fragment="head-fragment(title,path)">
     <meta charset="UTF-8">
-    <title>新蜂商城</title>
+    <title>New-Bee Mall</title>
     <link rel="stylesheet" th:href="@{/mall/css/swiper-bundle.min.css}">
     <link rel="stylesheet" th:href="@{/mall/css/iconfont.css}">
     <link rel="stylesheet" th:href="@{/mall/css/common.css}">
@@ -12,7 +12,7 @@
 </head>
 <nav id="nav" th:fragment="nav-fragment">
     <div class="banner_x center">
-        <a th:href="@{/index}" class="logo"><h1>新蜂商城</h1></a>
+        <a th:href="@{/index}" class="logo"><h1>New-Bee Mall</h1></a>
         <div class="fr">
             <div class="search">
                 <input class="text" type="text" id="keyword" autocomplete="off">
@@ -26,8 +26,8 @@
 <header id="header" th:fragment="header-fragment">
     <div class="center">
         <ul class="fl">
-            <li><a th:href="@{/index}">新蜂商城</a></li>
-            <li><a th:href="@{/admin}">后台管理系统</a></li>
+            <li><a th:href="@{/index}">New-Bee Mall</a></li>
+            <li><a th:href="@{/admin}">Back-office management system</a></li>
         </ul>
         <div class="fr">
             <th:block th:unless="${session.newBeeMallUser==null}">
@@ -35,17 +35,17 @@
                     <ul class="selector">
                         <li>
                             <a th:href="@{/personal}">
-                                个人中心
+                                Personal centre
                             </a>
                         </li>
                         <li>
                             <a th:href="@{/orders}">
-                                我的订单
+                                My orders
                             </a>
                         </li>
                         <li>
                             <a th:href="@{/logout}">
-                                退出登录
+                                Log out
                             </a>
                         </li>
                     </ul>
@@ -56,19 +56,19 @@
                 </div>
                 <div class="shopcart">
                     <a th:href="@{/shop-cart}" style="color: white;"><i class="iconfont icon-cart"></i>
-                        购物车(
+                        Shopping cart(
                         <th:block th:text="${session.newBeeMallUser.shopCartItemCount}"></th:block>
                         )</a>
                 </div>
             </th:block>
             <th:block th:if="${session.newBeeMallUser==null}">
                 <ul class="login">
-                    <li><a th:href="@{/login}">登录</a></li>
-                    <li><a th:href="@{/register}">注册</a></li>
+                    <li><a th:href="@{/login}">Log in</a></li>
+                    <li><a th:href="@{/register}">Registration</a></li>
                 </ul>
                 <div class="shopcart">
                     <a href="##" style="color: white;"><i class="iconfont icon-cart"></i>
-                        购物车(0)</a>
+                        Shopping cart(0)</a>
                 </div>
             </th:block>
         </div>

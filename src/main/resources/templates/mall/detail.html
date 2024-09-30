@@ -10,7 +10,7 @@
 
   <div class="dc">
     <div class="content w">
-      <div class="title fl">商品详情</div>
+      <div class="title fl">Good Details</div>
       <div class="clear"></div>
     </div>
   </div>
@@ -25,39 +25,39 @@
       <div class="h3 ml20 mt20" th:text="${goodsDetail.goodsName}">NewBeeMall</div>
       <div class="sub_title mr40 ml20 mt10" th:text="${goodsDetail.goodsIntro}">NewBeeMall</div>
       <div class="item_price mr40 ml20 mt10">
-        <th:block th:text="${goodsDetail.sellingPrice}+'.00 元'"></th:block>
+        <th:block th:text="${goodsDetail.sellingPrice}+'.00$'"></th:block>
         <del>
-          <th:block th:text="${goodsDetail.originalPrice}+'.00 元'"></th:block>
+          <th:block th:text="${goodsDetail.originalPrice}+'.00$'"></th:block>
         </del>
       </div>
 
       <div class="order">
-        <input class="car" type="button" th:onclick="'saveAndGoCart('+${goodsDetail.goodsId}+')'" value="立即选购"/>
-        <input class="car" type="button" th:onclick="'saveToCart('+${goodsDetail.goodsId}+')'" value="加入购物车"/>
+        <input class="car" type="button" th:onclick="'saveAndGoCart('+${goodsDetail.goodsId}+')'" value="Shopping Now"/>
+        <input class="car" type="button" th:onclick="'saveToCart('+${goodsDetail.goodsId}+')'" value="Add to Shopping Cart"/>
       </div>
       <div class="tb-extra ml20" id="J_tbExtra">
         <dl>
-          <dt>承诺</dt>
-          <dd><a class="J_Cont" title="满足7天无理由退换货申请的前提下，包邮商品需要买家承担退货邮费，非包邮商品需要买家承担发货和退货邮费。" href="#"
-                 target="_blank"><img th:src="@{/mall/image/7d.jpg}">7天无理由</a></dd>
+          <dt>Promise</dt>
+          <dd><a class="J_Cont" title="Under the premise of meeting the 7 days no reason to return and exchange application, the buyer is required to bear the return postage for packaged items, and the buyer is required to bear the shipping and return postage for non-packaged items." href="#"
+                 target="_blank"><img th:src="@{/mall/image/7d.jpg}">the 7 days no reason to return</a></dd>
         </dl>
         <dl>
-          <dt>支付</dt>
-          <dd><a href="##" target="_blank"><img th:src="@{/mall/image/hua.png}">蚂蚁花呗</a><a href="##"
+          <dt>Payment</dt>
+          <dd><a href="##" target="_blank"><img th:src="@{/mall/image/hua.png}">Ant & Huabei</a><a href="##"
                                                                                                target="_blank"><img
-                  th:src="@{/mall/image/card.png}">信用卡支付</a><a href="##" target="_blank"><img
-                  th:src="@{/mall/image/ji.png}">集分宝</a></dd>
+                  th:src="@{/mall/image/card.png}">Credit card payments</a><a href="##" target="_blank"><img
+                  th:src="@{/mall/image/ji.png}">Jifenbao</a></dd>
         </dl>
         <dl>
-          <dt>支持</dt>
-          <dd>折旧变现，买新更省钱。<a style="float:none;text-decoration: underline;" href="##">详情</a></dd>
+          <dt>adjuvant</dt>
+          <dd>Cash in on depreciation and save more money buying new.<a style="float:none;text-decoration: underline;" href="##">Details</a></dd>
         </dl>
 
       </div>
     </div>
     <div class="clear"></div>
   </div>
-  <!-- 这里使用的是 th:utext 标签，用 th:text 不会解析 html，用 th:utext 会解析 html -->
+  <!-- The th:utext tag is used here. th:text will not parse html, th:utext will parse html. -->
   <div class="goods mt20 w clearfix" th:utext="${goodsDetail.goodsDetailContent}">
   </div>
 </div>
