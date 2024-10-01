@@ -69,7 +69,95 @@
 <script th:src="@{/admin/plugins/sweetalert2/sweetalert2.all.min.js}"></script>
 <script th:src="@{/mall/js/search.js}" type="text/javascript"></script>
 <script type="text/javascript">
+  /**
+       * 添加到购物车
+       */
+      function saveToCart(id) {
+          var goodsCount = 1;
+          var data = {
+              "goodsId": id,
+              "goodsCount": goodsCount
+          };
+          $.ajax({
+              type: 'POST',
+              url: '/shop-cart',
+              contentType: 'application/json',
+              data: JSON.stringify(data),
+              success: function (result) {
+                  if (result.resultCode == 200) {
+                      Swal.fire({
+                          title: "confirmation box",
+                          text: "Add successfully",
+                          icon: "success",iconColor:"#1d953f",
+                          showCancelButton: true,
+                          confirmButtonText: 'yes',
+                          cancelButtonText: 'no'
+                      }).then((flag) => {
+                             if (flag.value) {
+                                  window.location.reload();
+                              }
+                          }
+                      );
+                  } else {
+                      Swal.fire({
+                          text: result.message,
+                          icon: "error",iconColor:"#f05b72",
+                      });
+                  }
+              },
+              error: function () {
+                  Swal.fire({
+                      text: "failure of an operation",
+                      icon: "error",iconColor:"#f05b72",
+                  });
+              }
+          });
+      }
 
+      /**
+       * 添加到购物车并跳转至购物车页面
+       */
+      function saveAndGoCart(id) {
+          var goodsCount = 1;
+          var data = {
+              "goodsId": id,
+              "goodsCount": goodsCount
+          };
+          $.ajax({
+              type: 'POST',
+              url: '/shop-cart',
+              contentType: 'application/json',
+              data: JSON.stringify(data),
+              success: function (result) {
+                  if (result.resultCode == 200) {
+                      Swal.fire({
+                          title: "confirmation box",
+                          text: "Items added to cart",
+                          icon: "success",iconColor:"#1d953f",
+                          showCancelButton: true,
+                          confirmButtonText: 'Go to cart to check out',
+                          cancelButtonText: 'Stay on current page'
+                      }).then((flag) => {
+                              if (flag.value) {
+                                  window.location.href = '/shop-cart';
+                              }
+                          }
+                      );
+                  } else {
+                      Swal.fire({
+                          text: result.message,
+                          icon: "error",iconColor:"#f05b72",
+                      });
+                  }
+              },
+              error: function () {
+                  Swal.fire({
+                      text: "failure of an operation",
+                      icon: "error",iconColor:"#f05b72",
+                  });
+              }
+          });
+      }
 </script>
 </body>
 </html>

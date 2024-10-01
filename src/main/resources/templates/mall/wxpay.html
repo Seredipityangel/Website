@@ -72,7 +72,23 @@
     </div>
 </div>
 <script type="text/javascript">
-
+    function payOrderSuccess() {
+            var orderNo = $("#orderNoValue").val();
+            $.ajax({
+                type: 'GET',
+                url: '/paySuccess?payType=2&orderNo=' + orderNo,
+                success: function (result) {
+                    if (result.resultCode == 200) {
+                        window.location.href = '/orders/' + orderNo;
+                    } else {
+                        alert(result.message);
+                    }
+                },
+                error: function () {
+                    alert("failure of an operation");
+                }
+            });
+        }
 </script>
 </body>
 </html>

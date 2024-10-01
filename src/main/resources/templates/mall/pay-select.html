@@ -155,7 +155,14 @@
 <!-- jQuery -->
 <script th:src="@{/admin/plugins/jquery/jquery.min.js}"></script>
 <script type="text/javascript">
+    $('.J_bank').click(function () {
+            alert('Not supported at this time, please be patient');
+        })
 
+        function payOrder(payType) {
+            var orderNo = $("#orderNoValue").val();
+            window.location.href = '/payPage?orderNo=' + orderNo + "&payType=" + payType;
+        }
 </script>
 </body>
 

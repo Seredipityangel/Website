@@ -91,7 +91,66 @@
 <script th:src="@{/mall/js/search.js}" type="text/javascript"></script>
 <script th:src="@{/admin/plugins/sweetalert2/sweetalert2.all.min.js}"></script>
 <script type="text/javascript">
+    function openUpdateModal() {
+            $('#personalInfoModal').modal('show');
+        }
 
+        //绑定modal上的保存按钮
+        $('#saveButton').click(function () {
+            var address = $("#address").val();
+            if (address.trim().length < 10) {
+                Swal.fire({
+                    text: "Please enter the correct shipping information",
+                    icon: "error",iconColor:"#f05b72",
+                });
+                return;
+            }
+            var introduceSign = $("#introduceSign").val();
+            if (introduceSign.trim().length < 4) {
+                Swal.fire({
+                    text: "Please enter the correct personalized signature",
+                    icon: "error",iconColor:"#f05b72",
+                });
+                return;
+            }
+            var nickName = $("#nickName").val();
+            if (nickName.trim().length < 2) {
+                Swal.fire({
+                    text: "Please enter the correct nickname",
+                    icon: "error",iconColor:"#f05b72",
+                });
+                return;
+            }
+            var userId = $("#userId").val();
+            var data = {
+                "userId": userId,
+                "address": address,
+                "introduceSign": introduceSign,
+                "nickName": nickName
+            };
+            $.ajax({
+                type: 'POST',//方法类型
+                url: '/personal/updateInfo',
+                contentType: 'application/json',
+                data: JSON.stringify(data),
+                success: function (result) {
+                    if (result.resultCode == 200) {
+                        $('#personalInfoModal').modal('hide');
+                        window.location.reload();
+                    } else {
+                        $('#personalInfoModal').modal('hide');
+                        alert(result.message);
+                    }
+                    ;
+                },
+                error: function () {
+                    Swal.fire({
+                        text: 'failure of an operation',
+                        icon: "error",iconColor:"#f05b72",
+                    });
+                }
+            });
+        });
 </script>
 </body>
 </html>

@@ -6,9 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="9290c5d8-ddac-46cc-b8ac-bbd356082d07" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/mybatis.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/mybatis.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/newbee_mall_schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/newbee_mall_schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mall/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mall/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mall/alipay.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mall/alipay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mall/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mall/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mall/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mall/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mall/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mall/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mall/order-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mall/order-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mall/order-settle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mall/order-settle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mall/pay-select.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mall/pay-select.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mall/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mall/personal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mall/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mall/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
