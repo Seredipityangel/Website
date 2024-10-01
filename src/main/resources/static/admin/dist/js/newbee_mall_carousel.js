@@ -4,16 +4,16 @@ $(function () {
         datatype: "json",
         colModel: [
             {label: 'id', name: 'carouselId', index: 'carouselId', width: 50, key: true, hidden: true},
-            {label: '轮播图', name: 'carouselUrl', index: 'carouselUrl', width: 180, formatter: coverImageFormatter},
-            {label: '跳转链接', name: 'redirectUrl', index: 'redirectUrl', width: 120},
-            {label: '排序值', name: 'carouselRank', index: 'carouselRank', width: 120},
-            {label: '添加时间', name: 'createTime', index: 'createTime', width: 120}
+            {label: 'carousel', name: 'carouselUrl', index: 'carouselUrl', width: 180, formatter: coverImageFormatter},
+            {label: 'redirect', name: 'redirectUrl', index: 'redirectUrl', width: 120},
+            {label: 'carousel', name: 'carouselRank', index: 'carouselRank', width: 120},
+            {label: 'createTime', name: 'createTime', index: 'createTime', width: 120}
         ],
         height: 560,
         rowNum: 10,
         rowList: [10, 20, 50],
         styleUI: 'Bootstrap',
-        loadtext: '信息读取中...',
+        loadtext: 'Information is being read...',
         rownumbers: false,
         rownumWidth: 20,
         autowidth: true,
@@ -119,7 +119,7 @@ $('#saveButton').click(function () {
             if (result.resultCode == 200) {
                 $('#carouselModal').modal('hide');
                 Swal.fire({
-                    text: "保存成功",
+                    text: "Save Successful",
                     icon: "success",iconColor:"#1d953f",
                 });
                 reload();
@@ -134,7 +134,7 @@ $('#saveButton').click(function () {
         },
         error: function () {
             Swal.fire({
-                text: "操作失败",
+                text: "failure of an operation",
                 icon: "error",iconColor:"#f05b72",
             });
         }
@@ -157,7 +157,7 @@ function carouselEdit() {
             $("#carouselRank").val(r.data.carouselRank);
         }
     });
-    $('.modal-title').html('轮播图编辑');
+    $('.modal-title').html('Rotational chart editing');
     $('#carouselModal').modal('show');
 }
 
@@ -167,12 +167,12 @@ function deleteCarousel() {
         return;
     }
     Swal.fire({
-        title: "确认弹框",
-        text: "确认要删除数据吗?",
+        title: "confirmation pop-up",
+        text: "Are you sure you want to delete the data?",
         icon: "warning",iconColor:"#dea32c",
         showCancelButton: true,
-        confirmButtonText: '确认',
-        cancelButtonText: '取消'
+        confirmButtonText: 'yes',
+        cancelButtonText: 'no'
     }).then((flag) => {
             if (flag.value) {
                 $.ajax({
@@ -183,7 +183,7 @@ function deleteCarousel() {
                     success: function (r) {
                         if (r.resultCode == 200) {
                             Swal.fire({
-                                text: "删除成功",
+                                text: "Deleted successfully",
                                 icon: "success",iconColor:"#1d953f",
                             });
                             $("#jqGrid").trigger("reloadGrid");

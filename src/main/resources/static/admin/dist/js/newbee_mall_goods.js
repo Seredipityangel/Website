@@ -3,26 +3,26 @@ $(function () {
         url: '/admin/goods/list',
         datatype: "json",
         colModel: [
-            {label: '商品编号', name: 'goodsId', index: 'goodsId', width: 60, key: true},
-            {label: '商品名', name: 'goodsName', index: 'goodsName', width: 120},
-            {label: '商品简介', name: 'goodsIntro', index: 'goodsIntro', width: 120},
-            {label: '商品图片', name: 'goodsCoverImg', index: 'goodsCoverImg', width: 120, formatter: coverImageFormatter},
-            {label: '商品库存', name: 'stockNum', index: 'stockNum', width: 60},
-            {label: '商品售价', name: 'sellingPrice', index: 'sellingPrice', width: 60},
+            {label: 'Product Number', name: 'goodsId', index: 'goodsId', width: 60, key: true},
+            {label: 'trade name', name: 'goodsName', index: 'goodsName', width: 120},
+            {label: 'Product Profile', name: 'goodsIntro', index: 'goodsIntro', width: 120},
+            {label: 'Product Images', name: 'goodsCoverImg', index: 'goodsCoverImg', width: 120, formatter: coverImageFormatter},
+            {label: 'Merchandise inventory', name: 'stockNum', index: 'stockNum', width: 60},
+            {label: 'Selling Price', name: 'sellingPrice', index: 'sellingPrice', width: 60},
             {
-                label: '上架状态',
+                label: 'Shelf Status',
                 name: 'goodsSellStatus',
                 index: 'goodsSellStatus',
                 width: 80,
                 formatter: goodsSellStatusFormatter
             },
-            {label: '创建时间', name: 'createTime', index: 'createTime', width: 60}
+            {label: 'Creation time', name: 'createTime', index: 'createTime', width: 60}
         ],
         height: 760,
         rowNum: 20,
         rowList: [20, 50, 80],
         styleUI: 'Bootstrap',
-        loadtext: '信息读取中...',
+        loadtext: 'Information is being read...',
         rownumbers: false,
         rownumWidth: 20,
         autowidth: true,
@@ -103,12 +103,12 @@ function putUpGoods() {
         return;
     }
     Swal.fire({
-        title: "确认弹框",
-        text: "确认要执行上架操作吗?",
+        title: "confirmation pop-up",
+        text: "Are you sure you want to perform the shelving operation?",
         icon: "warning",iconColor:"#dea32c",
         showCancelButton: true,
-        confirmButtonText: '确认',
-        cancelButtonText: '取消'
+        confirmButtonText: 'yes',
+        cancelButtonText: 'no'
     }).then((flag) => {
             if (flag.value) {
                 $.ajax({
@@ -119,7 +119,7 @@ function putUpGoods() {
                     success: function (r) {
                         if (r.resultCode == 200) {
                             Swal.fire({
-                                text: "上架成功",
+                                text: "Uploaded successfully",
                                 icon: "success",iconColor:"#1d953f",
                             });
                             $("#jqGrid").trigger("reloadGrid");
@@ -146,12 +146,12 @@ function putDownGoods() {
         return;
     }
     Swal.fire({
-        title: "确认弹框",
-        text: "确认要执行下架操作吗?",
+        title: "confirmation pop-up",
+        text: "Are you sure you want to perform a take-down?",
         icon: "warning",iconColor:"#dea32c",
         showCancelButton: true,
-        confirmButtonText: '确认',
-        cancelButtonText: '取消'
+        confirmButtonText: 'yes',
+        cancelButtonText: 'no'
     }).then((flag) => {
             if (flag.value) {
                 $.ajax({
@@ -162,7 +162,7 @@ function putDownGoods() {
                     success: function (r) {
                         if (r.resultCode == 200) {
                             Swal.fire({
-                                text: "下架成功",
+                                text: "Downgrade Successful",
                                 icon: "success",iconColor:"#1d953f",
                             });
                             $("#jqGrid").trigger("reloadGrid");
