@@ -10,7 +10,7 @@ $(function () {
             {label: 'payment method', name: 'payType', index: 'payType', width: 80,formatter:payTypeFormatter},
             {label: 'recipient's address', name: 'userAddress', index: 'userAddress', width: 10, hidden: true},
             {label: 'Creation time', name: 'createTime', index: 'createTime', width: 120},
-            {label: 'operate time', name: 'createTime', index: 'createTime', width: 120, formatter: operateFormatter}
+            {label: 'operate', name: 'createTime', index: 'createTime', width: 120, formatter: operateFormatter}
         ],
         height: 760,
         rowNum: 20,
