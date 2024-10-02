@@ -20,31 +20,31 @@
         <div class="login_center">
             <div class="login_top">
                 <div class="left fl">Member Registration</div>
-                <div class="right fr">You already have an account？<a href="login.html" target="_self">Please Log in</a></div>
+                <div class="right fr">Do you already have an account?<a href="login.html" target="_self">sign in</a></div>
                 <div class="clear"></div>
                 <div class="under-line center"></div>
             </div>
             <form id="registerForm" onsubmit="return false;" action="##">
                 <div class="login_main center">
-                    <div class="login-info">Phone number:&nbsp;<input class="login-info-input" type="text" name="loginName"
-                                                                placeholder="Please enter your phone number" id="loginName"/>
+                    <div class="login-info">cell phone number:&nbsp;<input class="login-info-input" type="text" name="loginName"
+                                                                placeholder="Please enter your cell phone number" id="loginName"/>
                     </div>
-                    <div class="login-info">password:&nbsp;<input class="login-info-input"
+                    <div class="login-info">PIN:&nbsp;<input class="login-info-input"
                                                                                       type="password"
                                                                                       name="password"
                                                                                       id="password"
                                                                                       placeholder="Please enter your password"/>
                     </div>
                     <div class="login-info">
-                        CAPTCHA:&nbsp;
+                        CAPTCHA:;
                         <input class="login-info-input verify-code" type="text" name="verifyCode" id="verifyCode"
-                               placeholder="Please enter your CAPTCHA"/>
-                        <img alt="Click on the image to refresh！" style="top: 16px;position: relative;" th:src="@{/common/mall/kaptcha}"
+                               placeholder="Please enter the verification code"/>
+                        <img alt="Click image to refresh！" style="top: 16px;position: relative;" th:src="@{/common/mall/kaptcha}"
                              onclick="this.src='/common/mall/kaptcha?d='+new Date()*1">
                     </div>
                 </div>
                 <div class="login_submit">
-                    <input class="submit" type="button" onclick="register()" value="Registration Now">
+                    <input class="submit" type="button" onclick="register()" value="Register Now">
                 </div>
             </form>
         </div>
@@ -56,71 +56,71 @@
 <script th:src="@{/admin/dist/js/public.js}"></script>
 <script th:src="@{/admin/plugins/sweetalert2/sweetalert2.all.min.js}"></script>
 <script type="text/javascript">
+
     //注册按钮onclick事件改为register()即可
-        function register() {
-            var loginName = $("#loginName").val();
-            if (!validPhoneNumber(loginName)) {
-                Swal.fire({
-                    text: "Please enter the correct login name (i.e. cell phone number)",
-                    icon: "error",iconColor:"#f05b72",
-                });
-                return false;
-            }
-            var password = $("#password").val();
-            if (!validPassword(password)) {
-                Swal.fire({
-                    text: "Please enter the correct password format (6-20 character and number combination)”,
-                    icon: "error",iconColor:"#f05b72",
-                });
-                return false;
-            }
-            var verifyCode = $("#verifyCode").val();
-            if (!validLength(verifyCode, 5)) {
-                Swal.fire({
-                    text: "Please enter the correct verification code",
-                    icon: "error",iconColor:"#f05b72",
-                });
-                return false;
-            }
-            //验证
-            var params = $("#registerForm").serialize();
-            var url = '/register';
-            $.ajax({
-                type: 'POST',//方法类型
-                url: url,
-                data: params,
-                success: function (result) {
-                    if (result.resultCode == 200) {
-                        Swal.fire({
-                            title: "Successful registration",
-                            text: "Does it go to the login page?",
-                            icon: "success",iconColor:"#1d953f",
-                            showCancelButton: true,
-                            confirmButtonText: 'yes',
-                            cancelButtonText: 'no'
-                        }).then((flag) => {
-                                if (flag.value) {
-                                    window.location.href = '/login';
-                                }
-                            }
-                        )
-                        ;
-                    } else {
-                        Swal.fire({
-                            text: result.message,
-                            icon: "error",iconColor:"#f05b72",
-                        });
-                    }
-                    ;
-                },
-                error: function () {
+    function register() {
+        var loginName = $("#loginName").val();
+        if (!validPhoneNumber(loginName)) {
+            Swal.fire({
+                text: "Please enter the correct login name (i.e. cell phone number)",
+                icon: "error",iconColor:"#f05b72",
+            });
+            return false;
+        }
+        var password = $("#password").val();
+        if (!validPassword(password)) {
+            Swal.fire({
+                text: "Please enter the correct password format (6-20 character and number combination)",
+                icon: "error",iconColor:"#f05b72",
+            });
+            return false;
+        }
+        var verifyCode = $("#verifyCode").val();
+        if (!validLength(verifyCode, 5)) {
+            Swal.fire({
+                text: "Please enter the correct verification code",
+                icon: "error",iconColor:"#f05b72",
+            });
+            return false;
+        }
+        //验证
+        var params = $("#registerForm").serialize();
+        var url = '/register';
+        $.ajax({
+            type: 'POST',//方法类型
+            url: url,
+            data: params,
+            success: function (result) {
+                if (result.resultCode == 200) {
                     Swal.fire({
-                        text: 'failure of an operation',
+                        title: "Successful registration",
+                        text: "Does it go to the login page?",
+                        icon: "success",iconColor:"#1d953f",
+                        showCancelButton: true,
+                        confirmButtonText: 'yes',
+                        cancelButtonText: 'no'
+                    }).then((flag) => {
+                            if (flag.value) {
+                                window.location.href = '/login';
+                            }
+                        }
+                    )
+                    ;
+                } else {
+                    Swal.fire({
+                        text: result.message,
                         icon: "error",iconColor:"#f05b72",
                     });
                 }
-            });
-        }
-
+                ;
+            },
+            error: function () {
+                Swal.fire({
+                    text: 'failure of an operation',
+                    icon: "error",iconColor:"#f05b72",
+                });
+            }
+        });
+    }
 </script>
 </html>
