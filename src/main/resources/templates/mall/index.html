@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="mall/header::head-fragment('NewBee Mall-Home Page','index')">
+<head th:replace="mall/header::head-fragment('NewBee Mall-Home','index')">
 </head>
 <body>
 <header th:replace="mall/header::header-fragment"></header>
@@ -32,7 +32,7 @@
         </div>
         <div class="swiper-container fl">
             <div class="swiper-wrapper">
-                <!-- If a rotator is configured, the rotator configured in the background is displayed. -->
+                <!-- 配置了轮播图则显示后台配置的轮播图 -->
                 <th:block th:unless="${#lists.isEmpty(carousels)}">
                     <th:block th:each="carousel : ${carousels}">
                         <div class="swiper-slide">
@@ -42,7 +42,7 @@
                         </div>
                     </th:block>
                 </th:block>
-                <!-- Unconfigured rotating images show the default three rotating images -->
+                <!-- 未配置轮播图则显示默认的三张轮播图 -->
                 <th:block th:if="${#lists.isEmpty(carousels)}">
                     <div class="swiper-slide">
                         <img src="./mall/image/swiper/banner01.jpg" alt="">
@@ -62,7 +62,7 @@
     </div>
 
     <div id="sub_banner">
-        <!-- If you have configured a hot good, the configuration will be displayed. -->
+        <!-- 已配置热销商品则显示配置内容 -->
         <th:block th:unless="${#lists.isEmpty(hotGoodses)}">
             <th:block th:each="hotGoodse : ${hotGoodses}">
                 <div class="hot-image">
@@ -72,7 +72,7 @@
                 </div>
             </th:block>
         </th:block>
-        <!-- If you do not configure a hot item, it will be displayed by default. -->
+        <!-- 未配置热销商品则显示默认 -->
         <th:block th:if="${#lists.isEmpty(hotGoodses)}">
             <div class="hot-image">
                 <a href="##">
@@ -98,9 +98,9 @@
     </div>
 
     <div id="flash">
-        <h2>New Goods</h2>
+        <h2>New Products</h2>
         <ul>
-            <!-- If a new good has been configured, the configuration is displayed -->
+            <!-- 已配置新品则显示配置内容 -->
             <th:block th:unless="${#lists.isEmpty(newGoodses)}">
                 <th:block th:each="newGoods : ${newGoodses}">
                     <li>
@@ -113,46 +113,46 @@
                     </li>
                 </th:block>
             </th:block>
-            <!-- Displays the default if not configured -->
+            <!-- 未配置则显示默认 -->
             <th:block th:if="${#lists.isEmpty(newGoodses)}">
                 <li>
                     <a href="##">
                         <img src="./mall/image/sub_banner/m6.jpg" alt=""/>
-                        <p class="name">Huawei tablet M6</p>
+                        <p class="name">Huawei Tablet M6</p>
                         <p class="discount">Mellow sound, immersive.</p>
-                        <p class="price">Start from $1499</p>
+                        <p class="price">From $1499</p>
                     </a>
                 </li>
                 <li>
                     <a href="##">
                         <img src="./mall/image/sub_banner/headphones.jpg" alt=""/>
                         <p class="name">Bluetooth headset</p>
-                        <p class="discount">One click to edit voice and muffle the original song</p>
+                        <p class="discount">One click to change voice</p>
                         <p class="price">$228</p>
                     </a>
                 </li>
                 <li>
                     <a href="##">
                         <img src="./mall/image/sub_banner/pc.jpg" alt=""/>
-                        <p class="name">15.6" i3 notebook</p>
-                        <p class="discount">Slim body Metal</p>
-                        <p class="price">Start from $3099</p>
+                        <p class="name">15.6” i3 Notebook</p>
+                        <p class="discount">Slim Body Metal</p>
+                        <p class="price">$3099</p>
                     </a>
                 </li>
                 <li>
                     <a href="##">
                         <img src="./mall/image/sub_banner/air.jpg" alt=""/>
                         <p class="name">air purifier</p>
-                        <p class="discount">Big space, fast cycle.</p>
-                        <p class="price">Start from $1099</p>
+                        <p class="discount">Big space, fast circulation</p>
+                        <p class="price">$1099</p>
                     </a>
                 </li>
                 <li>
                     <a href="##">
                         <img src="./mall/image/sub_banner/baby-car.jpg" alt=""/>
                         <p class="name">Folding Baby Stroller</p>
-                        <p class="discount">Setting off to where we want to be.</p>
-                        <p class="price">Start from $649</p>
+                        <p class="discount">Setting out for the place we want to be</p>
+                        <p class="price">$649</p>
                     </a>
                 </li>
             </th:block>
@@ -161,41 +161,41 @@
 
     <div id="recommend">
         <h2>Recommended for you</h2>
-        <a href="##" class="more">View More>></a>
+        <a href="##" class="more">View more >></a>
         <ul>
-            <!-- If you have configured recommended goods, the configured content will be displayed. -->
+            <!-- 已配置推荐商品则显示配置内容 -->
             <th:block th:unless="${#lists.isEmpty(recommendGoodses)}">
                 <th:block th:each="recommendGoods : ${recommendGoodses}">
                     <li>
                         <a th:href="@{'/goods/detail/'+${recommendGoods.goodsId}}">
                             <div class="info discount" th:text="${recommendGoods.tag}">
-                                New Good 
+                                new product
                             </div>
                             <img th:src="@{${recommendGoods.goodsCoverImg}}" th:alt="${recommendGoods.goodsName}">
                             <p class="name" th:text="${recommendGoods.goodsName}">NewBeeMall</p>
                             <p class="item_price" th:text="${recommendGoods.sellingPrice}">NewBeeMall</p>
-                            <p class="counter">Guess you like it.</p>
+                            <p class="counter">guess you like</p>
                             <div class="comment">
-                                <p>New Bee Selection</p>
+                                <p>New Bee Select</p>
                                 <p>Good things can be inexpensive</p>
                             </div>
                         </a>
                     </li>
                 </th:block>
             </th:block>
-            <!-- Displays the default if not configured -->
+            <!-- 未配置则显示默认 -->
             <th:block th:if="${#lists.isEmpty(recommendGoodses)}">
                 <li>
                     <a href="##">
                         <div class="info discount">
-                            New Good
+                            new product
                         </div>
                         <img src="./mall/image/sub_banner/r1.jpg" alt=""/>
-                        <p class="name">Huawei tablet M6</p>
+                        <p class="name">Huawei Tablet M6</p>
                         <p class="price">$1499</p>
-                        <p class="counter">Guess you like it.</p>
+                        <p class="counter">guess you like</p>
                         <div class="comment">
-                            <p>New Bee Selection</p>
+                            <p>New Bee Select</p>
                             <p>Good things can be inexpensive</p>
                         </div>
                     </a>
@@ -203,14 +203,14 @@
                 <li>
                     <a href="##">
                         <div class="info discount">
-                            Starting from 50% off
+                            50% off
                         </div>
                         <img src="./mall/image/sub_banner/r2.jpg" alt=""/>
-                        <p class="name">Huawei tablet M6</p>
+                        <p class="name">Huawei Tablet M6</p>
                         <p class="price">$1499</p>
-                        <p class="counter">Guess you like it.</p>
+                        <p class="counter">guess you like</p>
                         <div class="comment">
-                            <p>New Bee Selection</p>
+                            <p>New Bee Select</p>
                             <p>Good things can be inexpensive</p>
                         </div>
                     </a>
@@ -218,14 +218,14 @@
                 <li>
                     <a href="##">
                         <div class="info discount">
-                            New Good
+                            new product
                         </div>
                         <img src="./mall/image/sub_banner/r5.jpg" alt=""/>
-                        <p class="name">Huawei tablet M6</p>
+                        <p class="name">Huawei Tablet M6</p>
                         <p class="price">$1499</p>
-                        <p class="counter">Guess you like it.</p>
+                        <p class="counter">guess you like</p>
                         <div class="comment">
-                            <p>New Bee Selection</p>
+                            <p>New Bee Select</p>
                             <p>Good things can be inexpensive</p>
                         </div>
                     </a>
@@ -233,14 +233,29 @@
                 <li>
                     <a href="##">
                         <div class="info discount">
-                            Official price reductions
+                            official surrender
+                        </div>
+                        <img src="./mall/image/sub_banner/m6.jpg" alt=""/>
+                        <p class="name">Huawei Tablet M6</p>
+                        <p class="price">$1499</p>
+                        <p class="counter">guess you like</p>
+                        <div class="comment">
+                            <p>New Bee Select</p>
+                            <p>Good things can be inexpensive</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <div class="info discount">
+                            new product
                         </div>
                         <img src="./mall/image/sub_banner/r6.jpg" alt=""/>
-                        <p class="name">Huawei tablet M6</p>
+                        <p class="name">Huawei Tablet M6</p>
                         <p class="price">$1499</p>
-                        <p class="counter">Guess you like it.</p>
+                        <p class="counter">guess you like</p>
                         <div class="comment">
-                            <p>New Bee Selection</p>
+                            <p>New Bee Select</p>
                             <p>Good things can be inexpensive</p>
                         </div>
                     </a>
@@ -248,29 +263,14 @@
                 <li>
                     <a href="##">
                         <div class="info discount">
-                            New Good
-                        </div>
-                        <img src="./mall/image/sub_banner/r6.jpg" alt=""/>
-                        <p class="name">Huawei tablet M6</p>
-                        <p class="price">$1499</p>
-                        <p class="counter">Guess you like it.</p>
-                        <div class="comment">
-                            <p>New Bee Selection</p>
-                            <p>Good things can be inexpensive</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="##">
-                        <div class="info discount">
-                            popular good
+                            hot selling
                         </div>
                         <img src="./mall/image/sub_banner/r5.jpg" alt=""/>
-                        <p class="name">Huawei tablet M6</p>
+                        <p class="name">Huawei Tablet M6</p>
                         <p class="price">$1499</p>
-                        <p class="counter">Guess you like it.</p>
+                        <p class="counter">guess you like</p>
                         <div class="comment">
-                            <p>New Bee Selection</p>
+                            <p>New Bee Select</p>
                             <p>Good things can be inexpensive</p>
                         </div>
                     </a>
@@ -281,11 +281,11 @@
                             enjoy discounts
                         </div>
                         <img src="./mall/image/sub_banner/r4.jpg" alt=""/>
-                        <p class="name">Huawei tablet M6</p>
+                        <p class="name">Huawei Tablet M6</p>
                         <p class="price">$1499</p>
-                        <p class="counter">Guess you like it.</p>
+                        <p class="counter">guess you like</p>
                         <div class="comment">
-                            <p>New Bee Selection</p>
+                            <p>New Bee Select</p>
                             <p>Good things can be inexpensive</p>
                         </div>
                     </a>
@@ -296,11 +296,11 @@
                             lowest price
                         </div>
                         <img src="./mall/image/sub_banner/r3.jpg" alt=""/>
-                        <p class="name">Huawei tablet M6</p>
+                        <p class="name">Huawei Tablet M6</p>
                         <p class="price">$1499</p>
-                        <p class="counter">Guess you like it.</p>
+                        <p class="counter">guess you like</p>
                         <div class="comment">
-                            <p>New Bee Selection</p>
+                            <p>New Bee Select</p>
                             <p>Good things can be inexpensive</p>
                         </div>
                     </a>
@@ -308,14 +308,14 @@
                 <li>
                     <a href="##">
                         <div class="info discount">
-                            popular good
+                            lowest price
                         </div>
                         <img src="./mall/image/sub_banner/r2.jpg" alt=""/>
-                        <p class="name">Huawei tablet M6</p>
+                        <p class="name">Huawei Tablet M6</p>
                         <p class="price">$1499</p>
-                        <p class="counter">Guess you like it.</p>
+                        <p class="counter">guess you like</p>
                         <div class="comment">
-                            <p>New Bee Selection</p>
+                            <p>New Bee Select</p>
                             <p>Good things can be inexpensive</p>
                         </div>
                     </a>
@@ -323,14 +323,14 @@
                 <li>
                     <a href="##">
                         <div class="info discount">
-                            popular good
+                            hot selling
                         </div>
-                        <img src="./mall/image/sub_banner/r2.jpg" alt=""/>
-                        <p class="name">Huawei tablet M6</p>
+                        <img src="./mall/image/sub_banner/r1.jpg" alt=""/>
+                        <p class="name">Huawei Tablet M6</p>
                         <p class="price">$1499</p>
-                        <p class="counter">Guess you like it.</p>
+                        <p class="counter">guess you like</p>
                         <div class="comment">
-                            <p>New Bee Selection</p>
+                            <p>New Bee Select</p>
                             <p>Good things can be inexpensive</p>
                         </div>
                     </a>
