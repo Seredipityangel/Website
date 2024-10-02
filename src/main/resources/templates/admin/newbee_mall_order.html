@@ -1,3 +1,4 @@
+<!-- Copyright (c) 2019-2020 十三 all rights reserved. -->
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <header th:replace="admin/header::header-fragment">
@@ -40,21 +41,21 @@
             <div class="container-fluid">
                 <div class="card card-primary card-outline">
                     <div class="card-header">
-                        <h3 class="card-title">Order Management</h3>
+                        <h3 class="card-title">订单管理</h3>
                     </div> <!-- /.card-body -->
                     <div class="card-body">
                         <div class="grid-btn">
                             <button class="btn btn-info" onclick="orderEdit()"><i
-                                    class="fa fa-pencil-square-o"></i>&nbsp;Edit order
+                                    class="fa fa-pencil-square-o"></i>&nbsp;修改订单
                             </button>
                             <button class="btn btn-info" onclick="orderCheckDone()"><i
-                                    class="fa fa-truck"></i>&nbsp;Dispensing complete
+                                    class="fa fa-truck"></i>&nbsp;配货完成
                             </button>
                             <button class="btn btn-info" onclick="orderCheckOut()"><i
-                                    class="fa fa-truck"></i>&nbsp;leave the warehouse
+                                    class="fa fa-truck"></i>&nbsp;出库
                             </button>
                             <button class="btn btn-danger" onclick="closeOrder()"><i
-                                    class="fa fa-trash-o"></i>&nbsp;Close order
+                                    class="fa fa-trash-o"></i>&nbsp;关闭订单
                             </button>
                         </div>
                         <table id="jqGrid" class="table table-bordered">
@@ -79,27 +80,27 @@
                             <form id="##">
                                 <div class="form-group">
                                     <div class="alert alert-danger" id="edit-error-msg" style="display: none;">
-                                        Error message display bar.
+                                        错误信息展示栏。
                                     </div>
                                 </div>
                                 <input type="hidden" id="orderId">
                                 <div class="form-group">
-                                    <label for="totalPrice" class="control-label">Order Price:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    <label for="totalPrice" class="control-label">订单价格:&nbsp;&nbsp;&nbsp;&nbsp;</label>
                                     <input type="number" class="form-control" id="totalPrice" name="totalPrice"
-                                           placeholder="Please enter the price edit amount" required="true">
+                                           placeholder="请输入改价金额" required="true">
                                 </div>
                                 <div class="form-group">
                                     <label for="userAddress"
-                                           class="control-label">Recipient Information:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                           class="control-label">收件人信息:&nbsp;&nbsp;&nbsp;&nbsp;</label>
                                     <input type="text" class="form-control" id="userAddress" name="userAddress"
-                                           placeholder="Pease enter the recipient address" value="##">
+                                           placeholder="请输入收件人地址" value="##">
                                 </div>
 
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">cancel</button>
-                            <button type="button" class="btn btn-primary" id="saveButton">confirm</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                            <button type="button" class="btn btn-primary" id="saveButton">确认</button>
                         </div>
                     </div>
                 </div>
@@ -120,7 +121,7 @@
                         <div class="modal-body">
                             <form id="##">
                                 <div class="form-group">
-                                    <label class="control-label">Delivery Address Information:</label>
+                                    <label class="control-label">收件信息:</label>
                                     <label id="userAddressInfo" class="control-label"></label>
                                 </div>
                             </form>

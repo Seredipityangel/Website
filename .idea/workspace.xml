@@ -7,7 +7,7 @@
     <list default="true" id="9290c5d8-ddac-46cc-b8ac-bbd356082d07" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/mybatis.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/mybatis.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/newbee_mall_schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/newbee_mall_schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/newbee_mall_order.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/newbee_mall_order.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
