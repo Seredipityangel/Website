@@ -21,7 +21,7 @@ CREATE TABLE `tb_newbee_mall_admin_user` (
 -- ----------------------------
 -- Records of tb_newbee_mall_admin_user
 -- ----------------------------
-INSERT INTO `tb_newbee_mall_admin_user` VALUES (1, 'admin', 'e10adc3949ba59abbe56e057f20f883e', 'thirteen', 0,'thirteen000@gmail.com','34', 'Auckland');
+INSERT INTO `tb_newbee_mall_admin_user` VALUES (1, 'admin', 'e10adc3949ba59abbe56e057f20f883e', 'thirteen', 0,'one@gmail.com','34', 'Auckland');
 INSERT INTO `tb_newbee_mall_admin_user` VALUES (2, 'newbee-admin1', 'e10adc3949ba59abbe56e057f20f883e', 'newbeeNO.1', 0,'newbeeeNO.1980@gmail.com','27', 'Wellington');
 INSERT INTO `tb_newbee_mall_admin_user` VALUES (3, 'newbee-admin2', 'e10adc3949ba59abbe56e057f20f883e', 'newbeeNO.2', 0,'newbeeNO.2023@gmail.com', '48','Hamilton');
 
@@ -45,8 +45,8 @@ CREATE TABLE `tb_newbee_mall_carousel`  (
 -- ----------------------------
 -- Records of tb_newbee_mall_carousel
 -- ----------------------------
-INSERT INTO `tb_newbee_mall_carousel` VALUES (2, 'https://newbee-mall.oss-cn-beijing.aliyuncs.com/images/banner1.png', 'https://juejin.im/book/5da2f9d4f265da5b81794d48/section/5da2f9d6f265da5b794f2189', 13, 0, '2019-11-29 00:00:00', 0, '2019-11-29 00:00:00', 0);
-INSERT INTO `tb_newbee_mall_carousel` VALUES (5, 'https://newbee-mall.oss-cn-beijing.aliyuncs.com/images/banner2.png', 'https://juejin.im/book/5da2f9d4f265da5b81794d48/section/5da2f9d6f265da5b794f2189', 0, 0, '2019-11-29 00:00:00', 0, '2019-11-29 00:00:00', 0);
+INSERT INTO `tb_newbee_mall_carousel` VALUES (2, 'https://newbee-mall.oss-cn-beijing.aliyuncs.com/images/banner1.png', 'https://www.massey.ac.nz/', 13, 0, '2019-11-29 00:00:00', 0, '2019-11-29 00:00:00', 0);
+INSERT INTO `tb_newbee_mall_carousel` VALUES (5, 'https://newbee-mall.oss-cn-beijing.aliyuncs.com/images/banner2.png', 'https://www.massey.ac.nz/study/library/', 0, 0, '2019-11-29 00:00:00', 0, '2019-11-29 00:00:00', 0);
 
 -- ----------------------------
 -- Table structure for tb_newbee_mall_goods_category
@@ -906,7 +906,7 @@ INSERT INTO `tb_newbee_mall_order_item` VALUES (22, 14, 10158, 'MUJI Women\'s Th
 INSERT INTO `tb_newbee_mall_order_item` VALUES (23, 14, 10704, 'Huawei HUAWEI P30 Super Sensitivity Leica Triple Camera Kirin 980 AI...', '/goods-img/b9e6d770-06dd-40f4-9ae5-31103cec6e5f.jpg', 3988, 1, '2024-09-23 16:59:24');
 INSERT INTO `tb_newbee_mall_order_item` VALUES (24, 14, 10739, 'Huawei HUAWEI P30 Pro', '/goods-img/65c8e729-aeca-4780-977b-4d0d39d4aa2e.jpg', 4988, 1, '2024-09-23 16:59:24');
 INSERT INTO `tb_newbee_mall_order_item` VALUES (25, 15, 10147, 'MUJI Feather Cushion', '/goods-img/0f701215-b782-40c7-8bbd-97b51be56461.jpg', 65, 1, '2024-09-23 17:05:34');
-INSERT INTO `tb_newbee_mall_order_item` VALUES (26, 16, 10742, 'Huawei HUAWEI P30 Pro', '/goods-img/dda
+INSERT INTO `tb_newbee_mall_order_item` VALUES (26, 16, 10742, 'Huawei HUAWEI P30 Pro', '/goods-img/dda1d575-cdac-4eb4-a118-3834490166f7.jpg', 5488, 1, '2019-09-23 17:10:03');
 INSERT INTO `tb_newbee_mall_order_item` VALUES (27, 16, 10159, 'Apple AirPods with Charging Case', '/goods-img/53c9f268-7cd4-4fac-909c-2dc066625655.jpg', 1246, 1, '2024-09-23 17:10:03');
 INSERT INTO `tb_newbee_mall_order_item` VALUES (28, 16, 10254, 'Apple 2019 MacBook Air 13.3', '/goods-img/7810bc9d-236f-4386-a0ef-45a831b49bf2.jpg', 8499, 1, '2024-09-23 17:10:03');
 INSERT INTO `tb_newbee_mall_order_item` VALUES (29, 17, 10180, 'Apple AirPods with Charging Case', '/goods-img/64768a8d-0664-4b29-88c9-2626578ffbd1.jpg', 1246, 1, '2024-09-26 14:09:56');
