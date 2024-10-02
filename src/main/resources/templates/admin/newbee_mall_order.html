@@ -41,21 +41,21 @@
             <div class="container-fluid">
                 <div class="card card-primary card-outline">
                     <div class="card-header">
-                        <h3 class="card-title">订单管理</h3>
+                        <h3 class="card-title">Order Management</h3>
                     </div> <!-- /.card-body -->
                     <div class="card-body">
                         <div class="grid-btn">
                             <button class="btn btn-info" onclick="orderEdit()"><i
-                                    class="fa fa-pencil-square-o"></i>&nbsp;修改订单
+                                    class="fa fa-pencil-square-o"></i>&nbsp;Modify Order
                             </button>
                             <button class="btn btn-info" onclick="orderCheckDone()"><i
-                                    class="fa fa-truck"></i>&nbsp;配货完成
+                                    class="fa fa-truck"></i>&nbsp;Distribution completed
                             </button>
                             <button class="btn btn-info" onclick="orderCheckOut()"><i
-                                    class="fa fa-truck"></i>&nbsp;出库
+                                    class="fa fa-truck"></i>&nbsp;ship out (goods)
                             </button>
                             <button class="btn btn-danger" onclick="closeOrder()"><i
-                                    class="fa fa-trash-o"></i>&nbsp;关闭订单
+                                    class="fa fa-trash-o"></i>&nbsp;Close Order
                             </button>
                         </div>
                         <table id="jqGrid" class="table table-bordered">
@@ -80,27 +80,27 @@
                             <form id="##">
                                 <div class="form-group">
                                     <div class="alert alert-danger" id="edit-error-msg" style="display: none;">
-                                        错误信息展示栏。
+                                        Error message display bar
                                     </div>
                                 </div>
                                 <input type="hidden" id="orderId">
                                 <div class="form-group">
-                                    <label for="totalPrice" class="control-label">订单价格:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    <label for="totalPrice" class="control-label">Order Price：</label>
                                     <input type="number" class="form-control" id="totalPrice" name="totalPrice"
                                            placeholder="请输入改价金额" required="true">
                                 </div>
                                 <div class="form-group">
                                     <label for="userAddress"
-                                           class="control-label">收件人信息:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                           class="control-label">Recipient Information:</label>
                                     <input type="text" class="form-control" id="userAddress" name="userAddress"
-                                           placeholder="请输入收件人地址" value="##">
+                                           placeholder="Please enter the recipient's address" value="##">
                                 </div>
 
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                            <button type="button" class="btn btn-primary" id="saveButton">确认</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">no</button>
+                            <button type="button" class="btn btn-primary" id="saveButton">yes</button>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                         <div class="modal-body">
                             <form id="##">
                                 <div class="form-group">
-                                    <label class="control-label">收件信息:</label>
+                                    <label class="control-label">Incoming message：</label>
                                     <label id="userAddressInfo" class="control-label"></label>
                                 </div>
                             </form>
