@@ -140,7 +140,7 @@ function getSelectedRow() {
     var selectedIDs = grid.getGridParam("selarrrow");
     if (selectedIDs.length > 1) {
         Swal.fire({
-            text: "只能选择一条记录",
+            text: "e",
             icon: "warning",iconColor:"#dea32c",
         });
         return;
