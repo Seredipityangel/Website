@@ -7,7 +7,20 @@
     <list default="true" id="9290c5d8-ddac-46cc-b8ac-bbd356082d07" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/mybatis.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/mybatis.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_goods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_goods_edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_goods_edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_index_config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_index_config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/public.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/mall/js/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/mall/js/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/mall/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/mall/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/mall/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/mall/js/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/mall/styles/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/mall/styles/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/mall/styles/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/mall/styles/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/newbee_mall_carousel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/newbee_mall_carousel.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +75,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Code/159333/newbee-mall-master(1)",
+    "last_opened_file_path": "D:/Code/159333/Website",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

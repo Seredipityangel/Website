@@ -8,14 +8,14 @@ $(function () {
         colModel: [
             {label: 'id', name: 'categoryId', index: 'categoryId', width: 50, key: true, hidden: true},
             {label: 'Classification name', name: 'categoryName', index: 'categoryName', width: 240},
-            {label: 'sorted value', name: 'categoryRank', index: 'categoryRank', width: 120},
+            {label: 'arrange', name: 'categoryRank', index: 'categoryRank', width: 120},
             {label: 'Add Time', name: 'createTime', index: 'createTime', width: 120}
         ],
         height: 560,
         rowNum: 10,
         rowList: [10, 20, 50],
         styleUI: 'Bootstrap',
-        loadtext: 'Information is being read...',
+        loadtext: '信息读取中...',
         rownumbers: false,
         rownumWidth: 20,
         autowidth: true,
@@ -55,7 +55,7 @@ function reload() {
 
 function categoryAdd() {
     reset();
-    $('.modal-title').html('Category Add');
+    $('.modal-title').html('分类添加');
     $('#categoryModal').modal('show');
 }
 
@@ -74,7 +74,7 @@ function categoryManage() {
         window.location.href = '/admin/categories?categoryLevel=' + categoryLevel + '&parentId=' + id + '&backParentId=' + parentId;
     } else {
         Swal.fire({
-            text: "No Subordinate Classification",
+            text: "无下级分类",
             icon: "warning",iconColor:"#dea32c",
         });
     }
@@ -91,7 +91,7 @@ function categoryBack() {
         window.location.href = '/admin/categories?categoryLevel=' + categoryLevel + '&parentId=' + backParentId + '&backParentId=0';
     } else {
         Swal.fire({
-            text: "No higher classification",
+            text: "无上级分类",
             icon: "warning",iconColor:"#dea32c",
         });
     }
@@ -105,7 +105,7 @@ $('#saveButton').click(function () {
     var categoryRank = $("#categoryRank").val();
     if (!validCN_ENString2_18(categoryName)) {
         $('#edit-error-msg').css("display", "block");
-        $('#edit-error-msg').html("Please enter the name of the classification that conforms to the specification!");
+        $('#edit-error-msg').html("请输入符合规范的分类名称！");
     } else {
         var data = {
             "categoryName": categoryName,
@@ -134,7 +134,7 @@ $('#saveButton').click(function () {
                 if (result.resultCode == 200) {
                     $('#categoryModal').modal('hide');
                     Swal.fire({
-                        text: "Save Successful",
+                        text: "保存成功",
                         icon: "success",iconColor:"#1d953f",
                     });
                     reload();
@@ -149,7 +149,7 @@ $('#saveButton').click(function () {
             },
             error: function () {
                 Swal.fire({
-                    text: "failure of an operation",
+                    text: "操作失败",
                     icon: "error",iconColor:"#f05b72",
                 });
             }
@@ -164,7 +164,7 @@ function categoryEdit() {
         return;
     }
     var rowData = $("#jqGrid").jqGrid("getRowData", id);
-    $('.modal-title').html('Category Editor');
+    $('.modal-title').html('分类编辑');
     $('#categoryModal').modal('show');
     $("#categoryId").val(id);
     $("#categoryName").val(rowData.categoryName);
@@ -174,7 +174,7 @@ function categoryEdit() {
 /**
  * 分类的删除会牵涉到多级分类的修改和商品数据的修改，请谨慎删除分类数据，
  * 如果在商城页面不想显示相关分类可以通过调整rank值来调整显示顺序，
- * 不过代码也写了一部分，如果想保留删除功能的话可以在此代码的基础上进行修改。
+ * 不过代码我也写了一部分，如果想保留删除功能的话可以在此代码的基础上进行修改。
  */
 function deleteCagegory() {
 
@@ -183,12 +183,12 @@ function deleteCagegory() {
         return;
     }
     Swal.fire({
-        title: "confirmation pop-up",
-        text: "Are you sure you want to delete the data?",
+        title: "确认弹框",
+        text: "确认要删除数据吗?",
         icon: "warning",iconColor:"#dea32c",
         showCancelButton: true,
-        confirmButtonText: 'yes',
-        cancelButtonText: 'no'
+        confirmButtonText: '确认',
+        cancelButtonText: '取消'
     }).then((flag) => {
             if (flag.value) {
                 $.ajax({
@@ -199,7 +199,7 @@ function deleteCagegory() {
                     success: function (r) {
                         if (r.resultCode == 200) {
                             Swal.fire({
-                                text: "Deleted successfully",
+                                text: "删除成功",
                                 icon: "success",iconColor:"#1d953f",
                             });
                             $("#jqGrid").trigger("reloadGrid");

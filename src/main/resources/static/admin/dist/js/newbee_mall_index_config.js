@@ -8,7 +8,7 @@ $(function () {
             {label: 'id', name: 'configId', index: 'configId', width: 50, key: true, hidden: true},
             {label: 'Configuration Item Name', name: 'configName', index: 'configName', width: 180},
             {label: 'jump link', name: 'redirectUrl', index: 'redirectUrl', width: 120},
-            {label: 'sorted value', name: 'configRank', index: 'configRank', width: 120},
+            {label: 'arrange', name: 'configRank', index: 'configRank', width: 120},
             {label: 'Product Number', name: 'goodsId', index: 'goodsId', width: 120},
             {label: 'Add Time', name: 'createTime', index: 'createTime', width: 120}
         ],
@@ -16,7 +16,7 @@ $(function () {
         rowNum: 10,
         rowList: [10, 20, 50],
         styleUI: 'Bootstrap',
-        loadtext: 'Information is being read...',
+        loadtext: '信息读取中...',
         rownumbers: false,
         rownumWidth: 20,
         autowidth: true,
@@ -56,7 +56,7 @@ function reload() {
 
 function configAdd() {
     reset();
-    $('.modal-title').html('Home Page Configuration Item Addition');
+    $('.modal-title').html('首页配置项添加');
     $('#indexConfigModal').modal('show');
 }
 
@@ -69,7 +69,7 @@ $('#saveButton').click(function () {
     var configRank = $("#configRank").val();
     if (!validCN_ENString2_18(configName)) {
         $('#edit-error-msg').css("display", "block");
-        $('#edit-error-msg').html("Please enter a configuration item name that conforms to the specification!");
+        $('#edit-error-msg').html("请输入符合规范的配置项名称！");
     } else {
         var data = {
             "configName": configName,
@@ -100,7 +100,7 @@ $('#saveButton').click(function () {
                 if (result.resultCode == 200) {
                     $('#indexConfigModal').modal('hide');
                     Swal.fire({
-                        text: "Save Successful",
+                        text: "保存成功",
                         icon: "success",iconColor:"#1d953f",
                     });
                     reload();
@@ -115,7 +115,7 @@ $('#saveButton').click(function () {
             },
             error: function () {
                 Swal.fire({
-                    text: "failure of an operation",
+                    text: "操作失败",
                     icon: "error",iconColor:"#f05b72",
                 });
             }
@@ -130,7 +130,7 @@ function configEdit() {
         return;
     }
     var rowData = $("#jqGrid").jqGrid("getRowData", id);
-    $('.modal-title').html('Home Configurator Edit');
+    $('.modal-title').html('首页配置项编辑');
     $('#indexConfigModal').modal('show');
     $("#configId").val(id);
     $("#configName").val(rowData.configName);
@@ -145,12 +145,12 @@ function deleteConfig () {
         return;
     }
     Swal.fire({
-        title: "confirmation pop-up",
-        text: "Are you sure you want to delete the data?",
+        title: "确认弹框",
+        text: "确认要删除数据吗?",
         icon: "warning",iconColor:"#dea32c",
         showCancelButton: true,
-        confirmButtonText: 'yes',
-        cancelButtonText: 'no'
+        confirmButtonText: '确认',
+        cancelButtonText: '取消'
     }).then((flag) => {
             if (flag.value) {
                 $.ajax({
@@ -161,7 +161,7 @@ function deleteConfig () {
                     success: function (r) {
                         if (r.resultCode == 200) {
                             Swal.fire({
-                                text: "Deleted successfully",
+                                text: "删除成功",
                                 icon: "success",iconColor:"#1d953f",
                             });
                             $("#jqGrid").trigger("reloadGrid");

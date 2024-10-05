@@ -22,7 +22,7 @@ $(function () {
         rowNum: 20,
         rowList: [20, 50, 80],
         styleUI: 'Bootstrap',
-        loadtext: 'Information is being read...',
+        loadtext: '信息读取中...',
         rownumbers: false,
         rownumWidth: 20,
         autowidth: true,
@@ -103,12 +103,12 @@ function putUpGoods() {
         return;
     }
     Swal.fire({
-        title: "confirmation pop-up",
-        text: "Are you sure you want to perform the shelving operation?",
+        title: "确认弹框",
+        text: "确认要执行上架操作吗?",
         icon: "warning",iconColor:"#dea32c",
         showCancelButton: true,
-        confirmButtonText: 'yes',
-        cancelButtonText: 'no'
+        confirmButtonText: '确认',
+        cancelButtonText: '取消'
     }).then((flag) => {
             if (flag.value) {
                 $.ajax({
@@ -119,7 +119,7 @@ function putUpGoods() {
                     success: function (r) {
                         if (r.resultCode == 200) {
                             Swal.fire({
-                                text: "Uploaded successfully",
+                                text: "上架成功",
                                 icon: "success",iconColor:"#1d953f",
                             });
                             $("#jqGrid").trigger("reloadGrid");
@@ -146,12 +146,12 @@ function putDownGoods() {
         return;
     }
     Swal.fire({
-        title: "confirmation pop-up",
-        text: "Are you sure you want to perform a take-down?",
+        title: "确认弹框",
+        text: "确认要执行下架操作吗?",
         icon: "warning",iconColor:"#dea32c",
         showCancelButton: true,
-        confirmButtonText: 'yes',
-        cancelButtonText: 'no'
+        confirmButtonText: '确认',
+        cancelButtonText: '取消'
     }).then((flag) => {
             if (flag.value) {
                 $.ajax({
@@ -162,7 +162,7 @@ function putDownGoods() {
                     success: function (r) {
                         if (r.resultCode == 200) {
                             Swal.fire({
-                                text: "Downgrade Successful",
+                                text: "下架成功",
                                 icon: "success",iconColor:"#1d953f",
                             });
                             $("#jqGrid").trigger("reloadGrid");

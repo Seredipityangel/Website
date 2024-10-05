@@ -12,13 +12,13 @@
 </style>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
-    <!-- Introducing the page header header-fragment -->
+    <!-- 引入页面头header-fragment -->
     <div th:replace="admin/header::header-nav"></div>
-    <!-- Introducing the toolbar sidebar-fragment -->
+    <!-- 引入工具栏sidebar-fragment -->
     <div th:replace="admin/sidebar::sidebar-fragment(${path})"></div>
-    <!-- Content Wrapper. Contains icon content -->
+    <!-- Content Wrapper. Contains 图标content -->
     <div class="content-wrapper">
-        <!-- Content Header (icon header) -->
+        <!-- Content Header (图标header) -->
         <div class="content-header">
             <div class="container-fluid">
             </div><!-- /.container-fluid -->
@@ -33,13 +33,13 @@
                     <div class="card-body">
                         <div class="grid-btn">
                             <button class="btn btn-info" onclick="carouselAdd()"><i
-                                    class="fa fa-plus"></i>&nbsp;Add
+                                    class="fa fa-plus"></i>&nbsp;additional
                             </button>
                             <button class="btn btn-info" onclick="carouselEdit()"><i
-                                    class="fa fa-pencil-square-o"></i>&nbsp;Edit
+                                    class="fa fa-pencil-square-o"></i>&nbsp;modifications
                             </button>
                             <button class="btn btn-danger" onclick="deleteCarousel()"><i
-                                    class="fa fa-trash-o"></i>&nbsp;delete
+                                    class="fa fa-trash-o"></i>&nbsp;Delete
                             </button>
                         </div>
                         <br>
@@ -52,7 +52,7 @@
         </div>
         <!-- /.content -->
         <div class="content">
-            <!-- modal box（Modal） -->
+            <!-- 模态框（Modal） -->
             <div class="modal fade" id="carouselModal" tabindex="-1" role="dialog"
                  aria-labelledby="carouselModalLabel">
                 <div class="modal-dialog" role="document">
@@ -66,7 +66,7 @@
                             <form id="indexConfigForm">
                                 <div class="form-group">
                                     <div class="alert alert-danger" id="edit-error-msg" style="display: none;">
-                                        Error message display bar.
+                                        Error message display bar
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -85,20 +85,20 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="redirectUrl" class="control-label">jump link: </label>
+                                    <label for="redirectUrl" class="control-label">Jump Links.</label>
                                     <input type="text" class="form-control" id="redirectUrl" name="redirectUrl"
                                            placeholder="Please enter the jump link" value="##">
                                 </div>
                                 <div class="form-group">
-                                    <label for="carouselRank" class="control-label">sorted value:</label>
+                                    <label for="carouselRank" class="control-label">Sort value.</label>
                                     <input type="number" class="form-control" id="carouselRank" name="carouselRank"
                                            placeholder="Please enter a sort value">
                                 </div>
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">cancel</button>
-                            <button type="button" class="btn btn-primary" id="saveButton">confirm</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">no</button>
+                            <button type="button" class="btn btn-primary" id="saveButton">yes</button>
                         </div>
                     </div>
                 </div>
@@ -107,8 +107,7 @@
         </div>
     </div>
     <!-- /.content-wrapper -->
-    <!-- Introducing a footer footer-fragment -->
-    <!-- Introducing a footer footer-fragment -->
+    <!-- 引入页脚footer-fragment -->
     <div th:replace="admin/footer::footer-fragment"></div>
 </div>
 <!-- jQuery -->

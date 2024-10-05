@@ -120,104 +120,104 @@ $('#saveButton').click(function () {
     var goodsCoverImg = $('#goodsCoverImg')[0].src;
     if (isNull(goodsCategoryId)) {
         Swal.fire({
-            text: "Please select a category",
+            text: "请选择分类",
             icon: "error",iconColor:"#f05b72",
         });
         return;
     }
     if (isNull(goodsName)) {
         Swal.fire({
-            text: "Please enter the product name",
+            text: "请输入商品名称",
             icon: "error",iconColor:"#f05b72",
         });
         return;
     }
     if (!validLength(goodsName, 100)) {
         Swal.fire({
-            text: "Trade names are too long",
+            text: "商品名称过长",
             icon: "error",iconColor:"#f05b72",
         });
         return;
     }
     if (isNull(tag)) {
         Swal.fire({
-            text: "Please enter a small tag for the product",
+            text: "请输入商品小标签",
             icon: "error",iconColor:"#f05b72",
         });
         return;
     }
     if (!validLength(tag, 100)) {
         Swal.fire({
-            text: "excessive length of labels",
+            text: "标签过长",
             icon: "error",iconColor:"#f05b72",
         });
         return;
     }
     if (isNull(goodsIntro)) {
         Swal.fire({
-            text: "Please enter the product description",
+            text: "请输入商品简介",
             icon: "error",iconColor:"#f05b72",
         });
         return;
     }
     if (!validLength(goodsIntro, 100)) {
         Swal.fire({
-            text: "too long a synopsis",
+            text: "简介过长",
             icon: "error",iconColor:"#f05b72",
         });
         return;
     }
     if (isNull(originalPrice) || originalPrice < 1) {
         Swal.fire({
-            text: "Please enter the price of the product",
+            text: "请输入商品价格",
             icon: "error",iconColor:"#f05b72",
         });
         return;
     }
     if (isNull(sellingPrice) || sellingPrice < 1) {
         Swal.fire({
-            text: "Please enter the selling price of the product",
+            text: "请输入商品售卖价",
             icon: "error",iconColor:"#f05b72",
         });
         return;
     }
     if (isNull(stockNum) || sellingPrice < 0) {
         Swal.fire({
-            text: "Please enter the number of items in stock",
+            text: "请输入商品库存数",
             icon: "error",iconColor:"#f05b72",
         });
         return;
     }
     if (isNull(goodsSellStatus)) {
         Swal.fire({
-            text: "Please select the shelf status",
+            text: "请选择上架状态",
             icon: "error",iconColor:"#f05b72",
         });
         return;
     }
     if (isNull(goodsDetailContent)) {
         Swal.fire({
-            text: "Please enter the product description",
+            text: "请输入商品介绍",
             icon: "error",iconColor:"#f05b72",
         });
         return;
     }
         if (!validLength(goodsDetailContent, 50000)) {
         Swal.fire({
-            text: "The product description is too long.",
+            text: "商品介绍内容过长",
             icon: "error",iconColor:"#f05b72",
         });
         return;
     }
     if (isNull(goodsCoverImg) || goodsCoverImg.indexOf('img-upload') != -1) {
         Swal.fire({
-            text: "The cover image cannot be empty",
+            text: "封面图片不能为空",
             icon: "error",iconColor:"#f05b72",
         });
         return;
     }
     var url = '/admin/goods/save';
-    var swlMessage = 'Save Successful';
+    var swlMessage = '保存成功';
     var data = {
         "goodsName": goodsName,
         "goodsIntro": goodsIntro,
@@ -233,7 +233,7 @@ $('#saveButton').click(function () {
     };
     if (goodsId > 0) {
         url = '/admin/goods/update';
-        swlMessage = 'Modified successfully';
+        swlMessage = '修改成功';
         data = {
             "goodsId": goodsId,
             "goodsName": goodsName,
@@ -262,7 +262,7 @@ $('#saveButton').click(function () {
                     icon: "success",iconColor:"#1d953f",
                     showCancelButton: false,
                     confirmButtonColor: '#1baeae',
-                    confirmButtonText: 'Back to Product List',
+                    confirmButtonText: '返回商品列表',
                     confirmButtonClass: 'btn btn-success',
                     buttonsStyling: false
                 }).then(function () {
@@ -278,7 +278,7 @@ $('#saveButton').click(function () {
         },
         error: function () {
             Swal.fire({
-                text: "failure of an operation",
+                text: "操作失败",
                 icon: "error",iconColor:"#f05b72",
             });
         }
@@ -319,7 +319,7 @@ $('#levelOne').on('change', function () {
         },
         error: function () {
             Swal.fire({
-                text: "failure of an operation",
+                text: "操作失败",
                 icon: "error",iconColor:"#f05b72",
             });
         }
@@ -349,7 +349,7 @@ $('#levelTwo').on('change', function () {
         },
         error: function () {
             Swal.fire({
-                text: "failure of an operation",
+                text: "操作失败",
                 icon: "error",iconColor:"#f05b72",
             });
         }

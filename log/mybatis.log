@@ -15967,3 +15967,1038 @@
 [DEBUG][24-10-02][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10195(Long), 10180(Long), 10237(Long), 10160(Long), 10254(Long), 10233(Long), 10195(Long), 10180(Long), 10237(Long), 10160(Long), 10254(Long), 10233(Long)
 [DEBUG][24-10-02][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
 [DEBUG][24-10-02][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ab58a10]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f3b9c9e] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1689464743 wrapping com.mysql.cj.jdbc.ConnectionImpl@24a50b9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? ) and category_level = ? and is_deleted = 0 order by category_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 0(Long), 1(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 10
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f3b9c9e]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14409cbe] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1769162630 wrapping com.mysql.cj.jdbc.ConnectionImpl@24a50b9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 15(Long), 16(Long), 61(Long), 59(Long), 60(Long), 62(Long), 63(Long), 64(Long), 66(Long), 65(Long), 2(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 27
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14409cbe]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f54d745] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@803281277 wrapping com.mysql.cj.jdbc.ConnectionImpl@24a50b9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 17(Long), 67(Long), 70(Long), 73(Long), 79(Long), 83(Long), 87(Long), 91(Long), 95(Long), 18(Long), 68(Long), 71(Long), 74(Long), 80(Long), 84(Long), 88(Long), 92(Long), 96(Long), 19(Long), 69(Long), 72(Long), 75(Long), 81(Long), 85(Long), 89(Long), 93(Long), 97(Long), 3(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 54
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f54d745]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eb56e94] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@750942391 wrapping com.mysql.cj.jdbc.ConnectionImpl@24a50b9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]==>  Preparing: select carousel_id, carousel_url, redirect_url, carousel_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_carousel where is_deleted = 0 order by carousel_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]==> Parameters: 5(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]<==      Total: 2
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eb56e94]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40a2ee7a] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@2140807449 wrapping com.mysql.cj.jdbc.ConnectionImpl@24a50b9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 3(Integer), 4(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 4
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40a2ee7a]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63329fd7] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1100050261 wrapping com.mysql.cj.jdbc.ConnectionImpl@24a50b9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? );
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10700(Long), 10159(Long), 10779(Long), 10284(Long), 10700(Long), 10159(Long), 10779(Long), 10284(Long)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63329fd7]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8536e5d] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@636559534 wrapping com.mysql.cj.jdbc.ConnectionImpl@24a50b9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 4(Integer), 5(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 5
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8536e5d]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f4d84e] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@348553067 wrapping com.mysql.cj.jdbc.ConnectionImpl@24a50b9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? , ? );
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10283(Long), 10320(Long), 10269(Long), 10755(Long), 10186(Long), 10283(Long), 10320(Long), 10269(Long), 10755(Long), 10186(Long)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f4d84e]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@342d1936] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@364544341 wrapping com.mysql.cj.jdbc.ConnectionImpl@24a50b9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 5(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 6
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@342d1936]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cb87846] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@536881742 wrapping com.mysql.cj.jdbc.ConnectionImpl@24a50b9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? , ? , ? );
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10195(Long), 10180(Long), 10237(Long), 10160(Long), 10254(Long), 10233(Long), 10195(Long), 10180(Long), 10237(Long), 10160(Long), 10254(Long), 10233(Long)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cb87846]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1561b184] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@648714307 wrapping com.mysql.cj.jdbc.ConnectionImpl@24a50b9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.AdminUserMapper.login]==>  Preparing: select admin_user_id, login_user_name, login_password, nick_name, locked from tb_newbee_mall_admin_user where login_user_name = ? AND login_password=? AND locked = 0
+[DEBUG][24-10-04][ltd.newbee.mall.dao.AdminUserMapper.login]==> Parameters: admin(String), e10adc3949ba59abbe56e057f20f883e(String)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.AdminUserMapper.login]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1561b184]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34f62546] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1492249246 wrapping com.mysql.cj.jdbc.ConnectionImpl@24a50b9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 0(Long), 1(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 10
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34f62546]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fb0962c] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@573697772 wrapping com.mysql.cj.jdbc.ConnectionImpl@24a50b9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 15(Long), 2(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 3
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fb0962c]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@251b1f68] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1048706065 wrapping com.mysql.cj.jdbc.ConnectionImpl@24a50b9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 17(Long), 3(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 12
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@251b1f68]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27e73a47] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1455411010 wrapping com.mysql.cj.jdbc.ConnectionImpl@7802c284] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselList]==>  Preparing: select carousel_id, carousel_url, redirect_url, carousel_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_carousel where is_deleted = 0 order by carousel_rank desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselList]==> Parameters: 0(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselList]<==      Total: 2
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27e73a47]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73961e3f] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1543183056 wrapping com.mysql.cj.jdbc.ConnectionImpl@7802c284] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.getTotalCarousels]==>  Preparing: select count(*) from tb_newbee_mall_carousel where is_deleted = 0
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.getTotalCarousels]==> Parameters: 
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.getTotalCarousels]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73961e3f]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ecaa601] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1719157008 wrapping com.mysql.cj.jdbc.ConnectionImpl@79d07d65] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config WHERE config_type = ? and is_deleted = 0 order by config_rank desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]==> Parameters: 3(String), 0(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]<==      Total: 4
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ecaa601]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b97d617] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@792950452 wrapping com.mysql.cj.jdbc.ConnectionImpl@79d07d65] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]==>  Preparing: select count(*) from tb_newbee_mall_index_config WHERE config_type = ? and is_deleted = 0
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]==> Parameters: 3(String)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b97d617]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61ca246d] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@197509209 wrapping com.mysql.cj.jdbc.ConnectionImpl@79d07d65] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config WHERE config_type = ? and is_deleted = 0 order by config_rank desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]==> Parameters: 4(String), 0(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]<==      Total: 5
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@61ca246d]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fc78d14] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1193911261 wrapping com.mysql.cj.jdbc.ConnectionImpl@79d07d65] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]==>  Preparing: select count(*) from tb_newbee_mall_index_config WHERE config_type = ? and is_deleted = 0
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]==> Parameters: 4(String)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fc78d14]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55276afb] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1768383996 wrapping com.mysql.cj.jdbc.ConnectionImpl@79d07d65] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config WHERE config_type = ? and is_deleted = 0 order by config_rank desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]==> Parameters: 5(String), 0(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]<==      Total: 6
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55276afb]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a88015e] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@490913977 wrapping com.mysql.cj.jdbc.ConnectionImpl@79d07d65] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]==>  Preparing: select count(*) from tb_newbee_mall_index_config WHERE config_type = ? and is_deleted = 0
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]==> Parameters: 5(String)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a88015e]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c0100d5] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@691788922 wrapping com.mysql.cj.jdbc.ConnectionImpl@79d07d65] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.findGoodsCategoryList]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category WHERE category_level = ? and parent_id = ? and is_deleted = 0 order by category_rank desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.findGoodsCategoryList]==> Parameters: 1(String), 0(String), 0(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.findGoodsCategoryList]<==      Total: 10
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c0100d5]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19f265b7] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1737446318 wrapping com.mysql.cj.jdbc.ConnectionImpl@79d07d65] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.getTotalGoodsCategories]==>  Preparing: select count(*) from tb_newbee_mall_goods_category WHERE category_level = ? and parent_id = ? and is_deleted = 0
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.getTotalGoodsCategories]==> Parameters: 1(String), 0(String)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.getTotalGoodsCategories]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19f265b7]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fbf6833] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1674255749 wrapping com.mysql.cj.jdbc.ConnectionImpl@79d07d65] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.findNewBeeMallGoodsList]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info order by goods_id desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.findNewBeeMallGoodsList]==> Parameters: 0(Integer), 20(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.findNewBeeMallGoodsList]<==      Total: 20
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fbf6833]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16ecc162] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@435620598 wrapping com.mysql.cj.jdbc.ConnectionImpl@79d07d65] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.getTotalNewBeeMallGoods]==>  Preparing: select count(*) from tb_newbee_mall_goods_info
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.getTotalNewBeeMallGoods]==> Parameters: 
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.getTotalNewBeeMallGoods]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16ecc162]
+[DEBUG][24-10-04][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\AdminUserMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\CarouselMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\GoodsCategoryMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\IndexConfigMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\MallUserMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallGoodsMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallOrderItemMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallOrderMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallShoppingCartItemMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.core.toolkit.Sequence]Initialization Sequence datacenterId:23 workerId:25
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d50356] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1513803988 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? ) and category_level = ? and is_deleted = 0 order by category_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 0(Long), 1(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 10
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d50356]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7791117c] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@408777140 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 15(Long), 16(Long), 61(Long), 59(Long), 60(Long), 62(Long), 63(Long), 64(Long), 66(Long), 65(Long), 2(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 27
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7791117c]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6347d1ab] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@2136122481 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 17(Long), 67(Long), 70(Long), 73(Long), 79(Long), 83(Long), 87(Long), 91(Long), 95(Long), 18(Long), 68(Long), 71(Long), 74(Long), 80(Long), 84(Long), 88(Long), 92(Long), 96(Long), 19(Long), 69(Long), 72(Long), 75(Long), 81(Long), 85(Long), 89(Long), 93(Long), 97(Long), 3(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 54
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6347d1ab]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21eff9eb] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1747581047 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]==>  Preparing: select carousel_id, carousel_url, redirect_url, carousel_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_carousel where is_deleted = 0 order by carousel_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]==> Parameters: 5(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]<==      Total: 2
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21eff9eb]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@429a1be7] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1708636547 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 3(Integer), 4(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 4
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@429a1be7]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7981647e] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1002397963 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? );
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10700(Long), 10159(Long), 10779(Long), 10284(Long), 10700(Long), 10159(Long), 10779(Long), 10284(Long)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7981647e]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66e8b1ad] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@347638682 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 4(Integer), 5(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 5
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66e8b1ad]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ebd917e] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1845179613 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? , ? );
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10283(Long), 10320(Long), 10269(Long), 10755(Long), 10186(Long), 10283(Long), 10320(Long), 10269(Long), 10755(Long), 10186(Long)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ebd917e]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@111598da] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@855756263 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 5(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 6
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@111598da]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46533e46] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@2067643678 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? , ? , ? );
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10195(Long), 10180(Long), 10237(Long), 10160(Long), 10254(Long), 10233(Long), 10195(Long), 10180(Long), 10237(Long), 10160(Long), 10254(Long), 10233(Long)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@46533e46]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@865f759] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@43883561 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? ) and category_level = ? and is_deleted = 0 order by category_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 0(Long), 1(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 10
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@865f759]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6067fa8b] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1980900738 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 15(Long), 16(Long), 61(Long), 59(Long), 60(Long), 62(Long), 63(Long), 64(Long), 66(Long), 65(Long), 2(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 27
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6067fa8b]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27b0fd51] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@2027743374 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 17(Long), 67(Long), 70(Long), 73(Long), 79(Long), 83(Long), 87(Long), 91(Long), 95(Long), 18(Long), 68(Long), 71(Long), 74(Long), 80(Long), 84(Long), 88(Long), 92(Long), 96(Long), 19(Long), 69(Long), 72(Long), 75(Long), 81(Long), 85(Long), 89(Long), 93(Long), 97(Long), 3(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 54
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27b0fd51]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@cadad78] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@734452176 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]==>  Preparing: select carousel_id, carousel_url, redirect_url, carousel_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_carousel where is_deleted = 0 order by carousel_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]==> Parameters: 5(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]<==      Total: 2
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@cadad78]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6de211bb] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1886866830 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 3(Integer), 4(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 4
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6de211bb]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69c4e7fc] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@520838737 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? );
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10700(Long), 10159(Long), 10779(Long), 10284(Long), 10700(Long), 10159(Long), 10779(Long), 10284(Long)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69c4e7fc]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3dc7de54] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@960588178 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 4(Integer), 5(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 5
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3dc7de54]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@398ff7e7] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@985250812 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? , ? );
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10283(Long), 10320(Long), 10269(Long), 10755(Long), 10186(Long), 10283(Long), 10320(Long), 10269(Long), 10755(Long), 10186(Long)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@398ff7e7]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2abb213a] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1825426245 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 5(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 6
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2abb213a]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21a66098] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1382492007 wrapping com.mysql.cj.jdbc.ConnectionImpl@67caa8c9] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? , ? , ? );
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10195(Long), 10180(Long), 10237(Long), 10160(Long), 10254(Long), 10233(Long), 10195(Long), 10180(Long), 10237(Long), 10160(Long), 10254(Long), 10233(Long)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21a66098]
+[DEBUG][24-10-04][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\AdminUserMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\CarouselMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\GoodsCategoryMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\IndexConfigMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\MallUserMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallGoodsMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallOrderItemMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallOrderMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallShoppingCartItemMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.core.toolkit.Sequence]Initialization Sequence datacenterId:23 workerId:17
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42809a41] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@2082432234 wrapping com.mysql.cj.jdbc.ConnectionImpl@3bbb3e2c] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? ) and category_level = ? and is_deleted = 0 order by category_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 0(Long), 1(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 10
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42809a41]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@fa56f67] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@950566691 wrapping com.mysql.cj.jdbc.ConnectionImpl@3bbb3e2c] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 15(Long), 16(Long), 61(Long), 59(Long), 60(Long), 62(Long), 63(Long), 64(Long), 66(Long), 65(Long), 2(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 27
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@fa56f67]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2752a15c] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1971823053 wrapping com.mysql.cj.jdbc.ConnectionImpl@3bbb3e2c] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 17(Long), 67(Long), 70(Long), 73(Long), 79(Long), 83(Long), 87(Long), 91(Long), 95(Long), 18(Long), 68(Long), 71(Long), 74(Long), 80(Long), 84(Long), 88(Long), 92(Long), 96(Long), 19(Long), 69(Long), 72(Long), 75(Long), 81(Long), 85(Long), 89(Long), 93(Long), 97(Long), 3(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 54
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2752a15c]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b5091d1] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@2012804297 wrapping com.mysql.cj.jdbc.ConnectionImpl@3bbb3e2c] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]==>  Preparing: select carousel_id, carousel_url, redirect_url, carousel_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_carousel where is_deleted = 0 order by carousel_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]==> Parameters: 5(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]<==      Total: 2
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b5091d1]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25dc8a97] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@364018777 wrapping com.mysql.cj.jdbc.ConnectionImpl@3bbb3e2c] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 3(Integer), 4(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 4
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25dc8a97]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15ccfa24] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@154525513 wrapping com.mysql.cj.jdbc.ConnectionImpl@3bbb3e2c] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? );
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10700(Long), 10159(Long), 10779(Long), 10284(Long), 10700(Long), 10159(Long), 10779(Long), 10284(Long)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15ccfa24]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1014ac33] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1660643791 wrapping com.mysql.cj.jdbc.ConnectionImpl@3bbb3e2c] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 4(Integer), 5(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 5
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1014ac33]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a4d0545] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@797792011 wrapping com.mysql.cj.jdbc.ConnectionImpl@3bbb3e2c] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? , ? );
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10283(Long), 10320(Long), 10269(Long), 10755(Long), 10186(Long), 10283(Long), 10320(Long), 10269(Long), 10755(Long), 10186(Long)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a4d0545]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a24d0f7] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@951161819 wrapping com.mysql.cj.jdbc.ConnectionImpl@3bbb3e2c] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 5(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 6
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a24d0f7]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6468c783] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@145166481 wrapping com.mysql.cj.jdbc.ConnectionImpl@3bbb3e2c] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? , ? , ? );
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10195(Long), 10180(Long), 10237(Long), 10160(Long), 10254(Long), 10233(Long), 10195(Long), 10180(Long), 10237(Long), 10160(Long), 10254(Long), 10233(Long)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6468c783]
+[DEBUG][24-10-04][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\AdminUserMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\CarouselMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\GoodsCategoryMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\IndexConfigMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\MallUserMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallGoodsMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallOrderItemMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallOrderMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallShoppingCartItemMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.core.toolkit.Sequence]Initialization Sequence datacenterId:23 workerId:19
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e4ebfe2] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@709184176 wrapping com.mysql.cj.jdbc.ConnectionImpl@119b43e2] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.AdminUserMapper.login]==>  Preparing: select admin_user_id, login_user_name, login_password, nick_name, locked from tb_newbee_mall_admin_user where login_user_name = ? AND login_password=? AND locked = 0
+[DEBUG][24-10-04][ltd.newbee.mall.dao.AdminUserMapper.login]==> Parameters: admin(String), e10adc3949ba59abbe56e057f20f883e(String)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.AdminUserMapper.login]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e4ebfe2]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27d50093] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1831865358 wrapping com.mysql.cj.jdbc.ConnectionImpl@119b43e2] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.findGoodsCategoryList]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category WHERE category_level = ? and parent_id = ? and is_deleted = 0 order by category_rank desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.findGoodsCategoryList]==> Parameters: 1(String), 0(String), 0(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.findGoodsCategoryList]<==      Total: 10
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27d50093]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c301ecc] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@96210467 wrapping com.mysql.cj.jdbc.ConnectionImpl@119b43e2] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.getTotalGoodsCategories]==>  Preparing: select count(*) from tb_newbee_mall_goods_category WHERE category_level = ? and parent_id = ? and is_deleted = 0
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.getTotalGoodsCategories]==> Parameters: 1(String), 0(String)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.getTotalGoodsCategories]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c301ecc]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ef67735] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@26691101 wrapping com.mysql.cj.jdbc.ConnectionImpl@119b43e2] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselList]==>  Preparing: select carousel_id, carousel_url, redirect_url, carousel_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_carousel where is_deleted = 0 order by carousel_rank desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselList]==> Parameters: 0(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselList]<==      Total: 2
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ef67735]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@cbdad18] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@350816835 wrapping com.mysql.cj.jdbc.ConnectionImpl@119b43e2] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.getTotalCarousels]==>  Preparing: select count(*) from tb_newbee_mall_carousel where is_deleted = 0
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.getTotalCarousels]==> Parameters: 
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.getTotalCarousels]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@cbdad18]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c686ad4] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1990789081 wrapping com.mysql.cj.jdbc.ConnectionImpl@119b43e2] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config WHERE config_type = ? and is_deleted = 0 order by config_rank desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]==> Parameters: 3(String), 0(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]<==      Total: 4
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c686ad4]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b1ca268] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@2111286860 wrapping com.mysql.cj.jdbc.ConnectionImpl@119b43e2] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]==>  Preparing: select count(*) from tb_newbee_mall_index_config WHERE config_type = ? and is_deleted = 0
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]==> Parameters: 3(String)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b1ca268]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41b8e38d] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1450892750 wrapping com.mysql.cj.jdbc.ConnectionImpl@119b43e2] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config WHERE config_type = ? and is_deleted = 0 order by config_rank desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]==> Parameters: 4(String), 0(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]<==      Total: 5
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41b8e38d]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48c0ffb0] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@2011398873 wrapping com.mysql.cj.jdbc.ConnectionImpl@119b43e2] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]==>  Preparing: select count(*) from tb_newbee_mall_index_config WHERE config_type = ? and is_deleted = 0
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]==> Parameters: 4(String)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48c0ffb0]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@629fa5dd] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1603128227 wrapping com.mysql.cj.jdbc.ConnectionImpl@119b43e2] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config WHERE config_type = ? and is_deleted = 0 order by config_rank desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]==> Parameters: 5(String), 0(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]<==      Total: 6
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@629fa5dd]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69410e2f] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1779754467 wrapping com.mysql.cj.jdbc.ConnectionImpl@119b43e2] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]==>  Preparing: select count(*) from tb_newbee_mall_index_config WHERE config_type = ? and is_deleted = 0
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]==> Parameters: 5(String)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69410e2f]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c983f1c] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1741526322 wrapping com.mysql.cj.jdbc.ConnectionImpl@119b43e2] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.findGoodsCategoryList]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category WHERE category_level = ? and parent_id = ? and is_deleted = 0 order by category_rank desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.findGoodsCategoryList]==> Parameters: 1(String), 0(String), 0(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.findGoodsCategoryList]<==      Total: 10
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c983f1c]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74169c69] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1691350997 wrapping com.mysql.cj.jdbc.ConnectionImpl@119b43e2] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.getTotalGoodsCategories]==>  Preparing: select count(*) from tb_newbee_mall_goods_category WHERE category_level = ? and parent_id = ? and is_deleted = 0
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.getTotalGoodsCategories]==> Parameters: 1(String), 0(String)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.getTotalGoodsCategories]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74169c69]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@102afc03] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1972290950 wrapping com.mysql.cj.jdbc.ConnectionImpl@119b43e2] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.findNewBeeMallGoodsList]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info order by goods_id desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.findNewBeeMallGoodsList]==> Parameters: 0(Integer), 20(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.findNewBeeMallGoodsList]<==      Total: 20
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@102afc03]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1032aff5] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1018047234 wrapping com.mysql.cj.jdbc.ConnectionImpl@119b43e2] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.getTotalNewBeeMallGoods]==>  Preparing: select count(*) from tb_newbee_mall_goods_info
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.getTotalNewBeeMallGoods]==> Parameters: 
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.getTotalNewBeeMallGoods]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1032aff5]
+[DEBUG][24-10-04][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\AdminUserMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\CarouselMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\GoodsCategoryMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\IndexConfigMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\MallUserMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallGoodsMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallOrderItemMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallOrderMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallShoppingCartItemMapper.xml]'
+[DEBUG][24-10-04][com.baomidou.mybatisplus.core.toolkit.Sequence]Initialization Sequence datacenterId:23 workerId:31
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16305d47] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1668983139 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.AdminUserMapper.login]==>  Preparing: select admin_user_id, login_user_name, login_password, nick_name, locked from tb_newbee_mall_admin_user where login_user_name = ? AND login_password=? AND locked = 0
+[DEBUG][24-10-04][ltd.newbee.mall.dao.AdminUserMapper.login]==> Parameters: admin(String), e10adc3949ba59abbe56e057f20f883e(String)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.AdminUserMapper.login]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16305d47]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e5289ff] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@2011238443 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallOrderMapper.findNewBeeMallOrderList]==>  Preparing: select order_id, order_no, user_id, total_price, pay_status, pay_type, pay_time, order_status, extra_info, user_name, user_phone, user_address, is_deleted, create_time, update_time from tb_newbee_mall_order order by create_time desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallOrderMapper.findNewBeeMallOrderList]==> Parameters: 0(Integer), 20(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallOrderMapper.findNewBeeMallOrderList]<==      Total: 20
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e5289ff]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3688c98c] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@543001409 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallOrderMapper.getTotalNewBeeMallOrders]==>  Preparing: select count(*) from tb_newbee_mall_order
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallOrderMapper.getTotalNewBeeMallOrders]==> Parameters: 
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallOrderMapper.getTotalNewBeeMallOrders]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3688c98c]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@560abfcd] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@389527030 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.MallUserMapper.findMallUserList]==>  Preparing: select user_id, nick_name, login_name, password_md5, introduce_sign, address, is_deleted, locked_flag, create_time from tb_newbee_mall_user where 1=1 order by create_time desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.MallUserMapper.findMallUserList]==> Parameters: 0(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.MallUserMapper.findMallUserList]<==      Total: 5
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@560abfcd]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@266ae267] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1563090159 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.MallUserMapper.getTotalMallUsers]==>  Preparing: select count(*) from tb_newbee_mall_user where 1=1
+[DEBUG][24-10-04][ltd.newbee.mall.dao.MallUserMapper.getTotalMallUsers]==> Parameters: 
+[DEBUG][24-10-04][ltd.newbee.mall.dao.MallUserMapper.getTotalMallUsers]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@266ae267]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d5e4b9d] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1899302899 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.findNewBeeMallGoodsList]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info order by goods_id desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.findNewBeeMallGoodsList]==> Parameters: 0(Integer), 20(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.findNewBeeMallGoodsList]<==      Total: 20
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d5e4b9d]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@222ecd2d] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1919053711 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.getTotalNewBeeMallGoods]==>  Preparing: select count(*) from tb_newbee_mall_goods_info
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.getTotalNewBeeMallGoods]==> Parameters: 
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.getTotalNewBeeMallGoods]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@222ecd2d]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4474a076] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@231097379 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.findGoodsCategoryList]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category WHERE category_level = ? and parent_id = ? and is_deleted = 0 order by category_rank desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.findGoodsCategoryList]==> Parameters: 1(String), 0(String), 0(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.findGoodsCategoryList]<==      Total: 10
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4474a076]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d870db5] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1984720220 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.getTotalGoodsCategories]==>  Preparing: select count(*) from tb_newbee_mall_goods_category WHERE category_level = ? and parent_id = ? and is_deleted = 0
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.getTotalGoodsCategories]==> Parameters: 1(String), 0(String)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.getTotalGoodsCategories]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d870db5]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c305901] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1861120549 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config WHERE config_type = ? and is_deleted = 0 order by config_rank desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]==> Parameters: 5(String), 0(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]<==      Total: 6
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c305901]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1734f55a] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@354194167 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]==>  Preparing: select count(*) from tb_newbee_mall_index_config WHERE config_type = ? and is_deleted = 0
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]==> Parameters: 5(String)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1734f55a]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@575f0808] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1865504775 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config WHERE config_type = ? and is_deleted = 0 order by config_rank desc limit ?,?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]==> Parameters: 3(String), 0(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigList]<==      Total: 4
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@575f0808]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12337833] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1125590651 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]==>  Preparing: select count(*) from tb_newbee_mall_index_config WHERE config_type = ? and is_deleted = 0
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]==> Parameters: 3(String)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.getTotalIndexConfigs]<==      Total: 1
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12337833]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3ac25076] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1820537252 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? ) and category_level = ? and is_deleted = 0 order by category_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 0(Long), 1(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 10
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3ac25076]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76a6421d] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1227302382 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 15(Long), 16(Long), 61(Long), 59(Long), 60(Long), 62(Long), 63(Long), 64(Long), 66(Long), 65(Long), 2(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 27
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76a6421d]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a8830ce] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1994789764 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 17(Long), 67(Long), 70(Long), 73(Long), 79(Long), 83(Long), 87(Long), 91(Long), 95(Long), 18(Long), 68(Long), 71(Long), 74(Long), 80(Long), 84(Long), 88(Long), 92(Long), 96(Long), 19(Long), 69(Long), 72(Long), 75(Long), 81(Long), 85(Long), 89(Long), 93(Long), 97(Long), 3(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 54
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a8830ce]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d6ee385] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@525290478 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]==>  Preparing: select carousel_id, carousel_url, redirect_url, carousel_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_carousel where is_deleted = 0 order by carousel_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]==> Parameters: 5(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]<==      Total: 2
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d6ee385]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b16857e] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@249803721 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 3(Integer), 4(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 4
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b16857e]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e428baf] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1075157541 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? );
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10700(Long), 10159(Long), 10779(Long), 10284(Long), 10700(Long), 10159(Long), 10779(Long), 10284(Long)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e428baf]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a624548] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@273132632 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 4(Integer), 5(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 5
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a624548]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e6719e7] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@788533779 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? , ? );
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10283(Long), 10320(Long), 10269(Long), 10755(Long), 10186(Long), 10283(Long), 10320(Long), 10269(Long), 10755(Long), 10186(Long)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e6719e7]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79b1a78f] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1328488831 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 5(Integer), 10(Integer)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 6
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79b1a78f]
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25f96ce4] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-04][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1737678237 wrapping com.mysql.cj.jdbc.ConnectionImpl@37cda1] will not be managed by Spring
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? , ? , ? );
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10195(Long), 10180(Long), 10237(Long), 10160(Long), 10254(Long), 10233(Long), 10195(Long), 10180(Long), 10237(Long), 10160(Long), 10254(Long), 10233(Long)
+[DEBUG][24-10-04][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-04][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25f96ce4]
+[DEBUG][24-10-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][24-10-05][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\AdminUserMapper.xml]'
+[DEBUG][24-10-05][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\CarouselMapper.xml]'
+[DEBUG][24-10-05][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\GoodsCategoryMapper.xml]'
+[DEBUG][24-10-05][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\IndexConfigMapper.xml]'
+[DEBUG][24-10-05][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\MallUserMapper.xml]'
+[DEBUG][24-10-05][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallGoodsMapper.xml]'
+[DEBUG][24-10-05][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallOrderItemMapper.xml]'
+[DEBUG][24-10-05][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallOrderMapper.xml]'
+[DEBUG][24-10-05][com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean]Parsed mapper file: 'file [D:\Code\159333\Website\target\classes\mapper\NewBeeMallShoppingCartItemMapper.xml]'
+[DEBUG][24-10-05][com.baomidou.mybatisplus.core.toolkit.Sequence]Initialization Sequence datacenterId:23 workerId:14
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@293f017b] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@314017446 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? ) and category_level = ? and is_deleted = 0 order by category_rank desc limit ?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 0(Long), 1(Integer), 10(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 10
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@293f017b]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@cbeb691] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@669202250 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 15(Long), 16(Long), 61(Long), 59(Long), 60(Long), 62(Long), 63(Long), 64(Long), 66(Long), 65(Long), 2(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 27
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@cbeb691]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d041e3e] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@783353214 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 17(Long), 67(Long), 70(Long), 73(Long), 79(Long), 83(Long), 87(Long), 91(Long), 95(Long), 18(Long), 68(Long), 71(Long), 74(Long), 80(Long), 84(Long), 88(Long), 92(Long), 96(Long), 19(Long), 69(Long), 72(Long), 75(Long), 81(Long), 85(Long), 89(Long), 93(Long), 97(Long), 3(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 54
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d041e3e]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19685d82] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1889832544 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]==>  Preparing: select carousel_id, carousel_url, redirect_url, carousel_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_carousel where is_deleted = 0 order by carousel_rank desc limit ?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]==> Parameters: 5(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]<==      Total: 2
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19685d82]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ff07d9c] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@728968076 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 3(Integer), 4(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 4
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ff07d9c]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54319a22] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1122608040 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? );
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10700(Long), 10159(Long), 10779(Long), 10284(Long), 10700(Long), 10159(Long), 10779(Long), 10284(Long)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54319a22]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75c7cf05] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@763345685 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 4(Integer), 5(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 5
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75c7cf05]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@85bb539] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1127214288 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? , ? );
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10283(Long), 10320(Long), 10269(Long), 10755(Long), 10186(Long), 10283(Long), 10320(Long), 10269(Long), 10755(Long), 10186(Long)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@85bb539]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14142808] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1093903822 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 5(Integer), 10(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 6
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14142808]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c4a9287] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@430680942 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? , ? , ? );
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10195(Long), 10180(Long), 10237(Long), 10160(Long), 10254(Long), 10233(Long), 10195(Long), 10180(Long), 10237(Long), 10160(Long), 10254(Long), 10233(Long)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c4a9287]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d444e3] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@506039209 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.findNewBeeMallGoodsListBySearch]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info WHERE (goods_name like CONCAT('%',?,'%') or goods_intro like CONCAT('%',?,'%')) and goods_sell_status = ? limit ?,?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.findNewBeeMallGoodsListBySearch]==> Parameters: muji(String), muji(String), 0(Integer), 0(Integer), 10(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.findNewBeeMallGoodsListBySearch]<==      Total: 10
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d444e3]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f948b67] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1404072243 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.getTotalNewBeeMallGoodsBySearch]==>  Preparing: select count(*) from tb_newbee_mall_goods_info WHERE (goods_name like CONCAT('%',?,'%') or goods_intro like CONCAT('%',?,'%')) and goods_sell_status = ?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.getTotalNewBeeMallGoodsBySearch]==> Parameters: muji(String), muji(String), 0(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.getTotalNewBeeMallGoodsBySearch]<==      Total: 1
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f948b67]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62a64af5] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1866177694 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? ) and category_level = ? and is_deleted = 0 order by category_rank desc limit ?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 0(Long), 1(Integer), 10(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 10
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62a64af5]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24a50b9] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@824632066 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 15(Long), 16(Long), 61(Long), 59(Long), 60(Long), 62(Long), 63(Long), 64(Long), 66(Long), 65(Long), 2(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 27
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24a50b9]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69734786] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@971771273 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 17(Long), 67(Long), 70(Long), 73(Long), 79(Long), 83(Long), 87(Long), 91(Long), 95(Long), 18(Long), 68(Long), 71(Long), 74(Long), 80(Long), 84(Long), 88(Long), 92(Long), 96(Long), 19(Long), 69(Long), 72(Long), 75(Long), 81(Long), 85(Long), 89(Long), 93(Long), 97(Long), 3(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 54
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69734786]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3bfe333f] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@246771348 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]==>  Preparing: select carousel_id, carousel_url, redirect_url, carousel_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_carousel where is_deleted = 0 order by carousel_rank desc limit ?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]==> Parameters: 5(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]<==      Total: 2
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3bfe333f]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f048ef6] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@2016342052 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 3(Integer), 4(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 4
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f048ef6]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50e0c0b2] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@625488519 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? );
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10700(Long), 10159(Long), 10779(Long), 10284(Long), 10700(Long), 10159(Long), 10779(Long), 10284(Long)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50e0c0b2]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7dca18a9] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@729395954 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 4(Integer), 5(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 5
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7dca18a9]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8536e5d] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@636559534 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? , ? );
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10283(Long), 10320(Long), 10269(Long), 10755(Long), 10186(Long), 10283(Long), 10320(Long), 10269(Long), 10755(Long), 10186(Long)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8536e5d]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f4d84e] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@348553067 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 5(Integer), 10(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 6
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f4d84e]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@342d1936] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@364544341 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? , ? , ? );
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10195(Long), 10180(Long), 10237(Long), 10160(Long), 10254(Long), 10233(Long), 10195(Long), 10180(Long), 10237(Long), 10160(Long), 10254(Long), 10233(Long)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@342d1936]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e37f10d] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1660568475 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.findNewBeeMallGoodsListBySearch]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info WHERE (goods_name like CONCAT('%',?,'%') or goods_intro like CONCAT('%',?,'%')) and goods_sell_status = ? limit ?,?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.findNewBeeMallGoodsListBySearch]==> Parameters: muji(String), muji(String), 0(Integer), 0(Integer), 10(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.findNewBeeMallGoodsListBySearch]<==      Total: 10
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e37f10d]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f59b8c7] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@358723972 wrapping com.mysql.cj.jdbc.ConnectionImpl@46746bf3] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.getTotalNewBeeMallGoodsBySearch]==>  Preparing: select count(*) from tb_newbee_mall_goods_info WHERE (goods_name like CONCAT('%',?,'%') or goods_intro like CONCAT('%',?,'%')) and goods_sell_status = ?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.getTotalNewBeeMallGoodsBySearch]==> Parameters: muji(String), muji(String), 0(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.getTotalNewBeeMallGoodsBySearch]<==      Total: 1
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f59b8c7]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@39e94559] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@307578298 wrapping com.mysql.cj.jdbc.ConnectionImpl@b354ff1] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.MallUserMapper.selectByLoginNameAndPasswd]==>  Preparing: select user_id, nick_name, login_name, password_md5, introduce_sign, address, is_deleted, locked_flag, create_time from tb_newbee_mall_user where login_name = ? and password_md5 = ? and is_deleted = 0
+[DEBUG][24-10-05][ltd.newbee.mall.dao.MallUserMapper.selectByLoginNameAndPasswd]==> Parameters: 18645677891(String), e10adc3949ba59abbe56e057f20f883e(String)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.MallUserMapper.selectByLoginNameAndPasswd]<==      Total: 1
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@39e94559]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9517ae7] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1511556965 wrapping com.mysql.cj.jdbc.ConnectionImpl@b354ff1] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]==>  Preparing: select count(*) from tb_newbee_mall_shopping_cart_item where user_id = ? and is_deleted = 0
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]==> Parameters: 9(Long)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]<==      Total: 1
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9517ae7]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6cce6f3d] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1858774529 wrapping com.mysql.cj.jdbc.ConnectionImpl@b354ff1] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? ) and category_level = ? and is_deleted = 0 order by category_rank desc limit ?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 0(Long), 1(Integer), 10(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 10
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6cce6f3d]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66784110] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@2043706725 wrapping com.mysql.cj.jdbc.ConnectionImpl@b354ff1] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 15(Long), 16(Long), 61(Long), 59(Long), 60(Long), 62(Long), 63(Long), 64(Long), 66(Long), 65(Long), 2(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 27
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66784110]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b97d617] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@792950452 wrapping com.mysql.cj.jdbc.ConnectionImpl@b354ff1] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==>  Preparing: select category_id, category_level, parent_id, category_name, category_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_goods_category where parent_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and category_level = ? and is_deleted = 0 order by category_rank desc
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]==> Parameters: 17(Long), 67(Long), 70(Long), 73(Long), 79(Long), 83(Long), 87(Long), 91(Long), 95(Long), 18(Long), 68(Long), 71(Long), 74(Long), 80(Long), 84(Long), 88(Long), 92(Long), 96(Long), 19(Long), 69(Long), 72(Long), 75(Long), 81(Long), 85(Long), 89(Long), 93(Long), 97(Long), 3(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.GoodsCategoryMapper.selectByLevelAndParentIdsAndNumber]<==      Total: 54
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b97d617]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e6f078a] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@729636158 wrapping com.mysql.cj.jdbc.ConnectionImpl@b354ff1] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]==>  Preparing: select carousel_id, carousel_url, redirect_url, carousel_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_carousel where is_deleted = 0 order by carousel_rank desc limit ?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]==> Parameters: 5(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.CarouselMapper.findCarouselsByNum]<==      Total: 2
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e6f078a]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a136fd5] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1017536586 wrapping com.mysql.cj.jdbc.ConnectionImpl@b354ff1] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 3(Integer), 4(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 4
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a136fd5]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19e95f20] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1480975887 wrapping com.mysql.cj.jdbc.ConnectionImpl@b354ff1] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? );
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10700(Long), 10159(Long), 10779(Long), 10284(Long), 10700(Long), 10159(Long), 10779(Long), 10284(Long)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19e95f20]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@300844fb] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1674255749 wrapping com.mysql.cj.jdbc.ConnectionImpl@b354ff1] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 4(Integer), 5(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 5
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@300844fb]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30c8cc18] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1108699494 wrapping com.mysql.cj.jdbc.ConnectionImpl@b354ff1] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? , ? );
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10283(Long), 10320(Long), 10269(Long), 10755(Long), 10186(Long), 10283(Long), 10320(Long), 10269(Long), 10755(Long), 10186(Long)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30c8cc18]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2248f44a] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1410749463 wrapping com.mysql.cj.jdbc.ConnectionImpl@b354ff1] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==>  Preparing: select config_id, config_name, config_type, goods_id, redirect_url, config_rank, is_deleted, create_time, create_user, update_time, update_user from tb_newbee_mall_index_config where config_type = ? and is_deleted = 0 order by config_rank desc limit ?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]==> Parameters: 5(Integer), 10(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.IndexConfigMapper.findIndexConfigsByTypeAndNum]<==      Total: 6
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2248f44a]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f060859] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1787381591 wrapping com.mysql.cj.jdbc.ConnectionImpl@b354ff1] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==>  Preparing: select goods_id, goods_name, goods_intro,goods_category_id, goods_cover_img, goods_carousel, original_price, selling_price, stock_num, tag, goods_sell_status, create_user, create_time, update_user, update_time from tb_newbee_mall_goods_info where goods_id in ( ? , ? , ? , ? , ? , ? ) order by field(goods_id, ? , ? , ? , ? , ? , ? );
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]==> Parameters: 10195(Long), 10180(Long), 10237(Long), 10160(Long), 10254(Long), 10233(Long), 10195(Long), 10180(Long), 10237(Long), 10160(Long), 10254(Long), 10233(Long)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallGoodsMapper.selectByPrimaryKeys]<==      Total: 0
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f060859]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c2b3d0d] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@75550364 wrapping com.mysql.cj.jdbc.ConnectionImpl@b354ff1] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]==>  Preparing: select count(*) from tb_newbee_mall_shopping_cart_item where user_id = ? and is_deleted = 0
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]==> Parameters: 9(Long)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]<==      Total: 1
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c2b3d0d]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28158882] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5cb670f7] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@690942511 wrapping com.mysql.cj.jdbc.ConnectionImpl@b354ff1] will not be managed by Spring
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51edaee7] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]==>  Preparing: select count(*) from tb_newbee_mall_shopping_cart_item where user_id = ? and is_deleted = 0
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]==> Parameters: 9(Long)
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1545356680 wrapping com.mysql.cj.jdbc.ConnectionImpl@7c939316] will not be managed by Spring
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1493948514 wrapping com.mysql.cj.jdbc.ConnectionImpl@17c5478e] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]==>  Preparing: select count(*) from tb_newbee_mall_shopping_cart_item where user_id = ? and is_deleted = 0
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]==>  Preparing: select count(*) from tb_newbee_mall_shopping_cart_item where user_id = ? and is_deleted = 0
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]==> Parameters: 9(Long)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]==> Parameters: 9(Long)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]<==      Total: 1
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28158882]
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]<==      Total: 1
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]<==      Total: 1
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5cb670f7]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51edaee7]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d95713c] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@169324302 wrapping com.mysql.cj.jdbc.ConnectionImpl@9e5c2d8] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]==>  Preparing: select count(*) from tb_newbee_mall_shopping_cart_item where user_id = ? and is_deleted = 0
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]==> Parameters: 9(Long)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]<==      Total: 1
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d95713c]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@147fa131] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1196336909 wrapping com.mysql.cj.jdbc.ConnectionImpl@9e5c2d8] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallOrderMapper.getTotalNewBeeMallOrders]==>  Preparing: select count(*) from tb_newbee_mall_order WHERE user_id = ?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallOrderMapper.getTotalNewBeeMallOrders]==> Parameters: 9(Long)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallOrderMapper.getTotalNewBeeMallOrders]<==      Total: 1
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@147fa131]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@752e3e49] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@2030779557 wrapping com.mysql.cj.jdbc.ConnectionImpl@9e5c2d8] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallOrderMapper.findNewBeeMallOrderList]==>  Preparing: select order_id, order_no, user_id, total_price, pay_status, pay_type, pay_time, order_status, extra_info, user_name, user_phone, user_address, is_deleted, create_time, update_time from tb_newbee_mall_order WHERE user_id = ? order by create_time desc limit ?,?
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallOrderMapper.findNewBeeMallOrderList]==> Parameters: 9(Long), 0(Integer), 3(Integer)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallOrderMapper.findNewBeeMallOrderList]<==      Total: 0
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@752e3e49]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eade0a9] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@660916729 wrapping com.mysql.cj.jdbc.ConnectionImpl@9e5c2d8] will not be managed by Spring
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]==>  Preparing: select count(*) from tb_newbee_mall_shopping_cart_item where user_id = ? and is_deleted = 0
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3031a110] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]==> Parameters: 9(Long)
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1452752167 wrapping com.mysql.cj.jdbc.ConnectionImpl@32fc36f8] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]==>  Preparing: select count(*) from tb_newbee_mall_shopping_cart_item where user_id = ? and is_deleted = 0
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]<==      Total: 1
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]==> Parameters: 9(Long)
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@eade0a9]
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]<==      Total: 1
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3031a110]
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41d63110] was not registered for synchronization because synchronization is not active
+[DEBUG][24-10-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [HikariProxyConnection@1137745855 wrapping com.mysql.cj.jdbc.ConnectionImpl@9e5c2d8] will not be managed by Spring
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]==>  Preparing: select count(*) from tb_newbee_mall_shopping_cart_item where user_id = ? and is_deleted = 0
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]==> Parameters: 9(Long)
+[DEBUG][24-10-05][ltd.newbee.mall.dao.NewBeeMallShoppingCartItemMapper.selectCountByUserId]<==      Total: 1
+[DEBUG][24-10-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41d63110]

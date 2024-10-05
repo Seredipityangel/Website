@@ -132,7 +132,7 @@ function getSelectedRow() {
     var rowKey = grid.getGridParam("selrow");
     if (!rowKey) {
         Swal.fire({
-            text: "请选择一条记录",
+            text: "Please select a record",
             icon: "warning",iconColor:"#dea32c",
         });
         return;
@@ -140,7 +140,7 @@ function getSelectedRow() {
     var selectedIDs = grid.getGridParam("selarrrow");
     if (selectedIDs.length > 1) {
         Swal.fire({
-            text: "e",
+            text: "Only one record can be selected",
             icon: "warning",iconColor:"#dea32c",
         });
         return;
@@ -174,7 +174,7 @@ function getSelectedRows() {
     var rowKey = grid.getGridParam("selrow");
     if (!rowKey) {
         Swal.fire({
-            text: "请选择一条记录",
+            text: "Please select a record",
             icon: "warning",iconColor:"#dea32c",
         });
         return;

@@ -14,7 +14,7 @@ $(function () {
         rowNum: 10,
         rowList: [10, 20, 50],
         styleUI: 'Bootstrap',
-        loadtext: 'Information is being read...',
+        loadtext: '信息读取中...',
         rownumbers: false,
         rownumWidth: 20,
         autowidth: true,
@@ -76,17 +76,17 @@ function lockUser(lockStatus) {
     }
     if (lockStatus != 0 && lockStatus != 1) {
         Swal.fire({
-            text: 'unauthorized operation',
+            text: '非法操作',
             icon: "error",iconColor:"#f05b72",
         });
     }
     Swal.fire({
-        title: "confirmation pop-up",
-        text: "Are you sure you want to change your account status?",
+        title: "确认弹框",
+        text: "确认要修改账号状态吗?",
         icon: "warning",iconColor:"#dea32c",
         showCancelButton: true,
-        confirmButtonText: 'yes',
-        cancelButtonText: 'no'
+        confirmButtonText: '确认',
+        cancelButtonText: '取消'
     }).then((flag) => {
             if (flag.value) {
                 $.ajax({
@@ -97,7 +97,7 @@ function lockUser(lockStatus) {
                     success: function (r) {
                         if (r.resultCode == 200) {
                             Swal.fire({
-                                text: "The operation was successful.",
+                                text: "操作成功",
                                 icon: "success",iconColor:"#1d953f",
                             });
                             $("#jqGrid").trigger("reloadGrid");

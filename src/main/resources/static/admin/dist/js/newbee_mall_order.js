@@ -3,20 +3,20 @@ $(function () {
         url: '/admin/orders/list',
         datatype: "json",
         colModel: [
-                              {label: 'id', name: 'orderId', index: 'orderId', width: 50, key: true, hidden: true},
-                              {label: 'order number', name: 'orderNo', index: 'orderNo', width: 120},
-                              {label: 'Total order price', name: 'totalPrice', index: 'totalPrice', width: 60},
-                              {label: 'Order Status', name: 'orderStatus', index: 'orderStatus', width: 80, formatter: orderStatusFormatter},
-                              {label: 'payment method', name: 'payType', index: 'payType', width: 80,formatter:payTypeFormatter},
-                              {label: 'address', name: 'userAddress', index: 'userAddress', width: 10, hidden: true},
-                              {label: 'Creation time', name: 'createTime', index: 'createTime', width: 120},
-                              {label: 'operate', name: 'createTime', index: 'createTime', width: 120, formatter: operateFormatter}
-                          ],
+            {label: 'id', name: 'orderId', index: 'orderId', width: 50, key: true, hidden: true},
+            {label: 'order number', name: 'orderNo', index: 'orderNo', width: 120},
+            {label: 'Total order price', name: 'totalPrice', index: 'totalPrice', width: 60},
+            {label: 'Order Status', name: 'orderStatus', index: 'orderStatus', width: 80, formatter: orderStatusFormatter},
+            {label: 'payment method', name: 'payType', index: 'payType', width: 80,formatter:payTypeFormatter},
+            {label: 'recipient address', name: 'userAddress', index: 'userAddress', width: 10, hidden: true},
+            {label: 'Creation time', name: 'createTime', index: 'createTime', width: 120},
+            {label: 'operate', name: 'createTime', index: 'createTime', width: 120, formatter: operateFormatter}
+        ],
         height: 760,
         rowNum: 20,
         rowList: [20, 50, 80],
         styleUI: 'Bootstrap',
-        loadtext: 'Information is being read...',
+        loadtext: '信息读取中...',
         rownumbers: false,
         rownumWidth: 20,
         autowidth: true,
@@ -52,41 +52,41 @@ $(function () {
     function orderStatusFormatter(cellvalue) {
         //订单状态:0.待支付 1.已支付 2.配货完成 3:出库成功 4.交易成功 -1.手动关闭 -2.超时关闭 -3.商家关闭
         if (cellvalue == 0) {
-            return "To be paid";
+            return "待支付";
         }
         if (cellvalue == 1) {
-            return "paid";
+            return "已支付";
         }
         if (cellvalue == 2) {
-            return "Distribution completed";
+            return "配货完成";
         }
         if (cellvalue == 3) {
-            return "Successful exit";
+            return "出库成功";
         }
         if (cellvalue == 4) {
-            return "Successful transaction";
+            return "交易成功";
         }
         if (cellvalue == -1) {
-            return "manual shutdown";
+            return "手动关闭";
         }
         if (cellvalue == -2) {
-            return "timeout";
+            return "超时关闭";
         }
         if (cellvalue == -3) {
-            return "Merchant closure";
+            return "商家关闭";
         }
     }
 
     function payTypeFormatter(cellvalue) {
         //支付类型:0.无 1.支付宝支付 2.微信支付
         if (cellvalue == 0) {
-            return "null";
+            return "无";
         }
         if (cellvalue == 1) {
-            return "Alipay payment";
+            return "支付宝支付";
         }
         if (cellvalue == 2) {
-            return "WeChat Payment";
+            return "微信支付";
         }
     }
 
@@ -135,7 +135,7 @@ function openOrderItems(orderId) {
         },
         error: function () {
             Swal.fire({
-                text: "failure of an operation",
+                text: "操作失败",
                 icon: "error",iconColor:"#f05b72",
             });
         }
@@ -148,7 +148,7 @@ function openOrderItems(orderId) {
  */
 function openExpressInfo(orderId) {
     var rowData = $("#jqGrid").jqGrid("getRowData", orderId);
-    $('.modal-title').html('incoming mail');
+    $('.modal-title').html('收件信息');
     $('#expressInfoModal').modal('show');
     $("#userAddressInfo").html(rowData.userAddress);
 }
@@ -163,7 +163,7 @@ function orderEdit() {
         return;
     }
     var rowData = $("#jqGrid").jqGrid("getRowData", id);
-    $('.modal-title').html('Order Editing');
+    $('.modal-title').html('订单编辑');
     $('#orderInfoModal').modal('show');
     $("#orderId").val(id);
     $("#userAddress").val(rowData.userAddress);
@@ -195,7 +195,7 @@ $('#saveButton').click(function () {
             if (result.resultCode == 200) {
                 $('#orderInfoModal').modal('hide');
                 Swal.fire({
-                    text: "Save Successful",
+                    text: "保存成功",
                     icon: "success",iconColor:"#1d953f",
                 });
                 reload();
@@ -210,7 +210,7 @@ $('#saveButton').click(function () {
         },
         error: function () {
             Swal.fire({
-                text: "failure of an operation",
+                text: "操作失败",
                 icon: "error",iconColor:"#f05b72",
             });
         }
@@ -228,31 +228,31 @@ function orderCheckDone() {
     var orderNos = '';
     for (i = 0; i < ids.length; i++) {
         var rowData = $("#jqGrid").jqGrid("getRowData", ids[i]);
-        if (rowData.orderStatus != 'paid') {
+        if (rowData.orderStatus != '已支付') {
             orderNos += rowData.orderNo + " ";
         }
     }
     if (orderNos.length > 0 & orderNos.length < 100) {
         Swal.fire({
-            text: orderNos + "The status of the order is not Payment Successful and cannot be fulfilled.",
+            text: orderNos + "订单的状态不是支付成功无法执行配货完成操作",
             icon: "error",iconColor:"#f05b72",
         });
         return;
     }
     if (orderNos.length >= 100) {
         Swal.fire({
-            text: "You have selected too many orders with a status other than Payment Successful to perform the Dispensing Completion operation",
+            text: "你选择了太多状态不是支付成功的订单，无法执行配货完成操作",
             icon: "error",iconColor:"#f05b72",
         });
         return;
     }
     Swal.fire({
-        title: "confirmation pop-up",
-        text: "Are you sure you want to perform the Dispense Complete operation?",
+        title: "确认弹框",
+        text: "确认要执行配货完成操作吗?",
         icon: "warning",iconColor:"#dea32c",
         showCancelButton: true,
-        confirmButtonText: 'yes',
-        cancelButtonText: 'no'
+        confirmButtonText: '确认',
+        cancelButtonText: '取消'
     }).then((flag) => {
             if (flag.value) {
                 $.ajax({
@@ -263,7 +263,7 @@ function orderCheckDone() {
                     success: function (r) {
                         if (r.resultCode == 200) {
                             Swal.fire({
-                                text: "Distribution completed",
+                                text: "配货完成",
                                 icon: "success",iconColor:"#1d953f",
                             });
                             $("#jqGrid").trigger("reloadGrid");
@@ -292,31 +292,31 @@ function orderCheckOut() {
     var orderNos = '';
     for (i = 0; i < ids.length; i++) {
         var rowData = $("#jqGrid").jqGrid("getRowData", ids[i]);
-        if (rowData.orderStatus != 'paid' && rowData.orderStatus != 'Distribution completed') {
+        if (rowData.orderStatus != '已支付' && rowData.orderStatus != '配货完成') {
             orderNos += rowData.orderNo + " ";
         }
     }
     if (orderNos.length > 0 & orderNos.length < 100) {
         Swal.fire({
-            text: orderNos + "The status of the order is not Payment Successful or Dispensing Completed to perform the outbound operation.",
+            text: orderNos + "订单的状态不是支付成功或配货完成无法执行出库操作",
             icon: "error",iconColor:"#f05b72",
         });
         return;
     }
     if (orderNos.length >= 100) {
         Swal.fire({
-            text: "You have selected too many orders with statuses other than Payment Successful or Dispensing Complete to perform an outbound operation",
+            text: "你选择了太多状态不是支付成功或配货完成的订单，无法执行出库操作",
             icon: "error",iconColor:"#f05b72",
         });
         return;
     }
     Swal.fire({
-        title: "confirmation pop-up",
-        text: "Are you sure you want to perform an outbound operation?",
+        title: "确认弹框",
+        text: "确认要执行出库操作吗?",
         icon: "warning",iconColor:"#dea32c",
         showCancelButton: true,
-        confirmButtonText: 'yes',
-        cancelButtonText: 'no'
+        confirmButtonText: '确认',
+        cancelButtonText: '取消'
     }).then((flag) => {
             if (flag.value) {
                 $.ajax({
@@ -327,7 +327,7 @@ function orderCheckOut() {
                     success: function (r) {
                         if (r.resultCode == 200) {
                             Swal.fire({
-                                text: "Successful exit",
+                                text: "出库成功",
                                 icon: "success",iconColor:"#1d953f",
                             });
                             $("#jqGrid").trigger("reloadGrid");
@@ -351,12 +351,12 @@ function closeOrder() {
         return;
     }
     Swal.fire({
-        title: "confirmation pop-up",
-        text: "Are you sure you want to close the order?",
+        title: "确认弹框",
+        text: "确认要关闭订单吗?",
         icon: "warning",iconColor:"#dea32c",
         showCancelButton: true,
-        confirmButtonText: 'yes',
-        cancelButtonText: 'no'
+        confirmButtonText: '确认',
+        cancelButtonText: '取消'
     }).then((flag) => {
             if (flag.value) {
                 $.ajax({
@@ -367,7 +367,7 @@ function closeOrder() {
                     success: function (r) {
                         if (r.resultCode == 200) {
                             Swal.fire({
-                                text: "Closed successfully",
+                                text: "关闭成功",
                                 icon: "success",iconColor:"#1d953f",
                             });
                             $("#jqGrid").trigger("reloadGrid");

@@ -15,13 +15,16 @@ body {
 
 .top .logo img {
     border: none;
-    margin-top: -15px;
+    height: 100px;
+    width: 220px;
+    position: absolute;
+    left: 0px;
 }
 
 .form {
     width: 1130px;
     height: 588px;
-    background: url("../image/login_bg.png") no-repeat center center;
+    background: url("../image/login_bg.png") no-repeat 180px center;
 }
 
 .form .login {
