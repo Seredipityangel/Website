@@ -15,7 +15,7 @@ $(function () {
         rowNum: 10,
         rowList: [10, 20, 50],
         styleUI: 'Bootstrap',
-        loadtext: '信息读取中...',
+        loadtext: 'Information is being read...',
         rownumbers: false,
         rownumWidth: 20,
         autowidth: true,
@@ -55,7 +55,7 @@ function reload() {
 
 function categoryAdd() {
     reset();
-    $('.modal-title').html('分类添加');
+    $('.modal-title').html('Category Add');
     $('#categoryModal').modal('show');
 }
 
@@ -74,7 +74,7 @@ function categoryManage() {
         window.location.href = '/admin/categories?categoryLevel=' + categoryLevel + '&parentId=' + id + '&backParentId=' + parentId;
     } else {
         Swal.fire({
-            text: "无下级分类",
+            text: "No Subordinate Classification",
             icon: "warning",iconColor:"#dea32c",
         });
     }
@@ -91,7 +91,7 @@ function categoryBack() {
         window.location.href = '/admin/categories?categoryLevel=' + categoryLevel + '&parentId=' + backParentId + '&backParentId=0';
     } else {
         Swal.fire({
-            text: "无上级分类",
+            text: "No higher classification",
             icon: "warning",iconColor:"#dea32c",
         });
     }
@@ -105,7 +105,7 @@ $('#saveButton').click(function () {
     var categoryRank = $("#categoryRank").val();
     if (!validCN_ENString2_18(categoryName)) {
         $('#edit-error-msg').css("display", "block");
-        $('#edit-error-msg').html("请输入符合规范的分类名称！");
+        $('#edit-error-msg').html("Please enter the name of the classification that conforms to the specification!");
     } else {
         var data = {
             "categoryName": categoryName,
@@ -134,7 +134,7 @@ $('#saveButton').click(function () {
                 if (result.resultCode == 200) {
                     $('#categoryModal').modal('hide');
                     Swal.fire({
-                        text: "保存成功",
+                        text: "Save Successful",
                         icon: "success",iconColor:"#1d953f",
                     });
                     reload();
@@ -149,7 +149,7 @@ $('#saveButton').click(function () {
             },
             error: function () {
                 Swal.fire({
-                    text: "操作失败",
+                    text: "failure of an operation",
                     icon: "error",iconColor:"#f05b72",
                 });
             }
@@ -164,7 +164,7 @@ function categoryEdit() {
         return;
     }
     var rowData = $("#jqGrid").jqGrid("getRowData", id);
-    $('.modal-title').html('分类编辑');
+    $('.modal-title').html('Category Editor');
     $('#categoryModal').modal('show');
     $("#categoryId").val(id);
     $("#categoryName").val(rowData.categoryName);
@@ -183,12 +183,12 @@ function deleteCagegory() {
         return;
     }
     Swal.fire({
-        title: "确认弹框",
-        text: "确认要删除数据吗?",
+        title: "confirmation pop-up",
+        text: "Are you sure you want to delete the data?",
         icon: "warning",iconColor:"#dea32c",
         showCancelButton: true,
-        confirmButtonText: '确认',
-        cancelButtonText: '取消'
+        confirmButtonText: 'yes',
+        cancelButtonText: 'no'
     }).then((flag) => {
             if (flag.value) {
                 $.ajax({
@@ -199,7 +199,7 @@ function deleteCagegory() {
                     success: function (r) {
                         if (r.resultCode == 200) {
                             Swal.fire({
-                                text: "删除成功",
+                                text: "Deleted successfully",
                                 icon: "success",iconColor:"#1d953f",
                             });
                             $("#jqGrid").trigger("reloadGrid");
