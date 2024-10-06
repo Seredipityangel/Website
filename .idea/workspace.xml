@@ -7,13 +7,9 @@
     <list default="true" id="9290c5d8-ddac-46cc-b8ac-bbd356082d07" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/mybatis.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/mybatis.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_category.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_goods.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_goods_edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_goods_edit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_index_config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_index_config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/admin/dist/js/newbee_mall_user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mall/order-settle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mall/order-settle.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

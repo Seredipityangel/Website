@@ -16,7 +16,7 @@ $(function () {
         rowNum: 20,
         rowList: [20, 50, 80],
         styleUI: 'Bootstrap',
-        loadtext: '信息读取中...',
+        loadtext: 'Information is being read...',
         rownumbers: false,
         rownumWidth: 20,
         autowidth: true,
@@ -44,9 +44,9 @@ $(function () {
     });
 
     function operateFormatter(cellvalue, rowObject) {
-        return "<a href=\'##\' onclick=openOrderItems(" + rowObject.rowId + ")>查看订单信息</a>" +
+        return "<a href=\'##\' onclick=openOrderItems(" + rowObject.rowId + ")>View Order Information</a>" +
             "<br>" +
-            "<a href=\'##\' onclick=openExpressInfo(" + rowObject.rowId + ")>查看收件人信息</a>";
+            "<a href=\'##\' onclick=openExpressInfo(" + rowObject.rowId + ")>View Recipient Information</a>";
     }
 
     function orderStatusFormatter(cellvalue) {
@@ -80,13 +80,13 @@ $(function () {
     function payTypeFormatter(cellvalue) {
         //支付类型:0.无 1.支付宝支付 2.微信支付
         if (cellvalue == 0) {
-            return "无";
+            return "null";
         }
         if (cellvalue == 1) {
-            return "支付宝支付";
+            return "Alipay payment";
         }
         if (cellvalue == 2) {
-            return "微信支付";
+            return "WeChat Payment";
         }
     }
 
@@ -108,11 +108,11 @@ function reload() {
 }
 
 /**
- * 查看订单项信息
+ * 订单项信息
  * @param orderId
  */
 function openOrderItems(orderId) {
-    $('.modal-title').html('订单详情');
+    $('.modal-title').html('Order Details');
     $.ajax({
         type: 'GET',//方法类型
         url: '/admin/order-items/' + orderId,
@@ -122,7 +122,7 @@ function openOrderItems(orderId) {
                 $('#orderItemModal').modal('show');
                 var itemString = '';
                 for (i = 0; i < result.data.length; i++) {
-                    itemString += result.data[i].goodsName + ' x ' + result.data[i].goodsCount + ' 商品编号 ' + result.data[i].goodsId + ";<br>";
+                    itemString += result.data[i].goodsName + ' x ' + result.data[i].goodsCount + ' Product Number ' + result.data[i].goodsId + ";<br>";
                 }
                 $("#orderItemString").html(itemString);
             } else {
@@ -135,7 +135,7 @@ function openOrderItems(orderId) {
         },
         error: function () {
             Swal.fire({
-                text: "操作失败",
+                text: "failure of an operation",
                 icon: "error",iconColor:"#f05b72",
             });
         }

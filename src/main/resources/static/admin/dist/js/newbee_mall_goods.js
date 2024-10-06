@@ -52,15 +52,15 @@ $(function () {
     function goodsSellStatusFormatter(cellvalue) {
         //商品上架状态 0-上架 1-下架
         if (cellvalue == 0) {
-            return "<button type=\"button\" class=\"btn btn-block btn-success btn-sm\" style=\"width: 80%;\">销售中</button>";
+            return "<button type=\"button\" class=\"btn btn-block btn-success btn-sm\" style=\"width: 80%;\">Selling</button>";
         }
         if (cellvalue == 1) {
-            return "<button type=\"button\" class=\"btn btn-block btn-secondary btn-sm\" style=\"width: 80%;\">已下架</button>";
+            return "<button type=\"button\" class=\"btn btn-block btn-secondary btn-sm\" style=\"width: 80%;\">off the shelves</button>";
         }
     }
 
     function coverImageFormatter(cellvalue) {
-        return "<img src='" + cellvalue + "' height=\"80\" width=\"80\" alt='商品主图'/>";
+        return "<img src='" + cellvalue + "' height=\"80\" width=\"80\" alt='picture'/>";
     }
 
 });
