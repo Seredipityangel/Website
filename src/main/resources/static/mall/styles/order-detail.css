@@ -394,7 +394,7 @@ td {
 }
 
 .order-view-box .uc-order-item .order-detail-info .info-table th {
-    width: 80px;
+    width: 180px;
     font-weight: 400;
 }
 
@@ -414,13 +414,13 @@ td {
 }
 
 .order-view-box .uc-order-item .order-detail-total .total-table {
-    width: 255px;
+    width: 300px;
     margin: 0 0 0 auto;
     color: #757575;
 }
 
 .order-view-box .uc-order-item .order-detail-total .total-table th {
-    width: 100px;
+    width: 300px;
     font-weight: 400;
     text-align: right;
 }

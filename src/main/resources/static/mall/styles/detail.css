@@ -81,7 +81,7 @@
 #detail .intro .right {
     width: 620px;
     background: #f8f8f8;
-    padding-bottom: 50px;
+    padding-bottom: 120px;
 }
 
 #detail .intro .right .sub_title {
@@ -116,7 +116,7 @@
 
 #detail .intro .right .order .car {
     height: 50px;
-    width: 156px;
+    width: 245px;
     border: none;
     background: #1baeae;
     color: #fff;

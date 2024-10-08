@@ -19,26 +19,25 @@
         <div class="login_center">
             <div class="login_top">
                 <div class="left fl">Member Login</div>
-                <div class="right fr">You are not our member yet?<a href="register.html" target="_self">Register Now</a></div>
+                <div class="right fl">You are not our member yet? <a href="register.html" target="_self">Register Now</a></div>
                 <div class="clear"></div>
                 <div class="under-line center"></div>
             </div>
             <form id="loginForm" onsubmit="return false;" action="##">
                 <div class="login_main center">
-                    <div class="login-info">Phone Number:&nbsp;<input class="login-info-input" type="text" name="loginName"
+                    <div class="login-info"><span>Phone Number:&nbsp;</span><input class="login-info-input" type="text" name="loginName"
                                                                 id="loginName"
                                                                 placeholder="Please enter your phone number"/>
                     </div>
-                    <div class="login-info">Password:&nbsp;<input class="login-info-input"
+                    <div class="login-info"><span>Password:&nbsp;</span><input class="login-info-input"
                                                                                       id="password"
                                                                                       type="password"
                                                                                       name="password"
                                                                                       placeholder="Please enter your phone number"/></div>
                     <div class="login-info">
-                        Confirm Password:&nbsp;
-                        <input class="login-info-input verify-code" type="text" name="verifyCode"
-                               placeholder="Please enter the verification code" id="verifyCode"/>
-                        <img alt="Click on the image to refresh！" style="top: 16px;position: relative;" th:src="@{/common/mall/kaptcha}"
+                        <span>Security Code:&nbsp;</span>
+                        <input class="login-info-input verify-code" type="text" name="verifyCode" id="verifyCode"/>
+                        <img alt="Click on the image to refresh！" style="top: 14px;position: relative;" th:src="@{/common/mall/kaptcha}"
                              onclick="this.src='/common/mall/kaptcha?d='+new Date()*1">
                     </div>
                 </div>

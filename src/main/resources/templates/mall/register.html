@@ -20,26 +20,26 @@
         <div class="login_center">
             <div class="login_top">
                 <div class="left fl">Member Registration</div>
-                <div class="right fr">Do you already have an account?<a href="login.html" target="_self">sign in</a></div>
+                <div class="right fl">Do you already have an account? <a href="login.html" target="_self">Sign in</a></div>
                 <div class="clear"></div>
                 <div class="under-line center"></div>
             </div>
             <form id="registerForm" onsubmit="return false;" action="##">
                 <div class="login_main center">
-                    <div class="login-info">cell phone number:&nbsp;<input class="login-info-input" type="text" name="loginName"
+                    <div class="login-info"><span>Phone Number:&nbsp;</span><input class="login-info-input" type="text" name="loginName"
                                                                 placeholder="Please enter your cell phone number" id="loginName"/>
                     </div>
-                    <div class="login-info">PIN:&nbsp;<input class="login-info-input"
+                    <div class="login-info"><span>Password:&nbsp;</span><input class="login-info-input"
                                                                                       type="password"
                                                                                       name="password"
                                                                                       id="password"
                                                                                       placeholder="Please enter your password"/>
                     </div>
                     <div class="login-info">
-                        CAPTCHA:;
+                        <span>Security Code:&nbsp;</span>
                         <input class="login-info-input verify-code" type="text" name="verifyCode" id="verifyCode"
                                placeholder="Please enter the verification code"/>
-                        <img alt="Click image to refresh！" style="top: 16px;position: relative;" th:src="@{/common/mall/kaptcha}"
+                        <img alt="Click image to refresh！" style="top: 14px;position: relative;" th:src="@{/common/mall/kaptcha}"
                              onclick="this.src='/common/mall/kaptcha?d='+new Date()*1">
                     </div>
                 </div>

@@ -36,7 +36,7 @@
                     <div class="sub_top fl">
                     </div>
                     <div class="sub_top fl">Good Name</div>
-                    <div class="sub_top fl">Price of Item</div>
+                    <div class="sub_top fl">Price</div>
                     <div class="sub_top fl">Quantity</div>
                     <div class="sub_top fl">Subtotal</div>
                     <div class="sub_top fr">Rig</div>
@@ -78,12 +78,12 @@
                     <th:block th:if="${itemsTotal == 0}">
                         <input class="order_button_c" type="button" name="tip"
                                onclick="tip()"
-                               value="go to the settlement table"/>
+                               value="Make a payment"/>
                     </th:block>
                     <th:block th:unless="${itemsTotal == 0}">
                         <input class="order_button_d" type="button" name="settle"
                                onclick="settle()"
-                               value="go to the settlement table"/>
+                               value="Make a payment"/>
                     </th:block>
                 </div>
                 <div class="clear"></div>
