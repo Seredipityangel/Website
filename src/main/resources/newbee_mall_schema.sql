@@ -42,26 +42,26 @@ CREATE TABLE `tb_newbee_mall_carousel`  (
 -- ----------------------------
 -- Records of tb_newbee_mall_carousel
 -- ----------------------------
-INSERT INTO `tb_newbee_mall_carousel` VALUES (2, 'https://newbee-mall.oss-cn-beijing.aliyuncs.com/images/banner1.png', 'https://www.massey.ac.nz/', 13, 0, '2019-11-29 00:00:00', 0, '2019-11-29 00:00:00', 0);
-INSERT INTO `tb_newbee_mall_carousel` VALUES (5, 'https://newbee-mall.oss-cn-beijing.aliyuncs.com/images/banner2.png', 'https://www.massey.ac.nz/study/library/', 0, 0, '2019-11-29 00:00:00', 0, '2019-11-29 00:00:00', 0);
+INSERT INTO `tb_newbee_mall_carousel` VALUES (2, 'https://newbee-mall.oss-cn-beijing.aliyuncs.com/images/banner1.png', 'https://www.massey.ac.nz/', 13, 0, '2024-11-29 00:00:00', 0, '2024-11-29 00:00:00', 0);
+INSERT INTO `tb_newbee_mall_carousel` VALUES (5, 'https://newbee-mall.oss-cn-beijing.aliyuncs.com/images/banner2.png', 'https://www.massey.ac.nz/study/library/', 0, 0, '2024-11-29 00:00:00', 0, '2024-11-29 00:00:00', 0);
 
 -- ----------------------------
 -- Table structure for tb_newbee_mall_goods_category
 -- ----------------------------
 DROP TABLE IF EXISTS `tb_newbee_mall_goods_category`;
 CREATE TABLE `tb_newbee_mall_goods_category`  (
-  `category_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Classify id',
-  `category_level` tinyint NOT NULL DEFAULT 0 COMMENT 'Level of classification(1-Primary classification 2-secondary classification 3-thirdly classification)',
+`category_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Classify id',
+  `category_level` tinyint(4) NOT NULL DEFAULT 0 COMMENT 'Level of classification(1-Primary classification 2-secondary classification 3-thirdly classification)',
   `parent_id` bigint(20) NOT NULL DEFAULT 0 COMMENT 'The parent category id',
-  `category_name` varchar(100) NOT NULL COMMENT 'Category Name',
+  `category_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'Category Name',
   `category_rank` int(11) NOT NULL DEFAULT 0 COMMENT 'Ranking value(the first field is larger)',
-  `is_deleted` tinyint NOT NULL DEFAULT 0 COMMENT 'Delete identification field(0-not delete 1-have deleted)',
-  `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Creating time',
+  `is_deleted` tinyint(4) NOT NULL DEFAULT 0 COMMENT 'Delete identification field(0-not delete 1-have deleted)',
+  `create_time` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Creating time',
   `create_user` int(11) NOT NULL DEFAULT 0 COMMENT 'Creator id',
-  `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'modification time',
+  `update_time` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Modification time',
   `update_user` int(11) NULL DEFAULT 0 COMMENT 'Modifier id',
   PRIMARY KEY (`category_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 107 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of tb_newbee_mall_goods_category
@@ -165,7 +165,7 @@ INSERT INTO `tb_newbee_mall_goods_category` VALUES (106, 3, 83, 'Facial Mask', 0
 -- ----------------------------
 DROP TABLE IF EXISTS `tb_newbee_mall_goods_info`;
 CREATE TABLE `tb_newbee_mall_goods_info`  (
-  `goods_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Commodity table main key id',
+`goods_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Commodity table main key id',
   `goods_name` varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'Good name',
   `goods_intro` varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'Good profile',
   `goods_category_id` bigint(20) NOT NULL DEFAULT 0 COMMENT 'Associative classification id',
@@ -187,166 +187,7 @@ CREATE TABLE `tb_newbee_mall_goods_info`  (
 -- ----------------------------
 -- Records of tb_newbee_mall_goods_info
 -- ----------------------------
-INSERT INTO `tb_newbee_mall_goods_info` (`goods_id`, `goods_name`, `goods_intro`, `goods_category_id`, `goods_cover_img`, `goods_carousel`, `goods_detail_content`, `original_price`, `selling_price`, `stock_num`, `tag`, `goods_sell_status`, `create_user`, `create_time`, `update_user`, `update_time`)
-VALUES
-    (10003,'MUJI Basic skin toner','Moisture type 400ml',0,'/goods-img/87446ec4-e534-4b49-9f7d-9bea34665284.jpg','/goods-img/87446ec4-e534-4b49-9f7d-9bea34665284.jpg','<p>Product introduction loading...</p>',100,100,1000,'',1,0,'2019-09-18 13:18:47',0,'2020-10-13 10:41:59'),
-    (10004,'MUJI Soft cleansing foam','120g',0,'/goods-img/45854bdd-2ca5-423c-a609-3d336d9322b4.jpg','/goods-img/45854bdd-2ca5-423c-a609-3d336d9322b4.jpg','<p>Product description is loading...</p>',45,45,999,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10005,'MUJI Basic body lotion','High moisture type 200ml',0,'/goods-img/7614ce78-0ebc-4275-a7cc-d16ad5f5f6ed.jpg','/goods-img/7614ce78-0ebc-4275-a7cc-d16ad5f5f6ed.jpg','<p>Product description is loading...</p>',83,83,998,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10006,'MUJI Basic body lotion','Moisture type 400ml',0,'/goods-img/ef75879d-3d3e-4bab-888d-1e4036491e11.jpg','/goods-img/ef75879d-3d3e-4bab-888d-1e4036491e11.jpg','<p>Product description is loading...</p>',100,100,1000,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10007,'MUJI Basic skin toner','High moisture type 400ml',0,'/goods-img/558422d1-640e-442d-a073-2b2bdd95c4ed.jpg','/goods-img/558422d1-640e-442d-a073-2b2bdd95c4ed.jpg','<p>Product description is loading...</p>',127,127,1000,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10008,'MUJI Basic skin toner','Refreshing 200ml',0,'/goods-img/89660409-78b7-4d47-ae12-f94b3ce9664b.png','/goods-img/89660409-78b7-4d47-ae12-f94b3ce9664b.png','<p>Product description is loading...</p>',70,70,1000,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10009,'MUJI Male','Flannel without side seam pajamas navy blue L',0,'/goods-img/f172c500-21d0-42e3-95ce-aa9b84a2ef49.jpg','/goods-img/f172c500-21d0-42e3-95ce-aa9b84a2ef49.jpg','<p>Product description is loading...</p>',398,199,1000,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10010,'MUJI Basic Moisturizing cleansing foam','200ml',0,'/goods-img/f87bdee1-ed48-4b49-b701-cc44f26a2699.jpg','/goods-img/f87bdee1-ed48-4b49-b701-cc44f26a2699.jpg','<p>Product description is loading...</p>',83,83,1000,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10011,'MUJI Balanced moisturizing toner','Xin Feng Selected',0,'/goods-img/16230038-bf86-4d4e-a11f-954b9ee4bab2.jpg','/goods-img/16230038-bf86-4d4e-a11f-954b9ee4bab2.jpg','<p>Product description is loading...</p>',130,65,1000,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10012,'MUJI Gel ink ballpoint pen','Blue-black',0,'/goods-img/a952ecce-32e7-474e-9c1b-943962e0a580.jpg','/goods-img/a952ecce-32e7-474e-9c1b-943962e0a580.jpg','<p>Product description is loading...</p>',8,5,1000,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10013,'MUJI Balanced moisturizing cream','50g',0,'/goods-img/904c8aa1-0257-49e8-ad89-f48d2462db21.jpg','/goods-img/904c8aa1-0257-49e8-ad89-f48d2462db21.jpg','<p>Product description is loading...</p>',130,65,1000,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10014,'MUJI Basic body lotion','Refreshing type 200ml',0,'/goods-img/d66b6e0e-48d4-4503-8dd6-43b3c71f52a4.png','/goods-img/d66b6e0e-48d4-4503-8dd6-43b3c71f52a4.png','<p>Product description is loading...</p>',70,70,1000,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10015,'MUJI Balanced moisturizing cream','100g',0,'/goods-img/d0d8f6d1-1f2d-49f8-9099-0cdd94833581.jpg','/goods-img/d0d8f6d1-1f2d-49f8-9099-0cdd94833581.jpg','<p>Product description is loading...</p>',85,42,1000,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10016,'MUJI Basic body lotion','200ml',0,'/goods-img/e553f566-5dc4-4648-be58-fd7112a47b10.jpg','/goods-img/e553f566-5dc4-4648-be58-fd7112a47b10.jpg','<p>Product description is loading...</p>',61,61,1000,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10017,'MUJI Portable aromatherapy machine','Xin Feng Selected',0,'/goods-img/a9c0d929-6f0b-4bc7-819c-e5015f447a9e.jpg','/goods-img/a9c0d929-6f0b-4bc7-819c-e5015f447a9e.jpg','<p>Product description is loading...</p>',200,200,1000,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10018,'MUJI Women''s','Thick cotton striped long-sleeve T-shirt White * Stripes L',0,'/goods-img/38d5f694-2236-415d-80c8-4a1695e92d4e.jpg','/goods-img/38d5f694-2236-415d-80c8-4a1695e92d4e.jpg','<p>Product description is loading...</p>',198,70,1000,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10019,'MUJI Polypropylene makeup case 1/2','Translucent approx. 150x220x86mm',0,'/goods-img/fe34c09d-fb36-4995-8a8e-1e2a733e06a9.jpg','/goods-img/fe34c09d-fb36-4995-8a8e-1e2a733e06a9.jpg','<p>Product description is loading...</p>',70,70,1000,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10020,'MUJI Portable aromatherapy machine','Xin Feng Selected',0,'/goods-img/2f5b68fb-f115-4be8-b88b-f8cc10780560.jpg','/goods-img/2f5b68fb-f115-4be8-b88b-f8cc10780560.jpg','<p>Product description is loading...</p>',200,200,1000,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10021,'MUJI A needle-less stapler','Xin Feng Selected',0,'/goods-img/cf19de8b-e94e-4513-aecd-a0b5c976b738.jpg','/goods-img/cf19de8b-e94e-4513-aecd-a0b5c976b738.jpg','<p>Product description is loading...</p>',52,52,1000,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10022,'MUJI plastic eraser','Black Small',0,'/goods-img/d4f3299d-d526-4a81-ae9f-3b53e735075e.jpg','/goods-img/d4f3299d-d526-4a81-ae9f-3b53e735075e.jpg','<p>Product description is loading...</p>',4,4,1000,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10023,'MUJI Large volume base lotion/High moisture type','400ml',0,'/goods-img/ea92b50a-67ba-4279-a71a-4e52e6a3219c.jpg','/goods-img/ea92b50a-67ba-4279-a71a-4e52e6a3219c.jpg','<p>Product description is loading...</p>',140,140,1000,'',0,0,'2024-09-18 13:18:47',0,'2024-10-13 10:41:59'),
-    (10024,'MUJI Basic skin toner','Moisturizing type 400ml',0,'/goods-img/beb26b1b-7a73-48c2-a9f7-727ad92401f6.jpg','/goods-img/beb26b1b-7a73-48c2-a9f7-727ad92401f6.jpg','<p>Product description is loading...</p>',100,100,1000,'',0,0,'2024-09-18 13:18:52',0,'2024-10-13 10:41:59'),
-    (10025,'MUJI Soft cleansing foam','120g',0,'/goods-img/bf1dc4d1-acc2-40c8-8091-1c6f35988643.jpg','/goods-img/bf1dc4d1-acc2-40c8-8091-1c6f35988643.jpg','<p>Product description is loading...</p>',45,45,1000,'',0,0,'2024-09-18 13:18:52',0,'2024-10-13 10:41:59'),
-    (10026,'MUJI Basic body lotion','High moisture type 200ml',0,'/goods-img/4059caa9-e0b3-4ac3-a494-b9e4c47e0185.jpg','/goods-img/4059caa9-e0b3-4ac3-a494-b9e4c47e0185.jpg','<p>Product description is loading...</p>',83,83,1000,'',0,0,'2024-09-18 13:18:52',0,'2024-10-13 10:41:59'),
-    (10027,'MUJI Basic body lotion','Moisturizing Type 400ml',0,'/goods-img/a4a4c981-da0f-4228-bcc7-97d970dc619c.jpg','/goods-img/a4a4c981-da0f-4228-bcc7-97d970dc619c.jpg','<p>Product description is loading...</p>',100,100,1000,'',0,0,'2024-09-18 13:18:52',0,'2024-10-13 10:41:59'),
-    (10028,'MUJI Basic moisturizing toner','High moisture type 400ml',0,'/goods-img/98b5c5b5-cc75-4dfb-8ec4-0a7f42af6183.jpg','/goods-img/98b5c5b5-cc75-4dfb-8ec4-0a7f42af6183.jpg','<p>Product description is loading...</p>',127,127,1000,'',0,0,'2024-09-18 13:18:52',0,'2024-10-13 10:41:59'),
-    (10029,'MUJI Basic moisturizing toner','Refreshing Type 200ml',0,'/goods-img/71d1f469-b77b-473a-a31a-78fc97859b3a.png','/goods-img/71d1f469-b77b-473a-a31a-78fc97859b3a.png','<p>Product description is loading...</p>',70,70,1000,'',0,0,'2024-09-18 13:18:52',0,'2024-10-13 10:41:59'),
-    (10030,'MUJI Men\'s','Seamless Flannel Pajamas Navy Blue L',0,'/goods-img/68bfbfd9-bc28-429a-ab2c-7fa62205ed7e.jpg','/goods-img/68bfbfd9-bc28-429a-ab2c-7fa62205ed7e.jpg','<p>Product description is loading...</p>',398,199,1000,'',0,0,'2024-09-18 13:18:52',0,'2024-10-13 10:41:59'),
-    (10031,'MUJI Basic moisturizing cleansing foam','200ml',0,'/goods-img/679eb5a8-7689-4620-b072-63daeb8eb73a.jpg','/goods-img/679eb5a8-7689-4620-b072-63daeb8eb73a.jpg','<p>Product description is loading...</p>',83,83,1000,'',0,0,'2024-09-18 13:18:52',0,'2024-10-13 10:41:59'),
-    (10032,'MUJI Balanced high moisture toner','Xin Feng Selected',0,'/goods-img/eb13afc6-8898-4a50-9f93-06dd2593c313.jpg','/goods-img/eb13afc6-8898-4a50-9f93-06dd2593c313.jpg','<p>Product description is loading...</p>',130,65,1000,'',0,0,'2024-09-18 13:18:52',0,'2024-10-13 10:41:59'),
-    (10033,'MUJI Gel ink pen','Blue Black',0,'/goods-img/85a893fe-c971-4f0b-aa0f-4c24b65b1c75.jpg','/goods-img/85a893fe-c971-4f0b-aa0f-4c24b65b1c75.jpg','<p>Product description is loading...</p>',8,5,1000,'',0,0,'2024-09-18 13:18:52',0,'2024-10-13 10:41:59'),
-    (10034,'MUJI Balanced moisturizing cream','50g',0,'/goods-img/65aed381-cde0-44ed-b345-5ebf1d74a13b.jpg','/goods-img/65aed381-cde0-44ed-b345-5ebf1d74a13b.jpg','<p>Product description is loading...</p>',130,65,1000,'',0,0,'2024-09-18 13:18:52',0,'2024-10-13 10:41:59'),
-    (10035,'MUJI Basic body lotion','Refreshing type 200ml',0,'/goods-img/1e09e1ed-435b-4f08-84d0-d88308a315ee.png','/goods-img/1e09e1ed-435b-4f08-84d0-d88308a315ee.png','<p>Product description is loding...</p>',70,70,1000,'',0,0,'2019-09-18 13:18:52',0,'2020-10-13 10:41:59'),
-    (10036,'MUJI Balanced cleansing foam','100g',0,'/goods-img/dbc2ea2a-ee03-4366-a35e-6ebe66d02399.jpg','/goods-img/dbc2ea2a-ee03-4366-a35e-6ebe66d02399.jpg','<p>Product description is loading...</p>',85,42,1000,'',0,0,'2019-09-18 13:18:52',0,'2020-10-13 10:41:59'),
-    (10037,'MUJI Basic body lotion','Moisturizing type 200ml',0,'/goods-img/9389914c-2860-4a75-b603-53ed5a4e0509.jpg','/goods-img/9389914c-2860-4a75-b603-53ed5a4e0509.jpg','<p>Product description is loading...</p>',61,61,1000,'',0,0,'2019-09-18 13:18:52',0,'2020-10-13 10:41:59'),
-    (10038,'MUJI Portable aromatherapy machine','Xin Feng Selected',0,'/goods-img/6ab010e2-5f1e-4512-bd22-4c2550915d4c.jpg','/goods-img/6ab010e2-5f1e-4512-bd22-4c2550915d4c.jpg','<p>Product description is loading...</p>',200,200,1000,'',0,0,'2019-09-18 13:18:52',0,'2020-10-13 10:41:59'),
-    (10039,'MUJI Women''s','Thick cotton striped long-sleeve T-shirt White*Horizontal stripe L',0,'/goods-img/fab00903-7ff6-40ee-a9bc-3fbc2f0f0ffc.jpg','/goods-img/fab00903-7ff6-40ee-a9bc-3fbc2f0f0ffc.jpg','<p>Product description is loading...</p>',198,70,1000,'',0,0,'2019-09-18 13:18:52',0,'2020-10-13 10:41:59'),
-    (10040,'MUJI Polypropylene makeup case 1/2','Translucent approx. 150x220x86mm',0,'/goods-img/ab725751-adb8-452a-86dd-cb3d21da794e.jpg','/goods-img/ab725751-adb8-452a-86dd-cb3d21da794e.jpg','<p>Product description is loading...</p>',30,30,1000,'',0,0,'2019-09-18 13:18:52',0,'2020-10-13 10:41:59'),
-	(10041,'MUJI propathene', 'Pencil Case Large / Approx. 184*64*25㎜', 0, '/goods-img/9f623290-928c-498f-89e6-171372b394f2.jpg', '/goods-img/9f623290-928c-498f-89e6-171372b394f2.jpg', '<p>Product description loading...</p>', 18, 18, 1000, '', 0, 0, '2019-09-18 13:18:52', 0, '2020-10-13 10:41:59'),
-    (10042,'MUJI A needle-less stapler', 'Xinbee Selected', 0, '/goods-img/a7221688-3c37-4ac0-b07e-d8bde1525d1e.jpg', '/goods-img/a7221688-3c37-4ac0-b07e-d8bde1525d1e.jpg', '<p>Product description loading...</p>', 52, 52, 1000, '', 0, 0, '2019-09-18 13:18:52', 0, '2020-10-13 10:41:59'),
-    (10043,'MUJI plastic eraser', 'Black Small', 0, '/goods-img/75e26af4-8f15-43f2-9407-50d641f82acb.jpg', '/goods-img/75e26af4-8f15-43f2-9407-50d641f82acb.jpg', '<p>Product description loading...</p>', 4, 4, 1000, '', 0, 0, '2019-09-18 13:18:52', 0, '2020-10-13 10:41:59'),
-    (10044,'MUJI Large volume base lotion / High moisture type', '400ml', 0, '/goods-img/69d55773-1b43-497b-af18-90f2cec7c93a.jpg', '/goods-img/69d55773-1b43-497b-af18-90f2cec7c93a.jpg', '<p>Product description loading...</p>', 140, 140, 1000, '', 0, 0, '2019-09-18 13:18:52', 0, '2020-10-13 10:41:59'),
-    (10045,'MUJI Brush Pen', 'Black', 0, '/goods-img/419ddb3c-1793-49c1-8953-77409a5d5bce.jpg', '/goods-img/419ddb3c-1793-49c1-8953-77409a5d5bce.jpg', '<p>Product description loading...</p>', 20, 20, 1000, '', 0, 0, '2019-09-18 13:19:02', 0, '2020-10-13 10:41:59'),
-    (10046,'MUJI plastic eraser', 'White Small', 0, '/goods-img/e53cc7af-f81c-4752-aec8-007e807b2fc1.jpg', '/goods-img/e53cc7af-f81c-4752-aec8-007e807b2fc1.jpg', '<p>Product description loading...</p>', 4, 4, 1000, '', 0, 0, '2019-09-18 13:19:02', 0, '2020-10-13 10:41:59'),
-    (10047,'MUJI Men''s', 'Seamless Flannel Pajamas Deep Navy Blue X Plaid L', 0, '/goods-img/481e8994-20cb-4f6c-8b77-4eb8509eb3b9.jpg', '/goods-img/481e8994-20cb-4f6c-8b77-4eb8509eb3b9.jpg', '<p>Product description loading...</p>', 398, 199, 1000, '', 0, 0, '2019-09-18 13:19:02', 0, '2020-10-13 10:41:59'),
-    (10048, 'MUJI Highlighter', 'Blue', 0, '/goods-img/012ebf2d-8c96-4641-8782-eab01c85d98f.jpg', '/goods-img/012ebf2d-8c96-4641-8782-eab01c85d98f.jpg', '<p>Product description loading...</p>', 10, 10, 1000, '', 0, 0, '2019-09-18 13:19:02', 0, '2020-10-13 10:41:59'),
-    (10049, 'MUJI Steel Nail Clippers Small', 'Xinbee Selected', 0, '/goods-img/2c150720-4b3a-4d9e-9ce6-77eb4998e1f1.jpg', '/goods-img/2c150720-4b3a-4d9e-9ce6-77eb4998e1f1.jpg', '<p>Product description loading...</p>', 42, 42, 1000, '', 0, 0, '2019-09-18 13:19:02', 0, '2020-10-13 10:41:59'),
-    (10050, 'MUJI Long-form Poetry Paper-type Notepad', 'White 40 Sheets 14 Lines', 0, '/goods-img/e7d2ea3f-6703-4fcc-bbb4-ad9ef43a0ae2.jpg', '/goods-img/e7d2ea3f-6703-4fcc-bbb4-ad9ef43a0ae2.jpg', '<p>Product description loading...</p>', 10, 10, 1000, '', 0, 0, '2019-09-18 13:19:02', 0, '2020-10-13 10:41:59'),
-    (10051, 'MUJI PET Spray Bottle 100ml', 'Xin Feng Selection', 0, '/goods-img/0ec8c4a7-aedc-464d-9e23-d3e4acafdc73.jpg', '/goods-img/0ec8c4a7-aedc-464d-9e23-d3e4acafdc73.jpg', '<p>Product description loading...</p>', 30, 30, 1000, '', 0, 0, '2024-09-18 13:19:02', 0, '2024-10-13 10:41:59'),
-    (10052, 'MUJI Plastic Eraser', 'Black Large', 0, '/goods-img/ce8ff43c-e8b4-4c52-9de1-c983c97068f6.jpg', '/goods-img/ce8ff43c-e8b4-4c52-9de1-c983c97068f6.jpg', '<p>Product description loading...</p>', 7, 7, 1000, '', 0, 0, '2024-09-18 13:19:02', 0, '2024-10-13 10:41:59'),
-    (10053, 'MUJI Highlighter', 'Yellow', 0, '/goods-img/79b38a89-b02a-4fd1-80c4-5cb426028536.jpg', '/goods-img/79b38a89-b02a-4fd1-80c4-5cb426028536.jpg', '<p>Product description loading...</p>', 10, 10, 1000, '', 0, 0, '2024-09-18 13:19:02', 0, '2024-10-13 10:41:59'),
-    (10054, 'MUJI Concealer Stick', 'Natural Color', 0, '/goods-img/ffa69c8e-f57f-4ef4-a2a0-3695d538d6c5.jpg', '/goods-img/ffa69c8e-f57f-4ef4-a2a0-3695d538d6c5.jpg', '<p>Product description loading...</p>', 42, 42, 1000, '', 0, 0, '2024-09-18 13:19:02', 0, '2024-10-13 10:41:59'),
-    (10055, 'MUJI Toilet Brush with Case', 'White', 0, '/goods-img/9dd1cdfb-e7f9-4d3c-98df-933e2bc3f9a8.jpg', '/goods-img/9dd1cdfb-e7f9-4d3c-98df-933e2bc3f9a8.jpg', '<p>Product description loading...</p>', 70, 70, 1000, '', 0, 0, '2024-09-18 13:19:02', 0, '2024-10-13 10:41:59'),
-    (10056, 'MUJI Heat-resistant Glass Pot (Large)', 'Transparent', 0, '/goods-img/0bc4f5ac-d601-421d-8131-81958a195705.jpg', '/goods-img/0bc4f5ac-d601-421d-8131-81958a195705.jpg', '<p>Product description loading...</p>', 150, 150, 1000, '', 0, 0, '2024-09-18 13:19:02', 0, '2024-10-13 10:41:59'),
-    (10057, 'MUJI Women''s Plain Short-sleeve Shirt', 'Navy Blue M', 0, '/goods-img/76b6a573-12a0-4c63-b2ae-e7193aff0fc8.jpg', '/goods-img/76b6a573-12a0-4c63-b2ae-e7193aff0fc8.jpg', '<p>Product description loading...</p>', 198, 59, 1000, '', 0, 0, '2024-09-18 13:19:02', 0, '2024-10-13 10:41:59'),
-    (10058, 'MUJI Basic Moisturizing Lotion', 'Refreshing Type 50ml', 0, '/goods-img/af7f9b21-d782-4bad-8b1a-d86bbc4d224e.png', '/goods-img/af7f9b21-d782-4bad-8b1a-d86bbc4d224e.png', '<p>Product description loading...</p>', 28, 22, 1000, '', 0, 0, '2024-09-18 13:19:02', 0, '2024-10-13 10:41:59'),
-    (10059, 'MUJI Men''s Flannel Pajamas', 'Charcoal Gray M', 0, '/goods-img/26e0c424-f22d-4d3d-9bd6-a7958a346ff9.jpg', '/goods-img/26e0c424-f22d-4d3d-9bd6-a7958a346ff9.jpg', '<p>Product description loading...</p>', 398, 199, 1000, '', 0, 0, '2024-09-18 13:19:02', 0, '2024-10-13 10:41:59'),
-    (10060, 'MUJI PET Refillable Bottle', 'Xin Feng Selection', 0, '/goods-img/24bf1630-0339-4c22-ad19-37152c561e71.jpg', '/goods-img/24bf1630-0339-4c22-ad19-37152c561e71.jpg', '<p>Product description loading...</p>', 15, 15, 1000, '', 0, 0, '2024-09-18 13:19:02', 0, '2024-10-13 10:41:59'),
-	(10061, 'MUJI Women''s', 'Seamless Flannel Pajamas Gray M', 0, '/goods-img/e8e26306-0521-4843-9e07-70ebd2fa6405.jpg', '/goods-img/e8e26306-0521-4843-9e07-70ebd2fa6405.jpg', '<p>Loading product details...</p>', 398, 199, 1000, '', 0, 0, '2024-09-18 13:19:02', 0, '2024-10-13 10:41:59'),
-    (10062, 'MUJI PE Spray Bottle', 'Xinfeng Selected', 0, '/goods-img/9b3af7c2-57f5-48a7-bea5-603b2d145000.jpg', '/goods-img/9b3af7c2-57f5-48a7-bea5-603b2d145000.jpg', '<p>Loading product details...</p>', 10, 10, 1000, '', 0, 0, '2024-09-18 13:19:02', 0, '2024-10-13 10:41:59'),
-    (10063, 'MUJI Basic Moisturizing Toner', 'Moisturizing Type 200ml', 0, '/goods-img/7577f3e0-f48b-47a9-96b7-de405a6aaf95.png', '/goods-img/7577f3e0-f48b-47a9-96b7-de405a6aaf95.png', '<p>Loading product details...</p>', 70, 70, 1000, '', 0, 0, '2024-09-18 13:19:02', 0, '2024-10-13 10:41:59'),
-    (10064, 'MUJI Men''s', 'Quick-Dry Cool Mesh Knit V-Neck Short-Sleeve T-shirt Black L', 0, '/goods-img/cce2af31-07ea-4744-8d01-16dd01d68e5b.jpg', '/goods-img/cce2af31-07ea-4744-8d01-16dd01d68e5b.jpg', '<p>Loading product details...</p>', 98, 29, 1000, '', 0, 0, '2024-09-18 13:19:02', 0, '2024-10-13 10:41:59'),
-    (10065, 'MUJI Polypropylene Makeup Case', 'Semi-Transparent Approx. 150x220x169mm', 0, '/goods-img/6dc279ac-fef0-401c-8604-b18dc9a9f7ab.jpg', '/goods-img/6dc279ac-fef0-401c-8604-b18dc9a9f7ab.jpg', '<p>Loading product details...</p>', 40, 40, 1000, '', 0, 0, '2024-09-18 13:19:02', 0, '2024-10-13 10:41:59'),
-    (10066, 'MUJI Loose Powder Small', 'Natural Color', 0, '/goods-img/94764fac-f4ad-4ee8-8d26-21af0c09ea76.jpg', '/goods-img/94764fac-f4ad-4ee8-8d26-21af0c09ea76.jpg', '<p>Loading product details...</p>', 60, 60, 1000, '', 0, 0, '2024-09-18 13:19:02', 0, '2024-10-13 10:41:59'),
-    (10067, 'MUJI Calligraphy Brush', 'Black', 0, '/goods-img/9cd07460-8c0b-49e5-9741-5015a3576e8e.jpg', '/goods-img/9cd07460-8c0b-49e5-9741-5015a3576e8e.jpg', '<p>Loading product details...</p>', 20, 20, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10068, 'MUJI Plastic Eraser', 'White Small', 0, '/goods-img/70529ced-527a-4b46-aafa-874107ff9ea5.jpg', '/goods-img/70529ced-527a-4b46-aafa-874107ff9ea5.jpg', '<p>Loading product details...</p>', 4, 4, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10069, 'MUJI Men''s', 'Seamless Flannel Pajamas Dark Navy Check L', 0, '/goods-img/174ec60d-7d2b-4043-a7a6-7383c3de1a11.jpg', '/goods-img/174ec60d-7d2b-4043-a7a6-7383c3de1a11.jpg', '<p>Loading product details...</p>', 398, 199, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10070, 'MUJI Highlighter', 'Blue', 0, '/goods-img/eef29d44-17f5-41dd-b0ba-c6f63d7bdac3.jpg', '/goods-img/eef29d44-17f5-41dd-b0ba-c6f63d7bdac3.jpg', '<p>Loading product details...</p>', 10, 10, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10071, 'MUJI Steel Nail Clipper Small', 'Xin Feng Selected', 0, '/goods-img/f9964432-a9b7-45c2-ac6d-680130c2d7a7.jpg', '/goods-img/f9964432-a9b7-45c2-ac6d-680130c2d7a7.jpg', '<p>Product description loading...</p>', 42, 42, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10072, 'MUJI Long Striped Notepad', 'White 40 sheets, 14 lines', 0, '/goods-img/da1e4523-adb4-48e4-afa5-313346187690.jpg', '/goods-img/da1e4523-adb4-48e4-afa5-313346187690.jpg', '<p>Product description loading...</p>', 10, 10, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10073, 'MUJI PET Spray Bottle 100ml', 'Xin Feng Selected', 0, '/goods-img/7f1eec3d-d8e5-4a18-a1a9-b81876dcaaf5.jpg', '/goods-img/7f1eec3d-d8e5-4a18-a1a9-b81876dcaaf5.jpg', '<p>Product description loading...</p>', 30, 30, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10074, 'MUJI Plastic Eraser', 'Black Large', 0, '/goods-img/1ca16211-2b80-4006-ab60-e1a3cab4218c.jpg', '/goods-img/1ca16211-2b80-4006-ab60-e1a3cab4218c.jpg', '<p>Product description loading...</p>', 7, 7, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10075, 'MUJI Highlighter', 'Yellow', 0, '/goods-img/56eec806-2af3-4136-a9bf-2333455339e7.jpg', '/goods-img/56eec806-2af3-4136-a9bf-2333455339e7.jpg', '<p>Product description loading...</p>', 10, 10, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10076, 'MUJI Concealer Stick', 'Natural color', 0, '/goods-img/593b65a7-feae-45aa-837e-47d58bb27474.jpg', '/goods-img/593b65a7-feae-45aa-837e-47d58bb27474.jpg', '<p>Product description loading...</p>', 42, 42, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10077, 'MUJI Toilet Brush with Holder', 'White', 0, '/goods-img/a9983f71-d818-459d-ad59-bbdd26bb533b.jpg', '/goods-img/a9983f71-d818-459d-ad59-bbdd26bb533b.jpg', '<p>Product description loading...</p>', 70, 70, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10078, 'MUJI Heat-resistant Glass Pot Large', 'Transparent', 0, '/goods-img/7f89c29e-d888-4ee0-92af-ca713a7871a4.jpg', '/goods-img/7f89c29e-d888-4ee0-92af-ca713a7871a4.jpg', '<p>Product description loading...</p>', 150, 150, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10079, 'MUJI Women''s Short-sleeve Plain Shirt', 'Navy Blue M', 0, '/goods-img/0b1e57bf-b4fd-40df-9832-4749d7d69db9.jpg', '/goods-img/0b1e57bf-b4fd-40df-9832-4749d7d69db9.jpg', '<p>Product description loading...</p>', 198, 59, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10080, 'MUJI Basic Moisturizing Lotion', 'Refreshing Type 50ml', 0, '/goods-img/9b4af7cf-235a-4742-bdc3-9e8e656f245c.png', '/goods-img/9b4af7cf-235a-4742-bdc3-9e8e656f245c.png', '<p>Product description loading...</p>', 28, 22, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10081, 'MUJI Men''s', 'No-Side-Seam Flannel Pajamas Charcoal Gray M', 0, '/goods-img/8ddfc2de-3da3-4fad-86aa-7c570cb55212.jpg', '/goods-img/8ddfc2de-3da3-4fad-86aa-7c570cb55212.jpg', '<p>Product details loading...</p>', 398, 199, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10082, 'MUJI PET Refillable Bottle', 'Xinfeng Selection', 0, '/goods-img/e62d04e9-3ae2-431c-8538-becda89e0e84.jpg', '/goods-img/e62d04e9-3ae2-431c-8538-becda89e0e84.jpg', '<p>Product details loading...</p>', 15, 15, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10083, 'MUJI Women''s', 'No-Side-Seam Flannel Pajamas Gray M', 0, '/goods-img/3078143f-1cdd-4f66-951b-2cf08af8c826.jpg', '/goods-img/3078143f-1cdd-4f66-951b-2cf08af8c826.jpg', '<p>Product details loading...</p>', 398, 199, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10084, 'MUJI PE Refillable Bottle', 'Xinfeng Selection', 0, '/goods-img/97aa8872-26df-473a-b0d7-f5021776cb52.jpg', '/goods-img/97aa8872-26df-473a-b0d7-f5021776cb52.jpg', '<p>Product details loading...</p>', 10, 10, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10085, 'MUJI Basic Moisturizing Lotion', 'Moisturizing Type 200ml', 0, '/goods-img/954da201-0cbb-45d1-9cd1-17ce4d24cfb4.png', '/goods-img/954da201-0cbb-45d1-9cd1-17ce4d24cfb4.png', '<p>Product details loading...</p>', 70, 70, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10086, 'MUJI Men’s', 'Quick-Dry Cooling Mesh Knit V-Neck Short-Sleeve T-Shirt Black L', 0, '/goods-img/b584ea09-7aae-422e-8435-fdc38c948434.jpg', '/goods-img/b584ea09-7aae-422e-8435-fdc38c948434.jpg', '<p>Product details loading...</p>', 98, 29, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10087, 'MUJI Polypropylene Makeup Case', 'Translucent Approx. 150x220x169mm', 0, '/goods-img/a0a45b44-82c9-4a58-a972-304bed0632bb.jpg', '/goods-img/a0a45b44-82c9-4a58-a972-304bed0632bb.jpg', '<p>Product details loading...</p>', 40, 40, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10088, 'MUJI Loose Powder Small Natural Color', 'Xinfeng Selection', 0, '/goods-img/a1b8ff33-ec01-494e-a1db-fb5158f3c168.jpg', '/goods-img/a1b8ff33-ec01-494e-a1db-fb5158f3c168.jpg', '<p>Product details loading...</p>', 60, 60, 1000, '', 0, 0, '2024-09-18 13:19:07', 0, '2024-10-13 10:41:59'),
-    (10089, 'MUJI Highlighter', 'Pink', 0, '/goods-img/c5d6d952-c81b-436a-a345-feb4c5a20a7d.jpg', '/goods-img/c5d6d952-c81b-436a-a345-feb4c5a20a7d.jpg', '<p>Product details loading...</p>', 10, 10, 1000, '', 0, 0, '2024-09-18 13:19:17', 0, '2024-10-13 10:41:59'),
-    (10090, 'MUJI PET Small Refillable Bottle 100ml', 'Xinfeng Selection', 0, '/goods-img/2ffe59f3-559f-4e6f-810d-1b6fa4ac04e1.jpg', '/goods-img/2ffe59f3-559f-4e6f-810d-1b6fa4ac04e1.jpg', '<p>Product details loading...</p>', 30, 30, 1000, '', 0, 0, '2024-09-18 13:19:17',0, '2024-10-13 10:41:59'),
-    (10091,'MUJI Basic Moisturizing Facial Cleanser','150ml',0,'/goods-img/1f24d75a-0468-471a-a608-bd6788f4c1a1.jpg','/goods-img/1f24d75a-0468-471a-a608-bd6788f4c1a1.jpg','<p>Product description loading...</p>',74,74,1000,'',0,0,'2024-09-18 13:19:17',0,'2024-10-13 10:41:59'),
-    (10092,'MUJI Basic Moisturizing Cream','Other 50g',0,'/goods-img/86e027b3-8868-4fa5-971b-49e827027e3e.jpg','/goods-img/86e027b3-8868-4fa5-971b-49e827027e3e.jpg','<p>Product description loading...</p>',100,100,1000,'',0,0,'2024-09-18 13:19:17',0,'2024-10-13 10:41:59'),
-    (10093,'MUJI Basic Moisturizing Foam Cleanser (Refill)','180ml',0,'/goods-img/1aea34fa-f45e-4c3c-b73c-da1f92492c95.jpg','/goods-img/1aea34fa-f45e-4c3c-b73c-da1f92492c95.jpg','<p>Product description loading...</p>',69,69,1000,'',0,0,'2024-09-18 13:19:17',0,'2024-10-13 10:41:59'),
-    (10094,'MUJI Moisturizing Cleansing Gel','100g',0,'/goods-img/838fc0cb-b98f-4dca-bd68-581138b21a30.jpg','/goods-img/838fc0cb-b98f-4dca-bd68-581138b21a30.jpg','<p>Product description loading...</p>',100,50,1000,'',0,0,'2024-09-18 13:19:17',0,'2024-10-13 10:41:59'),
-    (10095,'MUJI Small Ultrasonic Aroma Diffuser','Other',0,'/goods-img/30f05c92-a303-4b94-bb5e-22f3c65f3c37.jpg','/goods-img/30f05c92-a303-4b94-bb5e-22f3c65f3c37.jpg','<p>Product description loading...</p>',250,250,1000,'',0,0,'2024-09-18 13:19:17',0,'2024-10-13 10:41:59'),
-    (10096,'MUJI Correction Tape','Other',0,'/goods-img/759427b3-b723-4917-b565-c0ae2003bf02.jpg','/goods-img/759427b3-b723-4917-b565-c0ae2003bf02.jpg','<p>Product description loading...</p>',25,25,1000,'',0,0,'2024-09-18 13:19:17',0,'2024-10-13 10:41:59'),
-    (10097,'MUJI Polypropylene Makeup Case','Small Pencil Case / Approx. 170*51*20mm',0,'/goods-img/734f1604-e687-4cd1-8573-bb00e680e94e.jpg','/goods-img/734f1604-e687-4cd1-8573-bb00e680e94e.jpg','<p>Product description loading...</p>',12,12,1000,'',0,0,'2024-09-18 13:19:17',0,'2024-10-13 10:41:59'),
-    (10098,'MUJI Lotion','50ml',0,'/goods-img/4eed1033-7728-477c-a29d-589bfd3ae3ce.jpg','/goods-img/4eed1033-7728-477c-a29d-589bfd3ae3ce.jpg','<p>Product description loading...</p>',55,27,1000,'',0,0,'2024-09-18 13:19:17',0,'2024-10-13 10:41:59'),
-    (10099,'MUJI Men''s','Cotton Washed Plain Short Sleeve Shirt White L',0,'/goods-img/d3fa11f3-6cfa-4958-b09c-584a62137b4b.jpg','/goods-img/d3fa11f3-6cfa-4958-b09c-584a62137b4b.jpg','<p>Product description loading...</p>',178,89,1000,'',0,0,'2024-09-18 13:19:17',0,'2024-10-13 10:41:59'),
-    (10100,'MUJI Incense/Green','12 Stick Pack',0,'/goods-img/829f2d09-1589-4f63-8376-d347c3cec620.jpg','/goods-img/829f2d09-1589-4f63-8376-d347c3cec620.jpg','<p>Product description loading...</p>',32,32,1000,'',0,0,'2024-09-18 13:19:17',0,'2024-10-13 10:41:59'),
-	(10101,'MUJI Moisturizing Cream 50g','50g',0,'/goods-img/1c70ddcb-ca69-40ed-a263-30880b2e2cac.jpg','/goods-img/1c70ddcb-ca69-40ed-a263-30880b2e2cac.jpg','<p>Product details loading...</p>',159,159,1000,'',0,0,'2024-09-18 13:19:17',0,'2024-10-13 10:41:59'),
-    (10102,'MUJI Smooth Ink Refill','Black',0,'/goods-img/1db10d7c-3429-4ef2-ac41-2991af57f442.jpg','/goods-img/1db10d7c-3429-4ef2-ac41-2991af57f442.jpg','<p>Product details loading...</p>',19,19,1000,'',0,0,'2024-09-18 13:19:17',0,'2024-10-13 10:41:59'),
-    (10103,'MUJI Aluminum Hook/Suction Cup Type_2 Pack Large/Approx. 4.5cm Width x 6cm Height',0,'/goods-img/bd0b92b4-c8ca-453a-b572-b3447083bddf.png','/goods-img/bd0b92b4-c8ca-453a-b572-b3447083bddf.png','<p>Product details loading...</p>',25,25,1000,'',0,0,'2024-09-18 13:19:17',0,'2024-10-13 10:41:59'),
-    (10104,'MUJI Correction Tape','POM Material Refill',0,'/goods-img/98ce17e1-890e-4eaf-856a-7fce8ffebc4c.jpg','/goods-img/98ce17e1-890e-4eaf-856a-7fce8ffebc4c.jpg','<p>Product details loading...</p>',15,15,999,'',0,0,'2024-09-18 13:19:17',0,'2024-10-13 10:41:59'),
-    (10105,'MUJI Acrylic Clipboard','A4/220×310mm',0,'/goods-img/64d4e0b7-cd01-47f6-9081-4c2e7625e4f9.jpg','/goods-img/64d4e0b7-cd01-47f6-9081-4c2e7625e4f9.jpg','<p>Product details loading...</p>',35,35,1000,'',0,0,'2024-09-18 13:19:17',0,'2024-10-13 10:41:59'),
-    (10106,'MUJI Natural Skin-Friendly Foundation Natural Bright Color','Xin Feng Selected',0,'/goods-img/09576fcd-ea01-4b1d-bed4-be96b71f2c4e.jpg','/goods-img/09576fcd-ea01-4b1d-bed4-be96b71f2c4e.jpg','<p>Product details loading...</p>',75,75,1000,'',0,0,'2024-09-18 13:19:17',0,'2024-10-13 10:41:59'),
-    (10107,'MUJI Highlighter','Pink',0,'/goods-img/04a8c325-d296-4f0e-ac6d-8cccba4dc90e.jpg','/goods-img/04a8c325-d296-4f0e-ac6d-8cccba4dc90e.jpg','<p>Product details loading...</p>',10,10,1000,'',0,0,'2024-09-18 13:19:22',0,'2024-10-13 10:41:59'),
-    (10108,'MUJI PET Small Refill Bottle 100ml','Xin Feng Selected',0,'/goods-img/755a34a3-bc3e-4f04-8943-f79860012e78.jpg','/goods-img/755a34a3-bc3e-4f04-8943-f79860012e78.jpg','<p>Product details loading...</p>',30,30,1000,'',0,0,'2024-09-18 13:19:22',0,'2024-10-13 10:41:59'),
-    (10109,'MUJI Basic Moisturizing Cleanser','150ml',0,'/goods-img/e6a986ed-9b83-4649-9e72-3cf676c1f90e.jpg','/goods-img/e6a986ed-9b83-4649-9e72-3cf676c1f90e.jpg','<p>Product details loading...</p>',74,74,1000,'',0,0,'2024-09-18 13:19:22',0,'2024-10-13 10:41:59'),
-    (10110,'MUJI Basic Moisturizing Cream','Others 50g',0,'/goods-img/30036561-a150-4ea7-9106-29bbea278909.jpg','/goods-img/30036561-a150-4ea7-9106-29bbea278909.jpg','<p>Product details loading...</p>',100,100,999,'',0,0,'2024-09-18 13:19:22',0,'2024-10-13 10:41:59'),
-	(10111,'MUJI Basic Moisturizing Cleansing Foam (Refill)','180ml',0,'/goods-img/aa37202c-68eb-4c84-b02c-171b3d11c0e8.jpg','/goods-img/aa37202c-68eb-4c84-b02c-171b3d11c0e8.jpg','<p>Product details loading...</p>',69,69,1000,'',0,0,'2024-09-18 13:19:22',0,'2024-10-13 10:41:59'),
-    (10112,'MUJI Moisturizing Cleansing Gel','100g',0,'/goods-img/0f724c0f-8888-4b75-8fe1-dc7dd8f2b7bd.jpg','/goods-img/0f724c0f-8888-4b75-8fe1-dc7dd8f2b7bd.jpg','<p>Product details loading...</p>',100,50,1000,'',0,0,'2024-09-18 13:19:22',0,'2024-10-13 10:41:59'),
-    (10113,'MUJI Small Ultrasonic Aroma Diffuser','Others',0,'/goods-img/9608b59d-cbca-4b70-9f05-226fde41c51c.jpg','/goods-img/9608b59d-cbca-4b70-9f05-226fde41c51c.jpg','<p>Product details loading...</p>',250,250,998,'Breath Quality Life',0,0,'2024-09-18 13:19:22',0,'2024-10-13 10:41:59'),
-    (10114,'MUJI Correction Tape','Others',0,'/goods-img/d91a71e7-aada-4770-91c5-4da21e4b7ed9.jpg','/goods-img/d91a71e7-aada-4770-91c5-4da21e4b7ed9.jpg','<p>Product details loading...</p>',25,25,1000,'',0,0,'2024-09-18 13:19:22',0,'2024-10-13 10:41:59'),
-    (10115,'MUJI Polypropylene','Pencil Case Small/Approx. 170*51*20mm',0,'/goods-img/d543ba0d-18d8-427a-87ea-99968b319440.jpg','/goods-img/d543ba0d-18d8-427a-87ea-99968b319440.jpg','<p>Product details loading...</p>',12,12,1000,'',0,0,'2024-09-18 13:19:22',0,'2024-10-13 10:41:59'),
-    (10116,'MUJI Lotion','50ml',0,'/goods-img/cd6d91b0-69b2-4415-8560-4cbd2690cb50.jpg','/goods-img/cd6d91b0-69b2-4415-8560-4cbd2690cb50.jpg','<p>Product details loading...</p>',55,27,1000,'',0,0,'2024-09-18 13:19:22',0,'2024-10-13 10:41:59'),
-    (10117,'MUJI Men’s','Cotton Washable Plain Short-Sleeve Shirt White L',0,'/goods-img/b08c94ac-cba2-4468-b3d0-03d9447f5bf2.jpg','/goods-img/b08c94ac-cba2-4468-b3d0-03d9447f5bf2.jpg','<p>Product details loading...</p>',178,89,1000,'',0,0,'2024-09-18 13:19:22',0,'2024-10-13 10:41:59'),
-    (10118,'MUJI Fragrance/Green','12-pack/Sticks',0,'/goods-img/5a65f952-4141-47f8-8f8e-84120bbf74ea.jpg','/goods-img/5a65f952-4141-47f8-8f8e-84120bbf74ea.jpg','<p>Product details loading...</p>',32,32,1000,'',0,0,'2024-09-18 13:19:22',0,'2024-10-13 10:41:59'),
-    (10119,'MUJI Moisturizing Cream (High Moisture Type) 50g','50g',0,'/goods-img/503ef53e-d4ac-4c4e-83a7-8a03ead0ecc8.jpg','/goods-img/503ef53e-d4ac-4c4e-83a7-8a03ead0ecc8.jpg','<p>Product details loading...</p>',159,159,1000,'',0,0,'2024-09-18 13:19:22',0,'2024-10-13 10:41:59'),
-    (10120,'MUJI Smooth Ink Refill','Black',0,'/goods-img/aa83ce5b-2db1-4ecf-bc4f-f43c437894d7.jpg','/goods-img/aa83ce5b-2db1-4ecf-bc4f-f43c437894d7.jpg','<p>Product details loading...</p>',19,19,1000,'',0,0,'2024-09-18 13:19:22',0,'2024-10-13 10:41:59'),
-	(10121,'MUJI Aluminum Hook/Suction Cup Type_2 Pack Large/Approx. 4.5cm Width x 6cm Height',0,'/goods-img/5c590548-9de3-47a3-8cb9-4d8f040a9635.png','/goods-img/5c590548-9de3-47a3-8cb9-4d8f040a9635.png','<p>Product details loading...</p>',25,25,1000,'',0,0,'2024-09-18 13:19:22',0,'2024-10-13 10:41:59'),
-    (10122,'MUJI Correction Tape','POM Material Refill',0,'/goods-img/93181f0b-c069-4542-be91-a63856cd12d1.jpg','/goods-img/93181f0b-c069-4542-be91-a63856cd12d1.jpg','<p>Product details loading...</p>',15,15,1000,'',0,0,'2024-09-18 13:19:22',0,'2024-10-13 10:41:59'),
-    (10123,'MUJI Acrylic Clipboard','A4/220×310mm',0,'/goods-img/45be1de3-447b-404b-9df8-ddf07fdc8647.jpg','/goods-img/45be1de3-447b-404b-9df8-ddf07fdc8647.jpg','<p>Product details loading...</p>',35,35,1000,'',0,0,'2024-09-18 13:19:22',0,'2024-10-13 10:41:59'),
-    (10124,'MUJI Natural Skin-Friendly Foundation Natural Bright Color','Xin Feng Selected',0,'/goods-img/7f905827-5765-40bc-a1b8-bedd9f407ced.jpg','/goods-img/7f905827-5765-40bc-a1b8-bedd9f407ced.jpg','<p>Product details loading...</p>',75,75,1000,'',0,0,'2024-09-18 13:19:22',0,'2024-10-13 10:41:59'),
-    (10125,'MUJI PE Small Refill Box','Transparent 30g',0,'/goods-img/1d7f28bb-6597-48de-a6bb-2561697db883.jpg','/goods-img/1d7f28bb-6597-48de-a6bb-2561697db883.jpg','<p>Product details loading...</p>',10,10,1000,'',0,0,'2024-09-18 13:19:30',0,'2024-10-13 10:41:59'),
-    (10126,'MUJI Moisturizing Lotion','Xin Feng Selected',0,'/goods-img/53a089a9-e1d1-487e-974e-18bb4df41cf3.jpg','/goods-img/53a089a9-e1d1-487e-974e-18bb4df41cf3.jpg','<p>Product details loading...</p>',160,80,1000,'',0,0,'2024-09-18 13:19:30',0,'2024-10-13 10:41:59'),
-    (10127,'MUJI Women''s','Cotton Stretch High Neck T-Shirt Dark Gray M',0,'/goods-img/53a6478b-4fd5-4add-b095-9fd4ad983a7b.jpg','/goods-img/53a6478b-4fd5-4add-b095-9fd4ad983a7b.jpg','<p>Product details loading...</p>',128,40,1000,'',0,0,'2024-09-18 13:19:30',0,'2024-10-13 10:41:59'),
-    (10128,'MUJI Men''s','Cotton Washed Oxford Button-Down Short Sleeve Shirt White L',0,'/goods-img/561e9e6d-b130-468d-8328-36a5ff70cdfa.jpg','/goods-img/561e9e6d-b130-468d-8328-36a5ff70cdfa.jpg','<p>Product details loading...</p>',178,89,1000,'',0,0,'2024-09-18 13:19:30',0,'2024-10-13 10:41:59'),
-    (10129,'MUJI Basic Body Lotion','High Moisture Type 50ml',0,'/goods-img/01514263-83b4-4ac7-aee3-5e5a2448414f.jpg','/goods-img/01514263-83b4-4ac7-aee3-5e5a2448414f.jpg','<p>Product details loading...</p>',37,29,1000,'',0,0,'2024-09-18 13:19:30',0,'2024-10-13 10:41:59'),
-    (10130,'MUJI Feather Cushion','White',0,'/goods-img/23e5ee1d-5bb7-4f2a-b4b5-4fbc9ca3c163.jpg','/goods-img/23e5ee1d-5bb7-4f2a-b4b5-4fbc9ca3c163.jpg','<p>Product details loading...</p>',65,65,1000,'',0,0,'2024-09-18 13:19:30',0,'2024-10-13 10:41:59'),
-	(10131,'MUJI Portable Small Measuring Tape White','Xin Feng Selected',0,'/goods-img/a4d3a61e-b0d3-4c58-85d6-fddf1de85f66.jpg','/goods-img/a4d3a61e-b0d3-4c58-85d6-fddf1de85f66.jpg','<p>Product details loading...</p>',28,28,1000,'',0,0,'2024-09-18 13:19:30',0,'2024-10-13 10:41:59'),
-    (10132,'MUJI Notebook/5mm Grid','Dark Gray B5/30 Sheets/Thread Bound',0,'/goods-img/38c25b00-a4fb-4893-aa8e-34ff76963397.jpg','/goods-img/38c25b00-a4fb-4893-aa8e-34ff76963397.jpg','<p>Product details loading...</p>',9,9,1000,'',0,0,'2024-09-18 13:19:30',0,'2024-10-13 10:41:59'),
-    (10133,'MUJI Low Center of Gravity Pencil','White',0,'/goods-img/dc497882-61ea-4d4f-98fe-d2b2500eda01.jpg','/goods-img/dc497882-61ea-4d4f-98fe-d2b2500eda01.jpg','<p>Product details loading...</p>',47,47,1000,'',0,0,'2024-09-18 13:19:30',0,'2024-10-13 10:41:59'),
-    (10134,'MUJI Manual Shredder','Xin Feng Selected',0,'/goods-img/f6e1ce14-a590-4736-9d36-df5628bc4188.jpg','/goods-img/f6e1ce14-a590-4736-9d36-df5628bc4188.jpg','<p>Product details loading...</p>',75,75,1000,'',0,0,'2024-09-18 13:19:30',0,'2024-10-13 10:41:59'),
-    (10135,'MUJI Women''s','Sleeveless Top Oatmeal XL',0,'/goods-img/c2e30c9b-ce49-4824-824a-b7d3ae173340.jpg','/goods-img/c2e30c9b-ce49-4824-824a-b7d3ae173340.jpg','<p>Product details loading...</p>',178,53,1000,'',0,0,'2024-09-18 13:19:30',0,'2024-10-13 10:41:59'),
-    (10136,'MUJI Women''s','Thick Cotton Long Sleeve T-Shirt Natural Color L',0,'/goods-img/4b1b98d5-359f-4025-85e3-f357b6e9724a.jpg','/goods-img/4b1b98d5-359f-4025-85e3-f357b6e9724a.jpg','<p>Product details loading...</p>',198,70,1000,'',0,0,'2024-09-18 13:19:30',0,'2024-10-13 10:41:59'),
-    (10137,'MUJI Plastic Bathroom Seat/Small','Original Color',0,'/goods-img/37053615-750d-486e-b218-358a7c1adb21.jpg','/goods-img/37053615-750d-486e-b218-358a7c1adb21.jpg','<p>Product details loading...</p>',85,85,1000,'',0,0,'2024-09-18 13:19:30',0,'2024-10-13 10:41:59'),
-    (10138,'MUJI Resin Portable Stapler White','Xin Feng Selected',0,'/goods-img/21dd6bd9-c4bc-4e17-8fed-23775cebf361.jpg','/goods-img/21dd6bd9-c4bc-4e17-8fed-23775cebf361.jpg','<p>Product details loading...</p>',42,42,1000,'',0,0,'2024-09-18 13:19:30',0,'2024-10-13 10:41:59'),
-    (10139,'MUJI Basic Body Lotion','Moisturizing Type',0,'/goods-img/b8978340-ff72-4b5a-a9d3-4b5610982764.jpg','/goods-img/b8978340-ff72-4b5a-a9d3-4b5610982764.jpg','<p>Product details loading...</p>',28,22,1000,'',0,0,'2024-09-18 13:19:30',0,'2024-10-13 10:41:59'),
-    (10140,'MUJI Color Control Primer 30g Light Blue','Xin Feng Selected',0,'/goods-img/b2969d29-b073-48f3-aa9a-b8aeb08a98d6.jpg','/goods-img/b2969d29-b073-48f3-aa9a-b8aeb08a98d6.jpg','<p>Product details loading...</p>',65,65,1000,'',0,0,'2024-09-18 13:19:30',0,'2024-10-13 10:41:59'),
-	(10141,'MUJI Women''s','Thick Cotton Striped Long Sleeve T-Shirt Black*Horizontal L',0,'/goods-img/a905c374-3411-4ddd-9b84-7ecbc9b50620.jpg','/goods-img/a905c374-3411-4ddd-9b84-7ecbc9b50620.jpg','<p>Product details loading...</p>',198,70,1000,'',0,0,'2024-09-18 13:19:30',0,'2024-10-13 10:41:59'),
-    (10142,'MUJI PE Small Container','Transparent 30g',0,'/goods-img/2750405a-2e01-463d-a059-54644c67f7cc.jpg','/goods-img/2750405a-2e01-463d-a059-54644c67f7cc.jpg','<p>Product details loading...</p>',10,10,1000,'',0,0,'2024-09-18 13:19:35',0,'2024-10-13 10:41:59'),
-    (10143,'MUJI Moisturizing Lotion','Xin Feng Selected',0,'/goods-img/17656dd7-c0fb-431d-810a-5eb29d07c011.jpg','/goods-img/17656dd7-c0fb-431d-810a-5eb29d07c011.jpg','<p>Product details loading...</p>',160,80,1000,'',0,0,'2024-09-18 13:19:35',0,'2024-10-13 10:41:59'),
-    (10144,'MUJI Women''s','Cotton Stretch High Neck T-Shirt Dark Gray M',0,'/goods-img/780e716a-7be8-4d94-b8b6-833b4d97e148.jpg','/goods-img/780e716a-7be8-4d94-b8b6-833b4d97e148.jpg','<p>Product details loading...</p>',128,40,1000,'',0,0,'2024-09-18 13:19:35',0,'2024-10-13 10:41:59'),
-    (10145,'MUJI Men''s','Washed Cotton Oxford Button-Down Short Sleeve Shirt White L',0,'/goods-img/94f5b471-1148-4320-aa8a-68573706fd91.jpg','/goods-img/94f5b471-1148-4320-aa8a-68573706fd91.jpg','<p>Product details loading...</p>',178,89,1000,'',0,0,'2024-09-18 13:19:35',0,'2024-10-13 10:41:59'),
-    (10146,'MUJI Basic Body Lotion','High Moisturizing Type 50ml',0,'/goods-img/a12dcb9c-bb36-4df9-b517-1578a03fe062.jpg','/goods-img/a12dcb9c-bb36-4df9-b517-1578a03fe062.jpg','<p>Product details loading...</p>',37,29,1000,'',0,0,'2024-09-18 13:19:35',0,'2024-10-13 10:41:59'),
-    (10147,'MUJI Feather Cushion','White',0,'/goods-img/0f701215-b782-40c7-8bbd-97b51be56461.jpg','/goods-img/0f701215-b782-40c7-8bbd-97b51be56461.jpg','<p>Product details loading...</p>',65,65,988,'Enjoy Comfort',0,0,'2024-09-18 13:19:35',0,'2024-10-13 10:41:59'),
-    (10148,'MUJI Portable Small Measuring Tape White','Xin Feng Selected',0,'/goods-img/737afa41-1905-4dbc-ab33-95f8489dde5b.jpg','/goods-img/737afa41-1905-4dbc-ab33-95f8489dde5b.jpg','<p>Product details loading...</p>',28,28,1000,'',0,0,'2024-09-18 13:19:35',0,'2024-10-13 10:41:59'),
-    (10149,'MUJI Notebook/5mm Grid','Dark Gray B5/30 Sheets/Thread Bound',0,'/goods-img/c6632420-ad7e-451b-a2a9-b02299653db1.jpg','/goods-img/c6632420-ad7e-451b-a2a9-b02299653db1.jpg','<p>Product details loading...</p>',9,9,1000,'',0,0,'2024-09-18 13:19:35',0,'2024-10-13 10:41:59'),
-    (10150,'MUJI Low Center of Gravity Pencil','White',0,'/goods-img/060e3ace-71ca-44a2-9ded-73a05f186fcf.jpg','/goods-img/060e3ace-71ca-44a2-9ded-73a05f186fcf.jpg','<p>Product details loading...</p>',47,47,1000,'',0,0,'2024-09-18 13:19:35',0,'2024-10-13 10:41:59'),
-    (10151,'MUJI Manual Shredder','Xin Feng Selected',0,'/goods-img/58d831e4-07f4-44e2-a994-1a7d585452a1.jpg','/goods-img/58d831e4-07f4-44e2-a994-1a7d585452a1.jpg','<p>Product details loading...</p>',75,75,1000,'',0,0,'2024-09-18 13:19:35',0,'2024-10-13 10:41:59'),
-    (10152,'MUJI Women''s','Sleeveless Top Oatmeal XL',0,'/goods-img/f2aaadc0-ddda-4736-9826-2dbb2c533ea0.jpg','/goods-img/f2aaadc0-ddda-4736-9826-2dbb2c533ea0.jpg','<p>Product details loading...</p>',178,53,1000,'',0,0,'2024-09-18 13:19:35',0,'2024-10-13 10:41:59'),
-    (10153,'MUJI Women''s','Thick Cotton Long Sleeve T-Shirt Cream L',0,'/goods-img/09c87218-d645-48e7-bbd5-54af5e77bf4b.jpg','/goods-img/09c87218-d645-48e7-bbd5-54af5e77bf4b.jpg','<p>Product details loading...</p>',198,70,1000,'',0,0,'2024-09-18 13:19:35',0,'2024-10-13 10:41:59'),
-    (10154,'MUJI Plastic Bathroom Stool','Natural Color',0,'/goods-img/15395057-94e9-4545-a8ee-8aee025f40c5.jpg','/goods-img/15395057-94e9-4545-a8ee-8aee025f40c5.jpg','<p>Product details loading...</p>',85,85,998,'MUJI',0,0,'2024-09-18 13:19:35',0,'2024-10-13 10:41:59'),
-    (10155,'MUJI Resin Portable Stapler White','Xin Feng Selected',0,'/goods-img/3b40971a-3f32-45cf-a99a-aada90ee8e33.jpg','/goods-img/3b40971a-3f32-45cf-a99a-aada90ee8e33.jpg','<p>Product details loading...</p>',42,42,1000,'',0,0,'2024-09-18 13:19:35',0,'2024-10-13 10:41:59'),
-    (10156,'MUJI Basic Body Lotion','Moisturizing Type',0,'/goods-img/f65ef709-8fa8-4a3f-8abd-75a9b0492b14.jpg','/goods-img/f65ef709-8fa8-4a3f-8abd-75a9b0492b14.jpg','<p>Product details loading...</p>',28,22,1000,'',0,0,'2024-09-18 13:19:35',0,'2024-10-13 10:41:59'),
-    (10157,'MUJI Color Control Primer 30g Light Blue','Xin Feng Selected',0,'/goods-img/66311489-b28b-41c3-ac34-540293df6e42.jpg','/goods-img/66311489-b28b-41c3-ac34-540293df6e42.jpg','<p>Product details loading...</p>',65,65,1000,'',0,0,'2024-09-18 13:19:35',0,'2024-10-13 10:41:59'),
-    (10158,'MUJI Women''s Thick Cotton Striped Long Sleeve T-Shirt','Black*Horizontal L',20,'/goods-img/5488564b-8335-4b0c-a5a4-52f3f03ee728.jpg','http://localhost:28089/goods-img/5488564b-8335-4b0c-a5a4-52f3f03ee728.jpg','<p>Product details loading...</p>',198,70,985,'MUJI',0,0,'2024-09-18 13:19:35',0,'2024-10-13 10:41:59'),
-    (10159,'Apple AirPods with Charging Case','Apple Bluetooth Earphones',0,'/goods-img/53c9f268-7cd4-4fac-909c-2dc066625655.jpg','/goods-img/53c9f268-7cd4-4fac-909c-2dc066625655.jpg','<p>Product details loading...</p>',1246,1246,987,'',0,0,'2024-09-18 13:21:28',0,'2024-10-13 10:41:59'),
-    (10160,'Xiaomi Redmi AirDots','True Wireless Bluetooth Earphones | Split Design | Storage Charging Case | Bluetooth 5.0 | Button Touch Operation',51,'/goods-img/c47403f1-b706-453b-88d8-2bfdee0316be.jpg','/goods-img/c47403f1-b706-453b-88d8-2bfdee0316be.jpg','<p>Product details loading...</p>',129,129,998,'Speak for Freedom',0,0,'2024-09-18 13:21:28',0,'2024-10-13 10:41:59'),
+
 	(10161, 'Honor Original Three-Button Wired Control Headphones AM116 (Prestige Edition) Suitable for Huawei Honor Phones', 'New Bee Selection', 0, '/goods-img/183481c3-47ff-4b2e-926f-b02b926ac02c.jpg', '/goods-img/183481c3-47ff-4b2e-926f-b02b926ac02c.jpg', '<p>Product introduction loading...</p>', 69, 49, 1000, '', 0, 0, '2024-09-18 13:21:28', 0, '2024-10-13 10:41:59'),
     (10162, 'Nokia (NOKIA) BH-705 Silver 5.0 True Wireless Bluetooth Earphones Mini Sports Running Music Business In-Ear Earphones for Android and Apple Phones', 'New Bee Selection', 0, '/goods-img/5e0d089b-fa91-410d-8ff2-9534eb6f627f.jpg', '/goods-img/5e0d089b-fa91-410d-8ff2-9534eb6f627f.jpg', '<p>Product introduction loading...</p>', 499, 499, 1000, '', 0, 0, '2024-09-18 13:21:28', 0, '2024-10-13 10:41:59'),
     (10163, 'Huawei Original Semi-In-Ear Wired Headphones for Mate9 P10 Plus 8X Honor V20 V10 Nova 2S 9IV 9P 9 Play [Standard Edition] Huawei AM115 White - Hot Sale', 'New Bee Selection', 0, '/goods-img/79e2b467-a075-46ef-ab43-aa0535f8e4c9.jpg', '/goods-img/79e2b467-a075-46ef-ab43-aa0535f8e4c9.jpg', '<p>Product introduction loading...</p>', 69, 39, 999, '', 0, 0, '2024-09-18 13:21:28', 0, '2024-10-13 10:41:59'),
@@ -771,17 +612,17 @@ VALUES
 DROP TABLE IF EXISTS `tb_newbee_mall_index_config`;
 CREATE TABLE `tb_newbee_mall_index_config`  (
   `config_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Primary key id for homepage configuration item',
-`config_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'Display character (cannot be empty for configuration search, others can be empty)',
-`config_type` tinyint(4) NOT NULL DEFAULT 0 COMMENT '1-Hot search for search box 2-Hot search for dropdown box 3-(Homepage) Best-selling products 4-(Homepage) New arrivals 5-(Homepage) Recommended for you',
-`goods_id` bigint(20) NOT NULL DEFAULT 0 COMMENT 'Product id, default is 0',
-`redirect_url` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '##' COMMENT 'Redirect URL after clicking (default does not redirect)',
-`config_rank` int(11) NOT NULL DEFAULT 0 COMMENT 'Sort value (the larger the value, the higher the rank)',
-`is_deleted` tinyint(4) NOT NULL DEFAULT 0 COMMENT 'Deletion flag field (0-Not deleted 1-Deleted)',
-`create_time` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Creation time',
-`create_user` int(11) NOT NULL DEFAULT 0 COMMENT 'Creator id',
-`update_time` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Latest modification time',
-`update_user` int(11) NULL DEFAULT 0 COMMENT 'Modifier id',
- PRIMARY KEY (`config_id`) USING BTREE
+  `config_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'Display character (cannot be empty for configuration search, others can be empty)',
+  `config_type` tinyint(4) NOT NULL DEFAULT 0 COMMENT '1-Hot search for search box 2-Hot search for dropdown box 3-(Homepage) Best-selling products 4-(Homepage) New arrivals 5-(Homepage) Recommended for you',
+  `goods_id` bigint(20) NOT NULL DEFAULT 0 COMMENT 'Product id, default is 0',
+  `redirect_url` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '##' COMMENT 'Redirect URL after clicking (default does not redirect)',
+  `config_rank` int(11) NOT NULL DEFAULT 0 COMMENT 'Sort value (the larger the value, the higher the rank)',
+  `is_deleted` tinyint(4) NOT NULL DEFAULT 0 COMMENT 'Deletion flag field (0-Not deleted 1-Deleted)',
+  `create_time` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Creation time',
+  `create_user` int(11) NOT NULL DEFAULT 0 COMMENT 'Creator id',
+  `update_time` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Latest modification time',
+  `update_user` int(11) NULL DEFAULT 0 COMMENT 'Modifier id',
+  PRIMARY KEY (`config_id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 25 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
@@ -802,7 +643,7 @@ INSERT INTO `tb_newbee_mall_index_config` VALUES (12, 'Sony WH-1000XM3', 5, 1019
 INSERT INTO `tb_newbee_mall_index_config` VALUES (13, 'Apple AirPods', 5, 10180, '##', 101, 0, '2024-09-18 17:49:11', 0, '2024-09-18 17:49:11', 0);
 INSERT INTO `tb_newbee_mall_index_config` VALUES (14, 'Xiaomi Redmi AirDots', 5, 10160, '##', 100, 0, '2024-09-18 17:49:28', 0, '2024-09-18 17:49:28', 0);
 INSERT INTO `tb_newbee_mall_index_config` VALUES (15, '2019 MacBook Air 13', 5, 10254, '##', 100, 0, '2024-09-18 17:50:18', 0, '2024-09-18 17:50:18', 0);
-INSERT INTO `tb_newbee_mall_index_config` VALUES (16, 'Women's Thick Cotton Striped Long Sleeve T-shirt', 5, 10158, '##', 99, 0, '2024-09-18 17:52:03', 0, '2024-09-18 17:52:03', 0);
+INSERT INTO `tb_newbee_mall_index_config` VALUES (16, 'Women''s Thick Cotton Striped Long Sleeve T-shirt', 5, 10158, '##', 99, 0, '2024-09-18 17:52:03', 0, '2024-09-18 17:52:03', 0);
 INSERT INTO `tb_newbee_mall_index_config` VALUES (17, 'Plastic Bathroom Stool', 5, 10154, '##', 100, 0, '2024-09-18 17:52:19', 0, '2024-09-18 17:52:19', 0);
 INSERT INTO `tb_newbee_mall_index_config` VALUES (18, 'Cushion', 5, 10147, '##', 101, 0, '2024-09-18 17:52:50', 0, '2024-09-18 17:52:50', 0);
 INSERT INTO `tb_newbee_mall_index_config` VALUES (19, 'Small Ultrasonic Aromatherapy Machine', 5, 10113, '##', 100, 0, '2024-09-18 17:54:07', 0, '2024-09-18 17:54:07', 0);
@@ -817,21 +658,21 @@ INSERT INTO `tb_newbee_mall_index_config` VALUES (24, 'Huawei Mate 30 Pro', 5, 1
 -- ----------------------------
 DROP TABLE IF EXISTS `tb_newbee_mall_order`;
 CREATE TABLE `tb_newbee_mall_order`  (
- `order_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Primary key ID of the order table',
-`order_no` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'Order number',
-`user_id` bigint(20) NOT NULL DEFAULT 0 COMMENT 'Primary key ID of the user',
-`total_price` int(11) NOT NULL DEFAULT 1 COMMENT 'Total price of the order',
-`pay_status` tinyint(4) NOT NULL DEFAULT 0 COMMENT 'Payment status: 0. Not paid, 1. Payment successful, -1: Payment failed',
-`pay_type` tinyint(4) NOT NULL DEFAULT 0 COMMENT '0. None, 1. Alipay, 2. WeChat Pay',
-`pay_time` datetime(0) NULL DEFAULT NULL COMMENT 'Payment time',
-`order_status` tinyint(4) NOT NULL DEFAULT 0 COMMENT 'Order status: 0. Pending payment, 1. Paid, 2. Picking completed, 3: Shipment successful, 4. Transaction successful, -1. Manually closed, -2. Timed out closed, -3. Merchant closed',
-`extra_info` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'Order body',
-`user_name` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'Recipient name',
-`user_phone` varchar(11) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'Recipient phone number',
-`user_address` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'Recipient shipping address',
-`is_deleted` tinyint(4) NOT NULL DEFAULT 0 COMMENT 'Deletion flag (0 - not deleted, 1 - deleted)',
-`create_time` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Creation time',
-`update_time` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Latest modification time',
+  `order_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Primary key ID of the order table',
+  `order_no` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'Order number',
+  `user_id` bigint(20) NOT NULL DEFAULT 0 COMMENT 'Primary key ID of the user',
+  `total_price` int(11) NOT NULL DEFAULT 1 COMMENT 'Total price of the order',
+  `pay_status` tinyint(4) NOT NULL DEFAULT 0 COMMENT 'Payment status: 0. Not paid, 1. Payment successful, -1: Payment failed',
+  `pay_type` tinyint(4) NOT NULL DEFAULT 0 COMMENT '0. None, 1. Alipay, 2. WeChat Pay',
+  `pay_time` datetime(0) NULL DEFAULT NULL COMMENT 'Payment time',
+  `order_status` tinyint(4) NOT NULL DEFAULT 0 COMMENT 'Order status: 0. Pending payment, 1. Paid, 2. Picking completed, 3: Shipment successful, 4. Transaction successful, -1. Manually closed, -2. Timed out closed, -3. Merchant closed',
+  `extra_info` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'Order body',
+  `user_name` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'Recipient name',
+  `user_phone` varchar(11) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'Recipient phone number',
+  `user_address` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'Recipient shipping address',
+  `is_deleted` tinyint(4) NOT NULL DEFAULT 0 COMMENT 'Deletion flag (0 - not deleted, 1 - deleted)',
+  `create_time` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Creation time',
+  `update_time` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Latest modification time',
   PRIMARY KEY (`order_id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 21 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
@@ -841,7 +682,7 @@ CREATE TABLE `tb_newbee_mall_order`  (
 INSERT INTO `tb_newbee_mall_order` VALUES (1, '15688187285093508', 1, 2492, 1, 2, '2024-09-18 23:00:18', -1, '', '', '', 'xafsdufhpwe', 0, '2024-09-18 22:53:07', '2024-09-18 22:55:32');
 INSERT INTO `tb_newbee_mall_order` VALUES (2, '15688188616936181', 1, 135, 1, 1, '2024-09-18 23:01:06', 1, '', '', '', 'xafsdufhpwe', 0, '2024-09-18 22:55:20', '2024-09-18 23:01:06');
 INSERT INTO `tb_newbee_mall_order` VALUES (3, '15689089426956979', 1, 15487, 1, 1, '2024-09-20 00:16:03', 3, '', '', '', 'Hangzhou West Lake District xx community building 419 13 137xxxx2703', 0, '2024-09-19 23:56:40', '2024-09-20 00:10:39');
-INSERT INTO `tb_newbee_mall_order` VALUES (4, '15689090398492576', 1, 8499, 0, 0, '2024-09-20 00:16:03', 3, '', '', '', 'Hangzhou West Lake District xx community building 419 13 137xxxx2703', 0, '2024-09-19 23:58:18', '2024-09-19 23:58:18');
+INSERT INTO `tb_newbee_mall_order` VALUES (4, '15689090398492576', 1, 8499, 0, 0, NULL,0, '', '', '', 'Hangzhou West Lake District xx community building 419 13 137xxxx2703', 0, '2024-09-19 23:58:18', '2024-09-19 23:58:18');
 INSERT INTO `tb_newbee_mall_order` VALUES (5, '15689096266448452', 1, 115, 1, 2, '2024-09-20 00:13:52', 1, '', '', '', 'Hangzhou West Lake District xx community building 419 13 137xxxx2703', 0, '2024-09-20 00:08:04', '2024-09-20 00:13:52');
 INSERT INTO `tb_newbee_mall_order` VALUES (6, '15691645776131562', 7, 7998, 1, 1, '2024-09-22 23:05:53', 1, '', '', '', 'Hangzhou West Lake District xx community building 419 13 137xxxx2703', 0, '2024-09-22 22:57:15', '2024-09-22 23:05:53');
 INSERT INTO `tb_newbee_mall_order` VALUES (7, '15691648465397435', 7, 13998, 1, 2, '2024-09-22 23:07:38', -1, '', '', '', 'Hangzhou West Lake District xx community building 419 13 137xxxx2703', 0, '2024-09-22 23:01:44', '2024-09-22 23:02:10');
@@ -864,7 +705,7 @@ INSERT INTO `tb_newbee_mall_order` VALUES (20, '15702847670935185', 6, 3999, 1, 
 -- ----------------------------
 DROP TABLE IF EXISTS `tb_newbee_mall_order_item`;
 CREATE TABLE `tb_newbee_mall_order_item`  (
-  `order_item_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Primary key ID for the order item',
+`order_item_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Primary key ID for the order item',
 `order_id` bigint(20) NOT NULL DEFAULT 0 COMMENT 'Primary key ID for the order',
 `goods_id` bigint(20) NOT NULL DEFAULT 0 COMMENT 'Associated product ID',
 `goods_name` varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'Product name at the time of order (order snapshot)',
@@ -872,15 +713,16 @@ CREATE TABLE `tb_newbee_mall_order_item`  (
 `selling_price` int(11) NOT NULL DEFAULT 1 COMMENT 'Price of the product at the time of order (order snapshot)',
 `goods_count` int(11) NOT NULL DEFAULT 1 COMMENT 'Quantity (order snapshot)',
 `create_time` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Creation time',
- PRIMARY KEY (`order_item_id`) USING BTREE
+PRIMARY KEY (`order_item_id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 35 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
 
 -- ----------------------------
 -- Records of tb_newbee_mall_order_item
 -- ----------------------------
 INSERT INTO `tb_newbee_mall_order_item` VALUES (1, 1, 10180, 'Apple AirPods with Charging Case', '/goods-img/64768a8d-0664-4b29-88c9-2626578ffbd1.jpg', 1246, 2, '2024-09-18 22:53:07');
 INSERT INTO `tb_newbee_mall_order_item` VALUES (2, 2, 10147, 'MUJI Feather Cushion', '/goods-img/0f701215-b782-40c7-8bbd-97b51be56461.jpg', 65, 1, '2024-09-18 22:55:20');
-INSERT INTO `tb_newbee_mall_order_item` VALUES (3, 2, 10158, 'MUJI Women\'s Thick Cotton Striped Long Sleeve T-Shirt', 'http://localhost:28089/goods-img/5488564b-8335-4b0c-a5a4-52f3f03ee728.jpg', 70, 1, '2024-09-18 22:55:20');
+INSERT INTO `tb_newbee_mall_order_item` VALUES (3, 2, 10158, 'MUJI Women''s Thick Cotton Striped Long Sleeve T-Shirt', 'http://localhost:28089/goods-img/5488564b-8335-4b0c-a5a4-52f3f03ee728.jpg', 70, 1, '2024-09-18 22:55:20');
 INSERT INTO `tb_newbee_mall_order_item` VALUES (4, 3, 10742, 'Huawei HUAWEI P30 Pro', '/goods-img/dda1d575-cdac-4eb4-a118-3834490166f7.jpg', 5488, 1, '2024-09-19 23:56:40');
 INSERT INTO `tb_newbee_mall_order_item` VALUES (5, 3, 10320, 'Apple iPhone 11 Pro', '/goods-img/0025ad55-e260-4a00-be79-fa5b8c5ac0de.jpg', 9999, 1, '2024-09-19 23:56:40');
 INSERT INTO `tb_newbee_mall_order_item` VALUES (6, 4, 10254, 'Apple 2019 MacBook Air 13.3', '/goods-img/7810bc9d-236f-4386-a0ef-45a831b49bf2.jpg', 8499, 1, '2024-09-19 23:58:18');
@@ -899,18 +741,18 @@ INSERT INTO `tb_newbee_mall_order_item` VALUES (18, 11, 10279, 'Apple iPhone 11 
 INSERT INTO `tb_newbee_mall_order_item` VALUES (19, 12, 10279, 'Apple iPhone 11 (A2223)', '/goods-img/a0d09f94-9c46-4ee1-aaef-dfd132e7543e.jpg', 5999, 1, '2024-09-23 14:57:26');
 INSERT INTO `tb_newbee_mall_order_item` VALUES (20, 12, 10159, 'Apple AirPods with Charging Case', '/goods-img/53c9f268-7cd4-4fac-909c-2dc066625655.jpg', 1246, 1, '2024-09-23 14:57:26');
 INSERT INTO `tb_newbee_mall_order_item` VALUES (21, 13, 10742, 'Huawei HUAWEI P30 Pro', '/goods-img/dda1d575-cdac-4eb4-a118-3834490166f7.jpg', 5488, 1, '2024-09-23 15:08:46');
-INSERT INTO `tb_newbee_mall_order_item` VALUES (22, 14, 10158, 'MUJI Women\'s Thick Cotton Striped Long Sleeve T-Shirt', '/goods-img/5488564b-8335-4b0c-a5a4-52f3f03ee728.jpg', 70, 1, '2024-09-23 16:59:24');
+INSERT INTO `tb_newbee_mall_order_item` VALUES (22, 14, 10158, 'MUJI Women''s Thick Cotton Striped Long Sleeve T-Shirt', '/goods-img/5488564b-8335-4b0c-a5a4-52f3f03ee728.jpg', 70, 1, '2024-09-23 16:59:24');
 INSERT INTO `tb_newbee_mall_order_item` VALUES (23, 14, 10704, 'Huawei HUAWEI P30 Super Sensitivity Leica Triple Camera Kirin 980 AI...', '/goods-img/b9e6d770-06dd-40f4-9ae5-31103cec6e5f.jpg', 3988, 1, '2024-09-23 16:59:24');
 INSERT INTO `tb_newbee_mall_order_item` VALUES (24, 14, 10739, 'Huawei HUAWEI P30 Pro', '/goods-img/65c8e729-aeca-4780-977b-4d0d39d4aa2e.jpg', 4988, 1, '2024-09-23 16:59:24');
 INSERT INTO `tb_newbee_mall_order_item` VALUES (25, 15, 10147, 'MUJI Feather Cushion', '/goods-img/0f701215-b782-40c7-8bbd-97b51be56461.jpg', 65, 1, '2024-09-23 17:05:34');
-INSERT INTO `tb_newbee_mall_order_item` VALUES (26, 16, 10742, 'Huawei HUAWEI P30 Pro', '/goods-img/dda1d575-cdac-4eb4-a118-3834490166f7.jpg', 5488, 1, '2019-09-23 17:10:03');
-INSERT INTO `tb_newbee_mall_order_item` VALUES (27, 16, 10159, 'Apple AirPods with Charging Case', '/goods-img/53c9f268-7cd4-4fac-909c-2dc066625655.jpg', 1246, 1, '2024-09-23 17:10:03');
+INSERT INTO `tb_newbee_mall_order_item` VALUES (26, 16, 10742, 'Huawei HUAWEI P30 Pro', '/goods-img/dda1d575-cdac-4eb4-a118-3834490166f7.jpg', 5488, 1, '2024-09-23 17:10:03');
+INSERT INTO `tb_newbee_mall_order_item` VALUES (27, 16, 10159, 'Apple AirPods Charging Case', '/goods-img/53c9f268-7cd4-4fac-909c-2dc066625655.jpg', 1246, 1, '2024-09-23 17:10:03');
 INSERT INTO `tb_newbee_mall_order_item` VALUES (28, 16, 10254, 'Apple 2019 MacBook Air 13.3', '/goods-img/7810bc9d-236f-4386-a0ef-45a831b49bf2.jpg', 8499, 1, '2024-09-23 17:10:03');
-INSERT INTO `tb_newbee_mall_order_item` VALUES (29, 17, 10180, 'Apple AirPods with Charging Case', '/goods-img/64768a8d-0664-4b29-88c9-2626578ffbd1.jpg', 1246, 1, '2024-09-26 14:09:56');
-INSERT INTO `tb_newbee_mall_order_item` VALUES (30, 18, 10779, 'HUAWEI Mate 20', '/goods-img/08f9a912-f049-4cf8-a839-115fc6582398.jpg', 3199, 1, '2024-09-30 08:38:26');
-INSERT INTO `tb_newbee_mall_order_item` VALUES (31, 19, 10742, 'HUAWEI P30 Pro', '/goods-img/dda1d575-cdac-4eb4-a118-3834490166f7.jpg', 5488, 1, '2024-10-05 20:20:10');
+INSERT INTO `tb_newbee_mall_order_item` VALUES (29, 17, 10180, 'Apple AirPods Charging Case', '/goods-img/64768a8d-0664-4b29-88c9-2626578ffbd1.jpg', 1246, 1, '2024-09-26 14:09:56');
+INSERT INTO `tb_newbee_mall_order_item` VALUES (30, 18, 10779, 'Huawei HUAWEI Mate 20', '/goods-img/08f9a912-f049-4cf8-a839-115fc6582398.jpg', 3199, 1, '2024-09-30 08:38:26');
+INSERT INTO `tb_newbee_mall_order_item` VALUES (31, 19, 10742, 'Huawei HUAWEI P30 Pro', '/goods-img/dda1d575-cdac-4eb4-a118-3834490166f7.jpg', 5488, 1, '2024-10-05 20:20:10');
 INSERT INTO `tb_newbee_mall_order_item` VALUES (32, 19, 10154, 'MUJI Plastic Bathroom Stool', '/goods-img/15395057-94e9-4545-a8ee-8aee025f40c5.jpg', 85, 1, '2024-10-05 20:20:10');
-INSERT INTO `tb_newbee_mall_order_item` VALUES (33, 19, 10159, 'Apple AirPods with Charging Case', '/goods-img/53c9f268-7cd4-4fac-909c-2dc066625655.jpg', 1246, 1, '2024-10-05 20:20:10');
+INSERT INTO `tb_newbee_mall_order_item` VALUES (33, 19, 10159, 'Apple AirPods Charging Case', '/goods-img/53c9f268-7cd4-4fac-909c-2dc066625655.jpg', 1246, 1, '2024-10-05 20:20:10');
 INSERT INTO `tb_newbee_mall_order_item` VALUES (34, 20, 10895, 'HUAWEI Mate 30 40MP Super Sensitive Leica Imaging', '/goods-img/mate30-3.png', 3999, 1, '2024-10-05 22:12:47');
 
 -- ----------------------------
@@ -918,14 +760,14 @@ INSERT INTO `tb_newbee_mall_order_item` VALUES (34, 20, 10895, 'HUAWEI Mate 30 4
 -- ----------------------------
 DROP TABLE IF EXISTS `tb_newbee_mall_shopping_cart_item`;
 CREATE TABLE `tb_newbee_mall_shopping_cart_item`  (
-  `cart_item_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Primary key ID for shopping item',
+`cart_item_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Primary key ID for shopping item',
 `user_id` bigint(20) NOT NULL COMMENT 'Primary key ID for user',
 `goods_id` bigint(20) NOT NULL DEFAULT 0 COMMENT 'Associated product ID',
 `goods_count` int(11) NOT NULL DEFAULT 1 COMMENT 'Quantity (maximum of 5)',
 `is_deleted` tinyint(4) NOT NULL DEFAULT 0 COMMENT 'Deletion flag field (0 - not deleted, 1 - deleted)',
 `create_time` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Creation time',
 `update_time` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Latest modification time',
- PRIMARY KEY (`cart_item_id`) USING BTREE
+PRIMARY KEY (`cart_item_id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 69 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
@@ -933,7 +775,7 @@ CREATE TABLE `tb_newbee_mall_shopping_cart_item`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `tb_newbee_mall_user`;
 CREATE TABLE `tb_newbee_mall_user`  (
- `user_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Primary key ID for user',
+`user_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Primary key ID for user',
 `nick_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'User nickname',
 `login_name` varchar(11) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'Login name (default is phone number)',
 `password_md5` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT 'MD5 hashed password',
@@ -942,13 +784,29 @@ CREATE TABLE `tb_newbee_mall_user`  (
 `is_deleted` tinyint(4) NOT NULL DEFAULT 0 COMMENT 'Cancellation flag field (0 - normal, 1 - cancelled)',
 `locked_flag` tinyint(4) NOT NULL DEFAULT 0 COMMENT 'Lock flag field (0 - not locked, 1 - locked)',
 `create_time` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Registration time',
- PRIMARY KEY (`user_id`) USING BTREE
+PRIMARY KEY (`user_id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of tb_newbee_mall_user
 -- ----------------------------
-INSERT INTO `tb_newbee_mall_user` VALUES (1, 'Thirteen', '13700002703', 'e10adc3949ba59abbe56e057f20f883e', 'I am not afraid of thousands blocking me, only of myself surrendering', 'Building 419, XX Community, West Lake District, Hangzhou, Thirteen, 137xxxx2703', 0, 0, '2019-09-22 08:44:57');
-INSERT INTO `tb_newbee_mall_user` VALUES (6, 'Test User 1', '13711113333', 'dda01dc6d334badcd031102be6bee182', 'Test User 1', '999 XX Road, Pudong New District, Shanghai, 137xxxx7797', 0, 0, '2019-08-29 10:51:39');
-INSERT INTO `tb_newbee_mall_user` VALUES (7, 'Test User 2', '13811113333', 'dda01dc6d334badcd031102be6bee182', 'Test User 2', 'Building 419, XX Community, West Lake District, Hangzhou, Thirteen, 137xxxx2703', 0, 0, '2019-08-29 10:55:08');
-INSERT INTO `tb_newbee_mall_user` VALUES (8, 'Test User 3', '13911113333', 'dda01dc6d334badcd031102be6bee182', 'Test User 3', 'Building 419, XX Community, West Lake District, Hangzhou, Thirteen, 137xxxx2703', 0, 0, '2019-08-29 10:55:16');
+INSERT INTO `tb_newbee_mall_user` VALUES (1, 'Thirteen', '13700002703', 'e10adc3949ba59abbe56e057f20f883e', 'I am not afraid of thousands blocking me, only of myself surrendering', 'Building 419, XX Community, West Lake District, Hangzhou, Thirteen, 137xxxx2703', 0, 0, '2024-09-22 08:44:57');
+INSERT INTO `tb_newbee_mall_user` VALUES (6, 'Test User 1', '13711113333', 'dda01dc6d334badcd031102be6bee182', 'Test User 1', '999 XX Road, Pudong New District, Shanghai, 137xxxx7797', 0, 0, '2024-08-29 10:51:39');
+INSERT INTO `tb_newbee_mall_user` VALUES (7, 'Test User 2', '13811113333', 'dda01dc6d334badcd031102be6bee182', 'Test User 2', 'Building 419, XX Community, West Lake District, Hangzhou, Thirteen, 137xxxx2703', 0, 0, '2024-08-29 10:55:08');
+INSERT INTO `tb_newbee_mall_user` VALUES (8, 'Test User 3', '13911113333', 'dda01dc6d334badcd031102be6bee182', 'Test User 3', 'Building 419, XX Community, West Lake District, Hangzhou, Thirteen, 137xxxx2703', 0, 0, '2024-08-29 10:55:16');
+
+-- ----------------------------
+-- Table structure for comment
+-- ----------------------------
+DROP TABLE IF EXISTS `comment`;
+CREATE TABLE `comment`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Comment id',
+  `user_id` int(11) NULL DEFAULT NULL COMMENT 'Commentator id',
+  `entity_type` int(11) NULL DEFAULT NULL COMMENT 'Types of comments being made 1:Commenting on a post 2:Replying to a comment 3:Commenting on a user',
+  `entity_id` int(11) NULL DEFAULT NULL COMMENT 'The id of the type being commented on',
+  `target_id` int(11) NULL DEFAULT NULL COMMENT 'Which person the comment is directed to (for the reply function)',
+  `content` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL COMMENT 'Comment content',
+  `status` int(11) NULL DEFAULT NULL COMMENT '0 Normal 1 Banned',
+  `create_time` datetime NULL DEFAULT NULL COMMENT 'Comment Creation Time',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;

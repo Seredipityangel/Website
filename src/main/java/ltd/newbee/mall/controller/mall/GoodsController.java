@@ -1,16 +1,19 @@
 package ltd.newbee.mall.controller.mall;
 
-
 import ltd.newbee.mall.common.Constants;
 import ltd.newbee.mall.common.NewBeeMallException;
 import ltd.newbee.mall.common.ServiceResultEnum;
 import ltd.newbee.mall.controller.vo.NewBeeMallGoodsDetailVO;
 import ltd.newbee.mall.controller.vo.SearchPageCategoryVO;
+import ltd.newbee.mall.dao.MallUserMapper;
+import ltd.newbee.mall.entity.Comment;
 import ltd.newbee.mall.entity.NewBeeMallGoods;
+import ltd.newbee.mall.service.CommentService;
 import ltd.newbee.mall.service.NewBeeMallCategoryService;
 import ltd.newbee.mall.service.NewBeeMallGoodsService;
 import ltd.newbee.mall.util.BeanUtil;
 import ltd.newbee.mall.util.PageQueryUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.ObjectUtils;
 import org.springframework.util.StringUtils;
@@ -20,6 +23,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -29,6 +35,11 @@ public class GoodsController {
     private NewBeeMallGoodsService newBeeMallGoodsService;
     @Resource
     private NewBeeMallCategoryService newBeeMallCategoryService;
+
+    @Autowired
+    private CommentService commentService;
+    @Autowired
+    private MallUserMapper userMapper;
 
     @GetMapping({"/search", "/search.html"})
     public String searchPage(@RequestParam Map<String, Object> params, HttpServletRequest request) {
@@ -77,6 +88,25 @@ public class GoodsController {
         BeanUtil.copyProperties(goods, goodsDetailVO);
         goodsDetailVO.setGoodsCarouselList(goods.getGoodsCarousel().split(","));
         request.setAttribute("goodsDetail", goodsDetailVO);
+
+        //评论帖子的列表
+        List<Comment> commentList = commentService.findCommentsByEntityType(1,goodsId);
+        //封装评论的全部结果
+        List<Map<String,Object>> commentVoList = new ArrayList<>();
+        if (commentList!=null){
+            //遍历帖子的每条评论
+            for (Comment comment : commentList){
+                //评论帖子的全部详情
+                Map<String,Object> commentVoMap = new HashMap<>();
+                //帖子的直接评论
+                commentVoMap.put("comment",comment);
+                //评论的作者
+                commentVoMap.put("user",userMapper.selectByPrimaryKey(comment.getUserId()));
+                commentVoList.add(commentVoMap);
+            }
+        }
+        request.setAttribute("comments",commentVoList);
+
         return "mall/detail";
     }
 

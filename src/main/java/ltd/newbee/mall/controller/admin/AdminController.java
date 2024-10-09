@@ -65,7 +65,7 @@ public class AdminController {
             //session.setMaxInactiveInterval(60 * 60 * 2);
             return "redirect:/admin/index";
         } else {
-            session.setAttribute("errorMsg", "登录失败");
+            session.setAttribute("errorMsg", "Login Failure");
             return "admin/login";
         }
     }
