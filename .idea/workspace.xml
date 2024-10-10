@@ -5,24 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9290c5d8-ddac-46cc-b8ac-bbd356082d07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/mall/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/dao/CommentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/entity/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/service/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/bootstrap/css/discuss-detail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/admin/plugins/bootstrap/css/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/mall/css/discuss-detail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/mall/css/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/mybatis.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/mybatis.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/admin/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/mall/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ltd/newbee/mall/controller/mall/GoodsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/newbee_mall_schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/newbee_mall_schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/mall/styles/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/mall/styles/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mall/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mall/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mall/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mall/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mall/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mall/personal.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +73,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
